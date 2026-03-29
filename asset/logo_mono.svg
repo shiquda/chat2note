@@ -1,0 +1,14 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Monochrome Folded Bubble Logo -->
+  <g>
+    <!-- Main bubble -->
+    <path d="M40 72c0-22 18-40 40-40h96c22 0 40 18 40 40v56c0 22-18 40-40 40h-76l-32 28c-3 3-7 0-7-4v-24C48 152 40 136 40 124V72z"
+          fill="white" stroke="black" stroke-width="10" stroke-linejoin="round"/>
+    <!-- Folded corner -->
+    <path d="M176 32h40v40l-40-40z" fill="white" stroke="black" stroke-width="10" stroke-linejoin="round"/>
+    <!-- Note lines (black bars) -->
+    <rect x="84" y="68" width="96" height="12" rx="6" fill="black"/>
+    <rect x="84" y="96" width="80" height="12" rx="6" fill="black"/>
+    <rect x="84" y="124" width="56" height="12" rx="6" fill="black"/>
+  </g>
+</svg>

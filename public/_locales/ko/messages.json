@@ -1,0 +1,1844 @@
+{
+  "app_name": {
+    "message": "Chat2Note",
+    "description": "Application name"
+  },
+  "scope_all": {
+    "message": "전체 대화",
+    "description": "Option to export entire conversation"
+  },
+  "file_format": {
+    "message": "파일 형식:",
+    "description": "Label for file format selection"
+  },
+  "export_destination": {
+    "message": "내보내기 대상:",
+    "description": "Label for export target selection"
+  },
+  "export_scope": {
+    "message": "내보내기 범위:",
+    "description": "Label for export scope selection"
+  },
+  "export_button": {
+    "message": "현재 대화 내보내기",
+    "description": "Main export button text"
+  },
+  "app_subtitle": {
+    "message": "AI 채팅 대화를 여러 형식으로 내보내기",
+    "description": "Application subtitle in popup"
+  },
+  "app_settings_subtitle": {
+    "message": "AI 대화를 내보내는 방법 구성",
+    "description": "Application subtitle in settings page"
+  },
+  "aria_export_to": {
+    "message": "$target$로 내보내기",
+    "description": "Accessibility label for export target buttons",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "Notion"
+      }
+    }
+  },
+  "exporting": {
+    "message": "내보내는 중...",
+    "description": "Export in progress status"
+  },
+  "format_json": {
+    "message": "JSON",
+    "description": "JSON format"
+  },
+  "target_notion": {
+    "message": "Notion",
+    "description": "Notion export target"
+  },
+  "format_markdown": {
+    "message": "Markdown",
+    "description": "Markdown format"
+  },
+  "advanced_options_show": {
+    "message": "고급 옵션 표시",
+    "description": "Button to show advanced options"
+  },
+  "target_local": {
+    "message": "로컬 파일",
+    "description": "Local file export target"
+  },
+  "scope_selected": {
+    "message": "선택된 메시지만",
+    "description": "Option to export only selected messages"
+  },
+  "target_obsidian": {
+    "message": "Obsidian",
+    "description": "Obsidian export target"
+  },
+  "include_metadata": {
+    "message": "메타데이터 포함",
+    "description": "Checkbox label for including metadata"
+  },
+  "advanced_options_hide": {
+    "message": "고급 옵션 숨기기",
+    "description": "Button to hide advanced options"
+  },
+  "target_clipboard": {
+    "message": "클립보드",
+    "description": "Clipboard export target"
+  },
+  "settings": {
+    "message": "설정",
+    "description": "Settings label"
+  },
+  "settings_title": {
+    "message": "Chat2Note 설정",
+    "description": "Settings page title"
+  },
+  "open_settings": {
+    "message": "설정 열기",
+    "description": "Button to open settings page"
+  },
+  "format_plain_text": {
+    "message": "일반 텍스트",
+    "description": "Plain text format"
+  },
+  "notion_hint": {
+    "message": "먼저 설정에서 Notion 연동을 구성해 주세요.",
+    "description": "Hint for Notion configuration"
+  },
+  "format_txt": {
+    "message": "일반 텍스트",
+    "description": "Plain text format (alias for format_plain_text)"
+  },
+  "error_no_active_tab": {
+    "message": "내보내기를 위한 활성 탭을 찾을 수 없습니다",
+    "description": "Error when active tab not found"
+  },
+  "error_not_supported_page": {
+    "message": "대화를 내보내려면 ChatGPT, Claude, DeepSeek, Grok 또는 기타 지원되는 AI 플랫폼을 열어주세요.",
+    "description": "Error when not on supported page"
+  },
+  "notification_exporting": {
+    "message": "대화 내보내는 중...",
+    "description": "Progress notification for export"
+  },
+  "notification_export_success": {
+    "message": "$target$($format$)로 내보냈습니다",
+    "description": "Success notification for export",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "Local file"
+      },
+      "format": {
+        "content": "$2",
+        "example": "Markdown"
+      }
+    }
+  },
+  "how_to_use": {
+    "message": "사용 방법",
+    "description": "How-to section title"
+  },
+  "notification_open_in_obsidian": {
+    "message": "Obsidian에서 열기",
+    "description": "Link text to open the generated Obsidian note"
+  },
+  "notification_view_in_notion": {
+    "message": "Notion에서 보기",
+    "description": "Link text to view exported page in Notion"
+  },
+  "how_to_step2": {
+    "message": "내보내기 대상과 형식을 선택하세요.",
+    "description": "Second step in how-to guide"
+  },
+  "notification_obsidian_uri_too_long": {
+    "message": "노트가 너무 커서 obsidian://로 전송할 수 없습니다. 대신 Markdown 파일로 내보내 주세요.",
+    "description": "Error when the Obsidian URI would exceed length limits"
+  },
+  "notification_export_failed": {
+    "message": "내보내기 실패",
+    "description": "Error notification for export failure"
+  },
+  "notification_siyuan_not_configured": {
+    "message": "SiYuan 연동이 설정되지 않았습니다. 내보내기 전에 설정에서 활성화해 주세요.",
+    "description": "Error shown when trying to export without SiYuan configuration"
+  },
+  "notification_export_siyuan_success": {
+    "message": "SiYuan에 저장됨: $path$",
+    "description": "Success notification for SiYuan export",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      }
+    }
+  },
+  "notification_export_obsidian_success": {
+    "message": "Obsidian으로 전송됨: $path$",
+    "description": "Success notification for Obsidian export",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      }
+    }
+  },
+  "how_to_step1": {
+    "message": "브라우저에서 ChatGPT를 열어주세요.",
+    "description": "First step in how-to guide"
+  },
+  "feature_notion_integration": {
+    "message": "Notion 데이터베이스 연동",
+    "description": "Notion integration feature"
+  },
+  "available_features": {
+    "message": "사용 가능한 기능",
+    "description": "Features list title"
+  },
+  "feature_clipboard": {
+    "message": "클립보드에 복사",
+    "description": "Clipboard feature"
+  },
+  "feature_multiple_formats": {
+    "message": "Markdown / JSON / TXT 형식",
+    "description": "Multiple formats feature"
+  },
+  "obsidian_settings": {
+    "message": "옵시디언 내보내기",
+    "description": "Obsidian settings section title"
+  },
+  "obsidian_enable": {
+    "message": "Obsidian 내보내기 활성화",
+    "description": "Toggle for enabling Obsidian integration"
+  },
+  "obsidian_settings_description": {
+    "message": "노트를 Obsidian Vault로 전송하는 방식을 구성합니다.",
+    "description": "Obsidian settings description"
+  },
+  "feature_local_download": {
+    "message": "로컬 파일로 다운로드",
+    "description": "Local download feature"
+  },
+  "how_to_step4": {
+    "message": "대화가 선택한 형식으로 내보내집니다.",
+    "description": "Fourth step in how-to guide"
+  },
+  "how_to_step3": {
+    "message": "내보내기 버튼을 클릭하세요.",
+    "description": "Third step in how-to guide"
+  },
+  "obsidian_vault_name_label": {
+    "message": "보관함 이름",
+    "description": "Label for Obsidian vault name"
+  },
+  "obsidian_open_mode_note": {
+    "message": "새로운 노트 열기",
+    "description": "Option to open new note"
+  },
+  "obsidian_vault_folder_label": {
+    "message": "하위 폴더 (선택 사항)",
+    "description": "Label for Obsidian folder path"
+  },
+  "obsidian_open_mode_app": {
+    "message": "보관함 열기",
+    "description": "Option to open the vault"
+  },
+  "obsidian_open_mode_none": {
+    "message": "아무 작업도 안 함",
+    "description": "Option to not open Obsidian automatically"
+  },
+  "obsidian_open_mode_label": {
+    "message": "내보내기 후",
+    "description": "Label for Obsidian open mode"
+  },
+  "obsidian_vault_name_description": {
+    "message": "Obsidian 보관함의 정확한 이름을 입력하세요.",
+    "description": "Description for Obsidian vault name"
+  },
+  "obsidian_vault_folder_description": {
+    "message": "노트가 이 폴더 내부에 생성됩니다. 볼트 루트를 사용하려면 비워두세요.",
+    "description": "Description for Obsidian folder path"
+  },
+  "obsidian_enable_description": {
+    "message": "Chat2Note가 obsidian:// 링크를 통해 노트를 전송하도록 허용합니다.",
+    "description": "Description for Obsidian enable toggle"
+  },
+  "obsidian_open_mode_description": {
+    "message": "노트를 보낸 후 Chat2Note가 수행할 작업을 선택하세요.",
+    "description": "Description for Obsidian open mode"
+  },
+  "obsidian_sample_note_title": {
+    "message": "Chat2Note 내보내기",
+    "description": "Sample note title"
+  },
+  "obsidian_include_yaml_frontmatter_label": {
+    "message": "YAML 프론트매터 포함",
+    "description": "Label for YAML frontmatter toggle"
+  },
+  "obsidian_format_locked": {
+    "message": "Obsidian 내보내기는 Markdown만 사용합니다.",
+    "description": "Hint indicating Markdown is enforced"
+  },
+  "obsidian_enforce_markdown_label": {
+    "message": "항상 Markdown 사용",
+    "description": "Label for strict Markdown toggle"
+  },
+  "obsidian_vault_placeholder": {
+    "message": "your vault",
+    "description": "Placeholder for vault name"
+  },
+  "obsidian_target_hint": {
+    "message": "Obsidian 데스크톱 앱이 설치되어 있고 obsidian:// 링크가 허용되어 있는지 확인하세요.",
+    "description": "Hint shown when Obsidian target is selected"
+  },
+  "obsidian_folder_root": {
+    "message": "(보관소 루트)",
+    "description": "Placeholder for vault root"
+  },
+  "obsidian_include_yaml_frontmatter_description": {
+    "message": "노트 상단에 메타데이터(제목, 출처, 플랫폼, 내보내기 날짜)가 포함된 YAML frontmatter를 추가합니다.",
+    "description": "Description for YAML frontmatter toggle"
+  },
+  "obsidian_enforce_markdown_description": {
+    "message": "Obsidian은 Markdown 콘텐츠만 지원합니다. 자동으로 Markdown을 적용하려면 이 옵션을 활성화된 상태로 유지하세요.",
+    "description": "Description for strict Markdown toggle"
+  },
+  "obsidian_note_path_hint": {
+    "message": "노트는 \"$vault$\" 내부에 $path$로 저장됩니다.",
+    "description": "Hint showing the resulting Obsidian path",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      },
+      "vault": {
+        "content": "$2",
+        "example": "Second Brain"
+      }
+    }
+  },
+  "language_en": {
+    "message": "영어",
+    "description": "English language option"
+  },
+  "language_auto_desc": {
+    "message": "브라우저 언어에 자동으로 맞추기",
+    "description": "Auto language description"
+  },
+  "language_auto": {
+    "message": "자동 (브라우저 설정 따름)",
+    "description": "Auto language option"
+  },
+  "language_en_desc": {
+    "message": "인터페이스를 영어로 표시",
+    "description": "English language description"
+  },
+  "siyuan_format_required": {
+    "message": "SiYuan 내보내기는 Markdown만 지원합니다. 형식을 Markdown으로 전환해 주세요.",
+    "description": "Error shown when a non-Markdown format is selected for SiYuan"
+  },
+  "obsidian_format_required": {
+    "message": "Obsidian 내보내기는 Markdown만 지원합니다. 형식을 Markdown으로 전환해 주세요.",
+    "description": "Error shown when a non-Markdown format is selected"
+  },
+  "appearance": {
+    "message": "외관",
+    "description": "Appearance settings section"
+  },
+  "language_settings": {
+    "message": "언어",
+    "description": "Language settings label"
+  },
+  "language_settings_description": {
+    "message": "확장 프로그램 인터페이스의 기본 언어를 선택하세요.",
+    "description": "Language settings description"
+  },
+  "appearance_description": {
+    "message": "모든 확장 프로그램 페이지에서 Chat2Note의 표시 방식을 선택하세요.",
+    "description": "Appearance settings description"
+  },
+  "floating_button_position": {
+    "message": "플로팅 버튼 위치",
+    "description": "Label for floating export button placement"
+  },
+  "language_fr_desc": {
+    "message": "프랑스어로 인터페이스 표시",
+    "description": "French language description"
+  },
+  "language_fr": {
+    "message": "Français",
+    "description": "French language option"
+  },
+  "floating_button_position_bottom_right": {
+    "message": "오른쪽 하단",
+    "description": "Floating button placement option"
+  },
+  "floating_button_position_bottom_left": {
+    "message": "왼쪽 하단",
+    "description": "Floating button placement option"
+  },
+  "language_zh_cn_desc": {
+    "message": "인터페이스를 중국어 간체로 표시",
+    "description": "Simplified Chinese language description"
+  },
+  "floating_button_position_middle_right": {
+    "message": "중앙 오른쪽",
+    "description": "Floating button placement option"
+  },
+  "language_zh_cn": {
+    "message": "간체 중국어",
+    "description": "Simplified Chinese language option"
+  },
+  "floating_button_position_description": {
+    "message": "플로팅 내보내기 버튼이 표시될 위치를 선택하거나 완전히 숨길 수 있습니다.",
+    "description": "Description for floating button placement setting"
+  },
+  "floating_button_position_top_right": {
+    "message": "오른쪽 상단",
+    "description": "Floating button placement option"
+  },
+  "theme_dark": {
+    "message": "다크",
+    "description": "Dark theme option"
+  },
+  "language_de": {
+    "message": "독일어",
+    "description": "German language option"
+  },
+  "language_de_desc": {
+    "message": "인터페이스를 독일어로 표시",
+    "description": "German language description"
+  },
+  "floating_button_position_top_left": {
+    "message": "왼쪽 상단",
+    "description": "Floating button placement option"
+  },
+  "theme_light": {
+    "message": "라이트",
+    "description": "Light theme option"
+  },
+  "theme_system": {
+    "message": "시스템",
+    "description": "System theme option"
+  },
+  "floating_button_position_middle_left": {
+    "message": "중앙 왼쪽",
+    "description": "Floating button placement option"
+  },
+  "theme_system_desc": {
+    "message": "운영체제 기본 설정에 맞추기",
+    "description": "System theme description"
+  },
+  "floating_button_position_hidden": {
+    "message": "숨김",
+    "description": "Floating button placement option to hide the button"
+  },
+  "theme_light_desc": {
+    "message": "어두운 텍스트가 있는 밝은 화면",
+    "description": "Light theme description"
+  },
+  "about_status_label": {
+    "message": "프로젝트 상태",
+    "description": "Label for project status badge"
+  },
+  "about_nav": {
+    "message": "소개",
+    "description": "Sidebar navigation label for About page"
+  },
+  "about_highlight_capture_title": {
+    "message": "신뢰할 수 있는 캡처",
+    "description": "Highlight title for capture"
+  },
+  "about_version_label": {
+    "message": "현재 버전",
+    "description": "Label for version badge"
+  },
+  "about_highlights_title": {
+    "message": "Chat2Note가 다른 점",
+    "description": "Highlights section title"
+  },
+  "about_status_value": {
+    "message": "활성 개발 중",
+    "description": "Value for project status badge"
+  },
+  "about_website_label": {
+    "message": "공식 웹사이트",
+    "description": "Label for official website card"
+  },
+  "about_website_description": {
+    "message": "example.invalid에서 최신 업데이트, 기능, 요금제를 확인하세요.",
+    "description": "Helper text for official website card"
+  },
+  "about_user_manual_label": {
+    "message": "사용자 매뉴얼",
+    "description": "Label for user manual card"
+  },
+  "about_user_manual_link_label": {
+    "message": "문서 열기",
+    "description": "Link text for user manual card"
+  },
+  "about_user_manual_description": {
+    "message": "설치, 내보내기, 통합 설정을 단계별로 안내합니다.",
+    "description": "Helper text for user manual card"
+  },
+  "about_support_label": {
+    "message": "지원 이메일",
+    "description": "Label for support email card"
+  },
+  "open_source_nav": {
+    "message": "오픈소스 라이선스",
+    "description": "Sidebar navigation label for open source page"
+  },
+  "about_title": {
+    "message": "Chat2Note 정보",
+    "description": "Heading for About page"
+  },
+  "theme_dark_desc": {
+    "message": "어두운 표면에 밝은 텍스트",
+    "description": "Dark theme description"
+  },
+  "about_intro": {
+    "message": "Chat2Note는 AI 대화를 캡처하고 자신만의 지식 스택 안에서 체계적으로 관리할 수 있도록 도와줍니다.",
+    "description": "Intro paragraph on the About page"
+  },
+  "about_support_title": {
+    "message": "도움이 필요하거나 기여하고 싶으신가요?",
+    "description": "Support section title"
+  },
+  "about_privacy_title": {
+    "message": "프라이버시 우선",
+    "description": "Privacy section title"
+  },
+  "about_highlight_integrations_title": {
+    "message": "완벽한 통합",
+    "description": "Highlight title for integrations"
+  },
+  "about_support_email_label": {
+    "message": "팀에 이메일 보내기 (support@example.invalid)",
+    "description": "Support link text for email"
+  },
+  "about_highlight_integrations_description": {
+    "message": "노트를 Notion, Obsidian 및 기타 연결된 노트북으로 클릭 한 번에 바로 전송하세요.",
+    "description": "Highlight description for integrations"
+  },
+  "about_highlight_export_title": {
+    "message": "유연한 내보내기",
+    "description": "Highlight title for export"
+  },
+  "about_privacy_description": {
+    "message": "모든 처리 과정은 사용자의 브라우저 내에서 이루어집니다. Chat2Note는 사용자가 명시적으로 노트북 대상을 연결하지 않는 한 대화 내용을 절대 업로드하지 않습니다.",
+    "description": "Privacy section description"
+  },
+  "about_links_title": {
+    "message": "공식 웹사이트 및 지원",
+    "description": "Title for official links section"
+  },
+  "about_links_description": {
+    "message": "Chat2Note 공식 채널에서 최신 소식과 도움말을 확인하세요.",
+    "description": "Description for official links section"
+  },
+  "about_links_website": {
+    "message": "공식 웹사이트 방문",
+    "description": "Link title for website card"
+  },
+  "about_links_website_description": {
+    "message": "example.invalid에서 기능, 업데이트, 요금제를 살펴보세요.",
+    "description": "Description for website link card"
+  },
+  "about_links_user_manual": {
+    "message": "사용자 매뉴얼 열기",
+    "description": "Link title for manual card"
+  },
+  "about_links_user_manual_description": {
+    "message": "대화 캡처와 내보내기 방법을 단계별로 안내합니다.",
+    "description": "Description for manual link card"
+  },
+  "about_links_support": {
+    "message": "지원팀에 문의하기",
+    "description": "Link title for support card"
+  },
+  "about_links_support_description": {
+    "message": "도움이나 의견이 필요하면 support@example.invalid 으로 이메일을 보내주세요.",
+    "description": "Description for support link card"
+  },
+  "about_highlight_capture_description": {
+    "message": "역할 인식 형식 및 컨텍스트 메타데이터를 포함한 전체 AI 채팅 세션을 캡처합니다.",
+    "description": "Highlight description for capture"
+  },
+  "about_support_description": {
+    "message": "이메일을 보내주시면 1영업일 이내에 답변드릴게요.",
+    "description": "Support card helper text"
+  },
+  "about_highlight_export_description": {
+    "message": "Markdown, JSON 또는 일반 텍스트로 내보내기. 사용자 지정 가능한 파일 이름과 메타데이터를 포함합니다.",
+    "description": "Highlight description for export"
+  },
+  "about_resources_roadmap": {
+    "message": "제품 로드맵",
+    "description": "Resources link text for roadmap"
+  },
+  "notion_api_token": {
+    "message": "Notion API 토큰",
+    "description": "Notion API token field label"
+  },
+  "notion_enable": {
+    "message": "Notion 연동 활성화",
+    "description": "Checkbox to enable Notion"
+  },
+  "about_resources_title": {
+    "message": "추가 리소스",
+    "description": "Resources section title"
+  },
+  "notion_integration_settings": {
+    "message": "Notion 통합 설정",
+    "description": "Notion integration settings section title"
+  },
+  "notion_enable_description": {
+    "message": "대화를 Notion 데이터베이스로 직접 내보내려면 활성화하세요.",
+    "description": "Notion enable description"
+  },
+  "about_support_issue_label": {
+    "message": "GitHub에서 이슈 열기",
+    "description": "Support link text for GitHub issues"
+  },
+  "about_resources_release_notes": {
+    "message": "릴리스 노트 및 변경 로그",
+    "description": "Resources link text for release notes"
+  },
+  "about_support_docs_label": {
+    "message": "제품 문서 둘러보기",
+    "description": "Support link text for docs"
+  },
+  "notion_integration": {
+    "message": "Notion 연동",
+    "description": "Notion integration tab title"
+  },
+  "notion_connected": {
+    "message": "연결됨",
+    "description": "Connected status"
+  },
+  "notion_database_id_placeholder": {
+    "message": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion database ID placeholder"
+  },
+  "notion_api_token_placeholder": {
+    "message": "API 토큰 입력",
+    "description": "Notion API token placeholder"
+  },
+  "notion_testing": {
+    "message": "테스트 중...",
+    "description": "Testing connection status"
+  },
+  "notion_database_id": {
+    "message": "Notion Database ID",
+    "description": "Notion database ID field label"
+  },
+  "notion_api_token_description": {
+    "message": "Notion Integrations 페이지의 Internal Integration Token",
+    "description": "Notion API token description"
+  },
+  "notion_test_connection": {
+    "message": "연결 테스트",
+    "description": "Test connection button"
+  },
+  "notion_include_properties": {
+    "message": "메타데이터를 데이터베이스 속성으로 내보내기",
+    "description": "Checkbox to export metadata as Notion database properties"
+  },
+  "notion_database_id_description": {
+    "message": "대상 데이터베이스의 ID, 형식: xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion database ID description"
+  },
+  "notion_include_properties_description": {
+    "message": "내보내기 URL, 내보낸 시간, 플랫폼 및 메시지 수를 데이터베이스 속성으로 내보냅니다. 이 옵션은 Markdown 콘텐츠에만 영향을 미치는 '내보내기에 메타데이터 포함' 옵션과는 독립적으로 작동합니다.",
+    "description": "Notion include properties description"
+  },
+  "notion_disconnected": {
+    "message": "연결 끊김",
+    "description": "Disconnected status"
+  },
+  "notion_unknown": {
+    "message": "알 수 없음",
+    "description": "Unknown connection status"
+  },
+  "notion_how_to_configure": {
+    "message": "Notion 연동 설정 방법",
+    "description": "Notion configuration guide title"
+  },
+  "notion_setup_step6": {
+    "message": "위 정보를 입력하고 연결을 테스트하세요",
+    "description": "Sixth step in Notion setup"
+  },
+  "notion_setup_step3": {
+    "message": "Notion에서 새 데이터베이스를 생성하거나 기존 데이터베이스를 사용하세요",
+    "description": "Third step in Notion setup"
+  },
+  "notion_setup_step1": {
+    "message": "Notion 통합 기능 방문하기",
+    "description": "First step in Notion setup"
+  },
+  "notion_setup_step2": {
+    "message": "새로운 integration을 생성하고 \"Internal Integration Token\"을 복사하세요",
+    "description": "Second step in Notion setup"
+  },
+  "notion_setup_step4": {
+    "message": "통합 기능과 데이터베이스 공유하기",
+    "description": "Fourth step in Notion setup"
+  },
+  "notion_advanced_settings": {
+    "message": "고급 설정",
+    "description": "Advanced settings section title"
+  },
+  "notion_setup_step5": {
+    "message": "데이터베이스 ID(데이터베이스 URL에 있는 32자리 문자)를 복사하세요",
+    "description": "Fifth step in Notion setup"
+  },
+  "notion_property_type": {
+    "message": "유형",
+    "description": "Property type column header"
+  },
+  "notion_property_name": {
+    "message": "속성 이름",
+    "description": "Property name column header"
+  },
+  "notion_property_url": {
+    "message": "소스 URL",
+    "description": "URL property label"
+  },
+  "notion_property_enabled": {
+    "message": "사용",
+    "description": "Property enabled column header"
+  },
+  "notion_property_mapping": {
+    "message": "속성 매핑",
+    "description": "Property mapping section title"
+  },
+  "notion_property_exported_at": {
+    "message": "내보낸 시간",
+    "description": "Exported at property label"
+  },
+  "notion_property_url_description": {
+    "message": "원본 대화 링크",
+    "description": "URL property description"
+  },
+  "notion_property_column_name": {
+    "message": "Notion 열 이름",
+    "description": "Column name input label"
+  },
+  "notion_property_exported_at_description": {
+    "message": "대화가 내보내진 타임스탬프",
+    "description": "Exported at property description"
+  },
+  "notion_advanced_settings_description": {
+    "message": "Notion 데이터베이스에서 내보낼 속성과 해당 열 이름을 사용자 지정합니다",
+    "description": "Advanced settings description"
+  },
+  "notion_type_url": {
+    "message": "URL",
+    "description": "URL type"
+  },
+  "notion_type_select": {
+    "message": "선택",
+    "description": "Select type"
+  },
+  "notion_type_date": {
+    "message": "날짜",
+    "description": "Date type"
+  },
+  "notion_property_message_count_description": {
+    "message": "대화의 총 메시지 수",
+    "description": "Message count property description"
+  },
+  "export_default_format": {
+    "message": "기본 내보내기 형식",
+    "description": "Default format setting label"
+  },
+  "export_settings": {
+    "message": "내보내기 설정",
+    "description": "Export settings tab title"
+  },
+  "notion_type_number": {
+    "message": "숫자",
+    "description": "Number type"
+  },
+  "notion_property_platform_description": {
+    "message": "AI 플랫폼 이름 (예: ChatGPT, Claude). Select 또는 Rich Text 유형 지원",
+    "description": "Platform property description"
+  },
+  "notion_property_platform": {
+    "message": "플랫폼",
+    "description": "Platform property label"
+  },
+  "notion_property_message_count": {
+    "message": "메시지 수",
+    "description": "Message count property label"
+  },
+  "export_markdown_template": {
+    "message": "Markdown 템플릿",
+    "description": "Markdown template setting label"
+  },
+  "export_filename_template": {
+    "message": "파일 이름 템플릿",
+    "description": "Filename template setting label"
+  },
+  "export_filename_template_description": {
+    "message": "지원 변수: {{title}}, {{date}}, {{time}}, {{timestamp}}",
+    "description": "Filename template description"
+  },
+  "export_default_scope": {
+    "message": "기본 내보내기 범위",
+    "description": "Default scope setting label"
+  },
+  "export_default_format_description": {
+    "message": "내보내기 기본 파일 형식 선택",
+    "description": "Default format description"
+  },
+  "export_default_target_description": {
+    "message": "기본 내보내기 대상 선택",
+    "description": "Default target description"
+  },
+  "export_filename_template_placeholder": {
+    "message": "{{title}}_{{date}}",
+    "description": "Filename template placeholder"
+  },
+  "export_default_target": {
+    "message": "기본 내보내기 위치",
+    "description": "Default target setting label"
+  },
+  "export_include_metadata_description": {
+    "message": "내보낸 파일에 원본 URL 및 내보내기 타임스탬프 포함",
+    "description": "Include metadata description"
+  },
+  "export_default_scope_description": {
+    "message": "기본적으로 전체 대화를 내보낼지 또는 선택한 메시지만 내보낼지 선택하세요",
+    "description": "Default scope description"
+  },
+  "filename_var_title": {
+    "message": "대화 제목",
+    "description": "Title variable description"
+  },
+  "export_message_template": {
+    "message": "메시지 템플릿",
+    "description": "Message template setting label"
+  },
+  "filename_var_date": {
+    "message": "날짜 (YYYY-MM-DD)",
+    "description": "Date variable description"
+  },
+  "export_markdown_template_placeholder": {
+    "message": "# {{title}}\\n\\n{{metadata}}{{messages}}",
+    "description": "Markdown template placeholder"
+  },
+  "export_visible_targets": {
+    "message": "표시된 내보내기 대상",
+    "description": "Label for visible targets setting"
+  },
+  "filename_variables_title": {
+    "message": "파일 이름 템플릿 변수",
+    "description": "Filename variables card title"
+  },
+  "export_message_template_placeholder": {
+    "message": "## {{role}}\\n\\n{{content}}\\n\\n",
+    "description": "Message template placeholder"
+  },
+  "export_visible_targets_description": {
+    "message": "플로팅 내보내기 버튼에 표시될 내보내기 대상을 선택하세요",
+    "description": "Description for visible targets setting"
+  },
+  "export_markdown_template_description": {
+    "message": "마크다운 본문을 사용자 정의합니다. 사용 가능한 플레이스홀더: {{title}}, {{metadata}}, {{messages}}, {{url}}, {{platform}}, {{exportedAt}}, {{exportedAtISO}}, {{messageCount}}.",
+    "description": "Markdown template description"
+  },
+  "export_message_template_description": {
+    "message": "각 메시지가 렌더링되는 방식을 사용자 정의합니다. 플레이스홀더: {{role}}, {{rawRole}}, {{content}}, {{index}}, {{messageCount}}, {{timestamp}}, {{timestampISO}}.",
+    "description": "Message template description"
+  },
+  "filename_var_timestamp": {
+    "message": "타임스탬프",
+    "description": "Timestamp variable description"
+  },
+  "config_export_info5": {
+    "message": "민감한 정보를 포함하는 파일은 파일명에 \"-sensitive\"가 포함됩니다.",
+    "description": "Config export info 5"
+  },
+  "saving": {
+    "message": "저장 중...",
+    "description": "Saving status"
+  },
+  "save_settings": {
+    "message": "설정 저장",
+    "description": "Save settings button"
+  },
+  "config_export_info3": {
+    "message": "내보내기 시 민감한 정보(API 토큰)를 포함할지 여부를 선택할 수 있습니다.",
+    "description": "Config export info 3"
+  },
+  "config_export_info2": {
+    "message": "파일을 가져오면 확인 후 현재 모든 설정이 대체됩니다.",
+    "description": "Config export info 2"
+  },
+  "filename_var_time": {
+    "message": "시간 (HH-MM-SS)",
+    "description": "Time variable description"
+  },
+  "config_export_info4": {
+    "message": "보안을 위해 가져온 파일의 민감한 정보는 자동으로 암호화됩니다.",
+    "description": "Config export info 4"
+  },
+  "config_import_export_title": {
+    "message": "설정 가져오기 및 내보내기",
+    "description": "Config import/export card title"
+  },
+  "config_export_info1": {
+    "message": "내보낸 파일에는 스키마 버전, 앱 버전 및 내보내기 타임스탬프가 포함됩니다.",
+    "description": "Config export info 1"
+  },
+  "import_config": {
+    "message": "설정 가져오기",
+    "description": "Import config button"
+  },
+  "reload": {
+    "message": "새로고침",
+    "description": "Reload button"
+  },
+  "notification_saving": {
+    "message": "설정 저장 중...",
+    "description": "Saving settings notification"
+  },
+  "export_config": {
+    "message": "내보내기 설정",
+    "description": "Export config button"
+  },
+  "notification_settings_saved": {
+    "message": "설정이 성공적으로 저장되었습니다",
+    "description": "Settings saved notification"
+  },
+  "notification_settings_load_failed": {
+    "message": "설정을 불러오지 못했습니다",
+    "description": "Load settings failed notification"
+  },
+  "reset_settings": {
+    "message": "설정 초기화",
+    "description": "Reset settings button"
+  },
+  "notification_notion_config_incomplete": {
+    "message": "먼저 Notion 구성을 완료해 주세요",
+    "description": "Notion config incomplete notification"
+  },
+  "notification_validation_failed": {
+    "message": "구성 검증 실패: $errors$",
+    "description": "Validation failed notification",
+    "placeholders": {
+      "errors": {
+        "content": "$1",
+        "example": "Invalid API token"
+      }
+    }
+  },
+  "notification_settings_save_failed": {
+    "message": "설정 저장 실패: $error$",
+    "description": "Save settings failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid configuration"
+      }
+    }
+  },
+  "notification_siyuan_testing": {
+    "message": "SiYuan 연결 테스트 중...",
+    "description": "Testing SiYuan connection notification"
+  },
+  "notification_notion_test_failed": {
+    "message": "Notion 연결 테스트 실패",
+    "description": "Notion test failed notification"
+  },
+  "notification_resetting": {
+    "message": "설정 초기화 중...",
+    "description": "Resetting notification"
+  },
+  "notification_siyuan_test_success": {
+    "message": "SiYuan 연결 테스트 성공",
+    "description": "SiYuan test success notification"
+  },
+  "notification_siyuan_config_incomplete": {
+    "message": "먼저 SiYuan 구성을 완료해 주세요",
+    "description": "SiYuan config incomplete notification"
+  },
+  "notification_notion_testing": {
+    "message": "Notion 연결 테스트 중...",
+    "description": "Testing Notion connection notification"
+  },
+  "notification_notion_test_success": {
+    "message": "Notion 연결 테스트 성공",
+    "description": "Notion test success notification"
+  },
+  "notification_siyuan_test_failed": {
+    "message": "SiYuan 연결 테스트 실패",
+    "description": "SiYuan test failed notification"
+  },
+  "notification_connection_test_failed": {
+    "message": "연결 테스트 실패: $error$",
+    "description": "Connection test failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "confirm_reset_settings": {
+    "message": "모든 설정을 초기화하시겠습니까? 이 작업은 취소할 수 없습니다.",
+    "description": "Reset settings confirmation"
+  },
+  "config_export_with_sensitive": {
+    "message": "민감한 정보 포함",
+    "description": "Config exported with sensitive data"
+  },
+  "notification_exporting_config": {
+    "message": "설정 내보내기 준비 중...",
+    "description": "Exporting config notification"
+  },
+  "notification_settings_reset": {
+    "message": "설정이 초기화되었습니다",
+    "description": "Settings reset notification"
+  },
+  "notification_importing_config": {
+    "message": "구성 가져오는 중...",
+    "description": "Importing config notification"
+  },
+  "config_export_without_sensitive": {
+    "message": "민감한 정보 없이",
+    "description": "Config exported without sensitive data"
+  },
+  "notification_reset_failed": {
+    "message": "설정 초기화 실패: $error$",
+    "description": "Reset failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Storage error"
+      }
+    }
+  },
+  "notification_config_exported": {
+    "message": "구성이 $sensitivity$ $filename$(으)로 내보내기됨",
+    "description": "Config exported notification",
+    "placeholders": {
+      "sensitivity": {
+        "content": "$1",
+        "example": "with sensitive information"
+      },
+      "filename": {
+        "content": "$2",
+        "example": "chat2note-settings.json"
+      }
+    }
+  },
+  "confirm_import_config": {
+    "message": "구성 파일을 가져오면 현재 설정이 덮어쓰기됩니다. 계속하시겠습니까?\n\n참고: 파일에 민감한 정보(API 토큰 등)가 포함된 경우 안전하게 암호화됩니다.\n파일에 민감한 정보가 포함되어 있지 않으면 기존 토큰이 모두 삭제됩니다.",
+    "description": "Confirm import config"
+  },
+  "confirm_export_sensitive": {
+    "message": "민감한 정보(Notion API 토큰 등)를 내보내기에 포함하시겠습니까?\n\n경고: 민감한 정보를 포함하면 내보낸 파일에 API 토큰이 포함됩니다.\n   파일이 저장될 위치와 접근 가능한 사용자를 신뢰하는 경우에만 선택하세요.\n\n확인을 클릭하면 민감한 정보를 포함하고, 취소를 클릭하면 민감한 정보 없이 내보냅니다.",
+    "description": "Confirm export with sensitive data"
+  },
+  "notification_export_config_failed": {
+    "message": "구성 내보내기 실패: $error$",
+    "description": "Export config failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Serialization error"
+      }
+    }
+  },
+  "error_unknown": {
+    "message": "알 수 없는 오류"
+  },
+  "context_menu_save_conversation": {
+    "message": "대화 저장",
+    "description": "Context menu item to save conversation"
+  },
+  "error_no_conversation_generic": {
+    "message": "사용 가능한 대화가 없습니다"
+  },
+  "loading": {
+    "message": "불러오는 중...",
+    "description": "Loading status"
+  },
+  "version_info": {
+    "message": "Chat2Note v$version$",
+    "description": "Version information",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "notification_config_imported": {
+    "message": "구성 가져오기 성공",
+    "description": "Config imported notification"
+  },
+  "error_extract_conversation": {
+    "message": "대화를 추출할 수 없음: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "error_no_conversation": {
+    "message": "$site$에서 대화를 찾을 수 없습니다",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "config_version_info": {
+    "message": "설정 버전: $current$ (최신: $latest$)",
+    "description": "Configuration version information",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1.0.0"
+      },
+      "latest": {
+        "content": "$2",
+        "example": "1.1.0"
+      }
+    }
+  },
+  "notification_import_config_failed": {
+    "message": "구성 가져오기 실패: $error$",
+    "description": "Import config failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid file format"
+      }
+    }
+  },
+  "preview_select_all": {
+    "message": "전체 선택"
+  },
+  "preview_select_assistant": {
+    "message": "Select assistant replies"
+  },
+  "preview_deselect_all": {
+    "message": "선택 해제"
+  },
+  "preview_cancel": {
+    "message": "취소"
+  },
+  "preview_toggle_expand": {
+    "message": "더 보기"
+  },
+  "notification_export_success_generic": {
+    "message": "대화 내보내기 성공"
+  },
+  "preview_confirm": {
+    "message": "선택 항목 내보내기"
+  },
+  "preview_title_select_messages": {
+    "message": "내보낼 메시지 선택"
+  },
+  "notification_export_selection_empty": {
+    "message": "내보내기 전에 최소한 하나의 메시지를 선택하세요"
+  },
+  "notification_export_selection_invalid": {
+    "message": "선택한 메시지는 내보낼 수 없습니다. 선택 항목을 조정하고 다시 시도하세요."
+  },
+  "notification_export_failed_with_reason": {
+    "message": "내보내기 실패: $reason$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "feedback_try_again": {
+    "message": "다시 시도"
+  },
+  "feedback_view_page": {
+    "message": "페이지 보기"
+  },
+  "feedback_export_failed": {
+    "message": "내보내기 실패"
+  },
+  "preview_toggle_collapse": {
+    "message": "간략히 보기"
+  },
+  "feedback_export_successful": {
+    "message": "내보내기 성공"
+  },
+  "preview_role_user": {
+    "message": "사용자"
+  },
+  "preview_role_assistant": {
+    "message": "어시스턴트"
+  },
+  "feedback_open_file": {
+    "message": "파일 열기"
+  },
+  "feedback_please_try_exporting_again": {
+    "message": "다시 내보내기를 시도해 주세요."
+  },
+  "feedback_file_saved_to_downloads": {
+    "message": "파일이 다운로드 폴더에 저장되었습니다"
+  },
+  "feedback_open_settings": {
+    "message": "설정 열기"
+  },
+  "feedback_connection_test_failed": {
+    "message": "연결 테스트 실패"
+  },
+  "feedback_unable_to_connect_to_notion_api": {
+    "message": "Notion API에 연결할 수 없습니다. 설정을 확인해 주세요"
+  },
+  "feedback_configuration_validation_failed": {
+    "message": "구성 유효성 검사 실패"
+  },
+  "feedback_successfully_connected_to_notion_api": {
+    "message": "Notion API에 성공적으로 연결되었습니다"
+  },
+  "error_network_connection_failed": {
+    "message": "네트워크 연결에 실패했습니다. 인터넷 연결을 확인해 주세요."
+  },
+  "feedback_connection_test_succeeded": {
+    "message": "연결 테스트 성공"
+  },
+  "error_notion_api_request_failed": {
+    "message": "Notion API 요청이 실패했습니다. 설정을 확인해 주세요."
+  },
+  "feedback_view_help": {
+    "message": "도움말 보기"
+  },
+  "feedback_troubleshooting": {
+    "message": "문제 해결"
+  },
+  "error_api_token_is_invalid_or_has_expired": {
+    "message": "API 토큰이 유효하지 않거나 만료되었습니다"
+  },
+  "error_database_id_format_is_invalid": {
+    "message": "Database ID 형식이 올바르지 않습니다"
+  },
+  "error_notion_api_request_failed_short": {
+    "message": "Notion API 요청 실패"
+  },
+  "error_page_parsing_failed": {
+    "message": "페이지 파싱에 실패했습니다. 지원되는 채팅 페이지에 접속해 있는지 확인해 주세요."
+  },
+  "error_database_id_cannot_be_empty": {
+    "message": "Database ID는 비워둘 수 없습니다"
+  },
+  "error_api_token_cannot_be_empty": {
+    "message": "API 토큰은 비워둘 수 없습니다"
+  },
+  "error_export_failed_please_try_again_later": {
+    "message": "내보내기 실패했습니다. 나중에 다시 시도해 주세요."
+  },
+  "error_api_calls_are_rate_limited_please_try_again_later": {
+    "message": "API 호출은 rate limited 상태입니다. 나중에 다시 시도해 주세요."
+  },
+  "error_storage_permissions_failed": {
+    "message": "저장소 권한을 획득하지 못했습니다. 확장 프로그램 권한을 확인해 주세요."
+  },
+  "error_database_not_found_check_database_id": {
+    "message": "데이터베이스를 찾을 수 없습니다. 데이터베이스 ID를 확인해 주세요."
+  },
+  "error_storage_operation_failed": {
+    "message": "스토리지 작업 실패"
+  },
+  "error_storage_quota_exceeded": {
+    "message": "스토리지 할당량 초과"
+  },
+  "error_invalid_theme_preference": {
+    "message": "유효하지 않은 테마 설정"
+  },
+  "notebook_software_section": {
+    "message": "노트북 소프트웨어",
+    "description": "Section title for notebook software configurations"
+  },
+  "advanced_settings_section": {
+    "message": "고급 설정",
+    "description": "Section title for advanced settings"
+  },
+  "error_request_data_format_is_invalid": {
+    "message": "요청 데이터 형식이 올바르지 않습니다"
+  },
+  "error_unknown_error_occurred": {
+    "message": "알 수 없는 오류가 발생했습니다"
+  },
+  "error_missing_storage_permission_review_settings": {
+    "message": "저장소 권한이 없습니다. 확장 프로그램 설정을 확인해 주세요."
+  },
+  "general_settings_section": {
+    "message": "일반 설정",
+    "description": "Section title for general settings"
+  },
+  "error_unknown_clipboard_error": {
+    "message": "알 수 없는 클립보드 오류"
+  },
+  "other_section": {
+    "message": "기타",
+    "description": "Section title for other pages"
+  },
+  "advanced_settings": {
+    "message": "고급 설정",
+    "description": "Advanced settings page title"
+  },
+  "theme_settings": {
+    "message": "테마",
+    "description": "Theme settings label"
+  },
+  "siyuan_api_url": {
+    "message": "SiYuan API URL",
+    "description": "SiYuan API URL field label"
+  },
+  "siyuan_enable": {
+    "message": "SiYuan 연동 활성화",
+    "description": "Toggle for enabling SiYuan"
+  },
+  "siyuan_settings": {
+    "message": "SiYuan 연동",
+    "description": "SiYuan settings section title"
+  },
+  "siyuan_settings_description": {
+    "message": "Chat2Note를 로컬 또는 원격 SiYuan 인스턴스와 연결합니다.",
+    "description": "SiYuan settings description"
+  },
+  "siyuan_connection_coming_soon": {
+    "message": "SiYuan 연동 기능이 곧 출시됩니다!",
+    "description": "Coming soon message for SiYuan"
+  },
+  "obsidian_connection_note": {
+    "message": "Obsidian은 통합을 위해 URI 스키마를 사용합니다. 연결 상태는 구성 완료 여부를 반영합니다.",
+    "description": "Note about Obsidian connection"
+  },
+  "siyuan_api_url_description": {
+    "message": "사용 중인 SiYuan 인스턴스의 API URL (예: http://localhost:6806)",
+    "description": "SiYuan API URL description"
+  },
+  "siyuan_open_after_create": {
+    "message": "생성 후 열기",
+    "description": "Toggle for opening document after creation"
+  },
+  "siyuan_notebook_placeholder": {
+    "message": "노트북",
+    "description": "Placeholder for notebook ID preview"
+  },
+  "siyuan_notebook_id_description": {
+    "message": "SiYuan 대상 노트북의 ID",
+    "description": "SiYuan notebook ID description"
+  },
+  "siyuan_folder_path": {
+    "message": "폴더 경로",
+    "description": "SiYuan folder path field label"
+  },
+  "siyuan_api_token_description": {
+    "message": "SiYuan API에 접근하기 위한 API 토큰",
+    "description": "SiYuan API token description"
+  },
+  "siyuan_open_after_create_description": {
+    "message": "생성된 문서를 SiYuan에서 자동으로 열기",
+    "description": "Description for open after creation toggle"
+  },
+  "siyuan_folder_path_description": {
+    "message": "노트북에서 문서가 생성될 경로",
+    "description": "SiYuan folder path description"
+  },
+  "siyuan_target_hint": {
+    "message": "SiYuan 데스크톱 또는 서버 API가 실행 중이고 접근 가능한지 확인하세요.",
+    "description": "Hint shown for SiYuan target"
+  },
+  "siyuan_notebook_id": {
+    "message": "노트북 ID",
+    "description": "SiYuan notebook ID field label"
+  },
+  "siyuan_api_token": {
+    "message": "SiYuan API 토큰",
+    "description": "SiYuan API token field label"
+  },
+  "siyuan_disconnected": {
+    "message": "연결 끊김",
+    "description": "SiYuan disconnected status"
+  },
+  "siyuan_test_connection": {
+    "message": "연결 테스트",
+    "description": "Test connection button for SiYuan"
+  },
+  "config_danger_zone": {
+    "message": "위험 구역",
+    "description": "Title for dangerous configuration actions"
+  },
+  "config_import_export_actions": {
+    "message": "가져오기/내보내기 작업",
+    "description": "Title for import/export action buttons"
+  },
+  "siyuan_connected": {
+    "message": "연결됨",
+    "description": "SiYuan connected status"
+  },
+  "target_siyuan": {
+    "message": "SiYuan",
+    "description": "SiYuan export target"
+  },
+  "siyuan_testing": {
+    "message": "테스트 중...",
+    "description": "Testing SiYuan connection status"
+  },
+  "siyuan_connection_unknown": {
+    "message": "알 수 없음",
+    "description": "SiYuan unknown status"
+  },
+  "siyuan_sample_note_title": {
+    "message": "Chat2Note 내보내기",
+    "description": "Sample SiYuan note title"
+  },
+  "siyuan_note_path_hint": {
+    "message": "노트가 $path$ 경로로 $notebook$ 노트북에 생성됩니다.",
+    "description": "Hint showing the resulting SiYuan path",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      },
+      "notebook": {
+        "content": "$2",
+        "example": "20210805123456-abcdefg"
+      }
+    }
+  },
+  "siyuan_set_block_attributes_label": {
+    "message": "블록 속성 설정",
+    "description": "Label for block attributes toggle in SiYuan settings"
+  },
+  "config_reset_warning": {
+    "message": "재설정하면 모든 설정이 기본값으로 복원되며 이 작업은 취소할 수 없습니다.",
+    "description": "Warning message for configuration reset"
+  },
+  "siyuan_set_block_attributes_description": {
+    "message": "대화 메타데이터를 블록 속성(custom-source-url, custom-platform, custom-exported-at 등)으로 설정하여 체계적인 정리와 검색 기능을 향상시킵니다.",
+    "description": "Description for block attributes toggle in SiYuan settings"
+  },
+  "language_ko": {
+    "message": "한국어",
+    "description": "Korean language option"
+  },
+  "language_ja": {
+    "message": "日本語",
+    "description": "Japanese language option"
+  },
+  "language_ko_desc": {
+    "message": "인터페이스를 한국어로 표시",
+    "description": "Korean language description"
+  },
+  "language_pt_desc": {
+    "message": "포르투갈어로 인터페이스 표시",
+    "description": "Portuguese language description"
+  },
+  "language_es_desc": {
+    "message": "인터페이스를 스페인어로 표시",
+    "description": "Spanish language description"
+  },
+  "language_ja_desc": {
+    "message": "인터페이스를 일본어로 표시",
+    "description": "Japanese language description"
+  },
+  "language_pt": {
+    "message": "포르투갈어",
+    "description": "Portuguese language option"
+  },
+  "language_es": {
+    "message": "Español",
+    "description": "Spanish language option"
+  },
+  "notification_export_success_shortcut": {
+    "message": "단축키로 대화 내보내기 완료"
+  },
+  "notification_export_in_progress": {
+    "message": "대화 내보내는 중..."
+  },
+  "account_section": {
+    "message": "계정",
+    "description": "Account section title"
+  },
+  "account_enable": {
+    "message": "계정 연동 활성화",
+    "description": "Label for account enable toggle"
+  },
+  "account_enable_description": {
+    "message": "계정에 연결하여 프리미엄 기능을 이용하고 구독을 관리하세요.",
+    "description": "Description for account enable toggle"
+  },
+  "account_test_connection": {
+    "message": "연결 테스트",
+    "description": "Test connection button text"
+  },
+  "account_membership_status": {
+    "message": "멤버십 상태",
+    "description": "Membership status section title"
+  },
+  "account_status_member": {
+    "message": "멤버",
+    "description": "Member status text"
+  },
+  "account_status_not_logged_in": {
+    "message": "로그인되지 않음",
+    "description": "Not logged in status text"
+  },
+  "account_status_unknown": {
+    "message": "알 수 없음",
+    "description": "Unknown status text"
+  },
+  "account_subscription_plan": {
+    "message": "플랜",
+    "description": "Subscription plan label"
+  },
+  "account_subscription_status": {
+    "message": "상태",
+    "description": "Subscription status label"
+  },
+  "account_client_name": {
+    "message": "이름",
+    "description": "Client name label"
+  },
+  "account_info": {
+    "message": "계정 정보",
+    "description": "Account information section title"
+  },
+  "account_client_company": {
+    "message": "회사",
+    "description": "Client company label"
+  },
+  "account_client_email": {
+    "message": "이메일",
+    "description": "Client email label"
+  },
+  "account_subscription_info": {
+    "message": "구독 정보",
+    "description": "Subscription information section title"
+  },
+  "account_status_not_member": {
+    "message": "멤버가 아닙니다",
+    "description": "Not a member status text"
+  },
+  "account_subscription_expires": {
+    "message": "만료일",
+    "description": "Subscription expiry date label"
+  },
+  "account_status_expired": {
+    "message": "만료됨",
+    "description": "Expired membership status text"
+  },
+  "account_login_success": {
+    "message": "로그인 성공",
+    "description": "Login success message"
+  },
+  "account_logout_success": {
+    "message": "로그아웃되었습니다",
+    "description": "Logout success message"
+  },
+  "account_subscription_never_expires": {
+    "message": "만료되지 않음",
+    "description": "Never expires text"
+  },
+  "account_subscription_auto_renew": {
+    "message": "자동 갱신",
+    "description": "Auto renew label"
+  },
+  "account_subscription_amount": {
+    "message": "금액",
+    "description": "Subscription amount label"
+  },
+  "account_connection_success": {
+    "message": "계정 연결이 성공적으로 완료되었습니다",
+    "description": "Connection success message"
+  },
+  "account_login_failed": {
+    "message": "로그인 실패: $error$",
+    "description": "Login failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid credentials"
+      }
+    }
+  },
+  "account_connection_failed": {
+    "message": "계정 서버 연결 실패: $error$",
+    "description": "Connection failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "account_api_key": {
+    "message": "API 키",
+    "description": "Label for API Key input"
+  },
+  "account_api_key_placeholder": {
+    "message": "API 키를 입력하세요...",
+    "description": "Placeholder for API Key input"
+  },
+  "account_test_connection_success": {
+    "message": "연결 성공",
+    "description": "Test connection success message"
+  },
+  "account_testing": {
+    "message": "테스트 중...",
+    "description": "Testing connection state"
+  },
+  "account_api_key_description": {
+    "message": "계정 대시보드에서 발급받은 클라이언트 API 키",
+    "description": "Description for API Key input"
+  },
+  "account_api_key_help": {
+    "message": "클라이언트 대시보드 → 프로필 → API Key에서 API Key를 확인하세요",
+    "description": "Help text for getting API Key"
+  },
+  "account_test_connection_failed": {
+    "message": "연결 실패: $REASON$",
+    "description": "Test connection failed message",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "Invalid API Key"
+      }
+    }
+  },
+  "account_not_connected": {
+    "message": "연결되지 않음",
+    "description": "Not connected status text"
+  },
+  "account_click_test_to_check": {
+    "message": "'연결 테스트'를 클릭하여 멤버십 상태를 확인하세요",
+    "description": "Prompt to test connection for membership status"
+  },
+  "days_remaining": {
+    "message": "$count$일 남음",
+    "description": "Remaining days until subscription expires",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "account_register": {
+    "message": "계정 등록",
+    "description": "Button to register a new account"
+  },
+  "account_register_hint": {
+    "message": "계정이 없으신가요? API Key를 발급받으려면 먼저 등록하세요.",
+    "description": "Hint for registering an account"
+  },
+  "account_member_title": {
+    "message": "You're a Pro member!",
+    "description": "Headline for active Pro members"
+  },
+  "account_member_description": {
+    "message": "Thank you for supporting Chat2Note Pro. Enjoy the full suite of premium features without limits.",
+    "description": "Description for active Pro members"
+  },
+  "account_member_days_remaining": {
+    "message": "$count$ days of Pro access remaining",
+    "description": "Days remaining for Pro membership",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "account_member_active_hint": {
+    "message": "Your Pro benefits are active",
+    "description": "Message when Pro membership is active without remaining days info"
+  },
+  "account_member_expiry": {
+    "message": "Renews on $date$",
+    "description": "Membership renewal date message",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "2025-08-01"
+      }
+    }
+  },
+  "account_manage_membership": {
+    "message": "Manage membership",
+    "description": "Button to manage an existing membership"
+  },
+  "account_nonmember_title": {
+    "message": "Upgrade to Pro membership",
+    "description": "Headline encouraging non-members to upgrade"
+  },
+  "account_nonmember_description": {
+    "message": "Remove daily limits, unlock premium export workflows and stay ahead with upcoming features.",
+    "description": "Description encouraging upgrade"
+  },
+  "account_nonmember_benefit_unlimited": {
+    "message": "Unlimited exports without daily caps",
+    "description": "Benefit list item for unlimited exports"
+  },
+  "account_nonmember_benefit_advanced": {
+    "message": "Advanced templates and smart formatting",
+    "description": "Benefit list item for advanced tools"
+  },
+  "account_nonmember_benefit_priority": {
+    "message": "Priority support and faster updates",
+    "description": "Benefit list item for support"
+  },
+  "account_upgrade_now": {
+    "message": "Upgrade now",
+    "description": "Upgrade button label"
+  },
+  "export_advanced_options": {
+    "message": "고급 옵션",
+    "description": "Advanced export options section title"
+  },
+  "export_template_settings": {
+    "message": "템플릿 설정",
+    "description": "Template settings section title"
+  },
+  "pro_feature_tooltip": {
+    "message": "Pro 회원 전용 기능",
+    "description": "Tooltip text for Pro-only features"
+  },
+  "target_joplin": {
+    "message": "Joplin",
+    "description": "Joplin export target"
+  },
+  "joplin_settings": {
+    "message": "Joplin 연동",
+    "description": "Joplin settings section title"
+  },
+  "joplin_api_token_description": {
+    "message": "Joplin Web Clipper 설정에서 가져온 인증 토큰",
+    "description": "Joplin API token description"
+  },
+  "joplin_api_url": {
+    "message": "Joplin API URL",
+    "description": "Joplin API URL field label"
+  },
+  "joplin_api_token_placeholder": {
+    "message": "API 토큰을 입력하세요",
+    "description": "Joplin API token placeholder"
+  },
+  "joplin_api_token": {
+    "message": "Joplin API 토큰",
+    "description": "Joplin API token field label"
+  },
+  "joplin_api_url_description": {
+    "message": "Web Clipper 서비스 URL (기본값: http://127.0.0.1:41184)",
+    "description": "Joplin API URL description"
+  },
+  "joplin_enable": {
+    "message": "Joplin 연동 활성화",
+    "description": "Toggle for enabling Joplin"
+  },
+  "notification_joplin_not_configured": {
+    "message": "Joplin 연동이 설정되지 않았습니다. 내보내기 전에 설정에서 활성화해 주세요.",
+    "description": "Error shown when trying to export without Joplin configuration"
+  },
+  "joplin_settings_description": {
+    "message": "대화를 Joplin 노트 애플리케이션으로 직접 내보내기",
+    "description": "Joplin settings description"
+  },
+  "joplin_connected": {
+    "message": "연결됨",
+    "description": "Joplin connected status"
+  },
+  "joplin_include_metadata": {
+    "message": "메타데이터 포함",
+    "description": "Joplin include metadata toggle"
+  },
+  "joplin_default_notebook_description": {
+    "message": "노트가 생성될 노트북을 선택하세요",
+    "description": "Joplin default notebook description"
+  },
+  "joplin_default_notebook": {
+    "message": "기본 노트북",
+    "description": "Joplin default notebook field label"
+  },
+  "joplin_default_tags_description": {
+    "message": "내보낸 노트에 추가할 쉼표로 구분된 태그",
+    "description": "Joplin default tags description"
+  },
+  "joplin_include_metadata_description": {
+    "message": "대화 메타데이터를 노트 내용에 추가",
+    "description": "Joplin include metadata description"
+  },
+  "joplin_default_tags": {
+    "message": "기본 태그",
+    "description": "Joplin default tags field label"
+  },
+  "joplin_test_connection": {
+    "message": "연결 테스트",
+    "description": "Test Joplin connection button"
+  },
+  "joplin_default_tags_placeholder": {
+    "message": "ai-chat, export",
+    "description": "Joplin default tags placeholder"
+  },
+  "joplin_testing": {
+    "message": "테스트 중...",
+    "description": "Testing Joplin connection status"
+  },
+  "joplin_disconnected": {
+    "message": "연결 끊김",
+    "description": "Joplin disconnected status"
+  },
+  "joplin_config_incomplete": {
+    "message": "먼저 Joplin 구성을 완료해 주세요",
+    "description": "Joplin config incomplete notification"
+  },
+  "joplin_test_success": {
+    "message": "Joplin 연결 테스트 성공",
+    "description": "Joplin test success notification"
+  },
+  "joplin_test_failed": {
+    "message": "Joplin 연결 테스트 실패",
+    "description": "Joplin test failed notification"
+  },
+  "joplin_target_hint": {
+    "message": "Joplin 데스크톱 앱이 Web Clipper가 활성화된 상태에서 실행 중인지 확인하세요",
+    "description": "Hint shown for Joplin target"
+  },
+  "notification_joplin_test_failed": {
+    "message": "Joplin 연결 테스트 실패",
+    "description": "Joplin test failed notification"
+  },
+  "joplin_notebook_id": {
+    "message": "노트북 ID",
+    "description": "Joplin notebook ID field label"
+  },
+  "joplin_notebook_id_description": {
+    "message": "선택사항: 내보낸 대화를 저장할 기본 노트북 ID",
+    "description": "Joplin notebook ID description"
+  },
+  "notification_joplin_test_success": {
+    "message": "Joplin 연결 테스트 성공",
+    "description": "Joplin test success notification"
+  },
+  "notification_joplin_config_incomplete": {
+    "message": "Joplin 구성을 먼저 완료해 주세요 (API URL과 Token이 필요합니다)",
+    "description": "Joplin config incomplete notification"
+  },
+  "joplin_connection_unknown": {
+    "message": "연결 상태 알 수 없음",
+    "description": "Joplin connection status unknown"
+  },
+  "notification_joplin_testing": {
+    "message": "Joplin 연결 테스트 중...",
+    "description": "Testing Joplin connection status"
+  }
+}

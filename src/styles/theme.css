@@ -1,0 +1,98 @@
+:root,
+.chat2note-theme-scope {
+  --bg-body: #f5f5f5;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f0f0f0;
+  --bg-subtle: #fafafa;
+  --text-primary: #111111;
+  --text-secondary: #3f3f3f;
+  --text-muted: #6c6c6c;
+  --border-subtle: #d8d8d8;
+  --border-strong: #bcbcbc;
+  --primary-400: #38bdf8;
+  --primary-500: #0ea5e9;
+  --primary-600: #0284c7;
+  --accent-strong: #111111;
+  --accent-contrast: #f7f7f7;
+  --control-bg: #f0f0f0;
+  --control-border: #cccccc;
+  --control-focus: #9c9c9c;
+  --interactive-hover: rgba(0, 0, 0, 0.08);
+  --shadow-soft: rgba(0, 0, 0, 0.12);
+  --shadow-strong: rgba(0, 0, 0, 0.18);
+  --backdrop-mask: rgba(0, 0, 0, 0.45);
+  --divider-subtle: rgba(0, 0, 0, 0.1);
+  --badge-background: #ededed;
+  --badge-border: #c8c8c8;
+  --badge-text: #2f2f2f;
+  --button-disabled-bg: rgba(0, 0, 0, 0.06);
+  --button-disabled-text: rgba(17, 17, 17, 0.35);
+  --input-placeholder: rgba(17, 17, 17, 0.45);
+  color-scheme: light;
+}
+
+:root[data-theme='dark'],
+.chat2note-theme-scope[data-theme='dark'] {
+  color-scheme: dark;
+  --bg-body: #0d0d0d;
+  --bg-surface: #151515;
+  --bg-elevated: #1d1d1d;
+  --bg-subtle: #121212;
+  --text-primary: #f4f4f4;
+  --text-secondary: #d0d0d0;
+  --text-muted: #9a9a9a;
+  --border-subtle: #272727;
+  --border-strong: #3b3b3b;
+  --primary-400: #38bdf8;
+  --primary-500: #0ea5e9;
+  --primary-600: #36b3ff;
+  --accent-strong: #f5f5f5;
+  --accent-contrast: #121212;
+  --control-bg: #1d1d1d;
+  --control-border: #323232;
+  --control-focus: #4a4a4a;
+  --interactive-hover: rgba(255, 255, 255, 0.08);
+  --shadow-soft: rgba(0, 0, 0, 0.55);
+  --shadow-strong: rgba(0, 0, 0, 0.7);
+  --backdrop-mask: rgba(0, 0, 0, 0.65);
+  --divider-subtle: rgba(255, 255, 255, 0.08);
+  --badge-background: #1c1c1c;
+  --badge-border: #343434;
+  --badge-text: #e1e1e1;
+  --button-disabled-bg: rgba(255, 255, 255, 0.08);
+  --button-disabled-text: rgba(244, 244, 244, 0.4);
+  --input-placeholder: rgba(244, 244, 244, 0.45);
+}
+
+:root[data-theme='light'],
+.chat2note-theme-scope[data-theme='light'] {
+  color-scheme: light;
+  --bg-body: #f5f5f5;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f0f0f0;
+  --bg-subtle: #fafafa;
+  --text-primary: #111111;
+  --text-secondary: #3f3f3f;
+  --text-muted: #6c6c6c;
+  --border-subtle: #d8d8d8;
+  --border-strong: #bcbcbc;
+  --primary-400: #38bdf8;
+  --primary-500: #0ea5e9;
+  --primary-600: #0284c7;
+  --accent-strong: #111111;
+  --accent-contrast: #f7f7f7;
+  --control-bg: #f0f0f0;
+  --control-border: #cccccc;
+  --control-focus: #9c9c9c;
+  --interactive-hover: rgba(0, 0, 0, 0.08);
+  --shadow-soft: rgba(0, 0, 0, 0.12);
+  --shadow-strong: rgba(0, 0, 0, 0.18);
+  --backdrop-mask: rgba(0, 0, 0, 0.45);
+  --divider-subtle: rgba(0, 0, 0, 0.1);
+  --badge-background: #ededed;
+  --badge-border: #c8c8c8;
+  --badge-text: #2f2f2f;
+  --button-disabled-bg: rgba(0, 0, 0, 0.06);
+  --button-disabled-text: rgba(17, 17, 17, 0.35);
+  --input-placeholder: rgba(17, 17, 17, 0.45);
+}

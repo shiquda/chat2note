@@ -1,0 +1,1844 @@
+{
+  "app_name": {
+    "message": "Chat2Note",
+    "description": "Application name"
+  },
+  "app_subtitle": {
+    "message": "Exportez les conversations d'IA dans plusieurs formats",
+    "description": "Application subtitle in popup"
+  },
+  "export_button": {
+    "message": "Exporter la conversation actuelle",
+    "description": "Main export button text"
+  },
+  "exporting": {
+    "message": "Export en cours...",
+    "description": "Export in progress status"
+  },
+  "export_destination": {
+    "message": "Destination d'exportation :",
+    "description": "Label for export target selection"
+  },
+  "file_format": {
+    "message": "Format de fichier :",
+    "description": "Label for file format selection"
+  },
+  "export_scope": {
+    "message": "Portée de l'exportation :",
+    "description": "Label for export scope selection"
+  },
+  "scope_all": {
+    "message": "Conversation entière",
+    "description": "Option to export entire conversation"
+  },
+  "scope_selected": {
+    "message": "Seulement les messages sélectionnés",
+    "description": "Option to export only selected messages"
+  },
+  "advanced_options_show": {
+    "message": "Afficher les options avancées",
+    "description": "Button to show advanced options"
+  },
+  "advanced_options_hide": {
+    "message": "Masquer les options avancées",
+    "description": "Button to hide advanced options"
+  },
+  "include_metadata": {
+    "message": "Inclure les métadonnées",
+    "description": "Checkbox label for including metadata"
+  },
+  "target_local": {
+    "message": "Fichier local",
+    "description": "Local file export target"
+  },
+  "target_notion": {
+    "message": "Notion",
+    "description": "Notion export target"
+  },
+  "target_clipboard": {
+    "message": "Presse-papiers",
+    "description": "Clipboard export target"
+  },
+  "format_markdown": {
+    "message": "Markdown",
+    "description": "Markdown format"
+  },
+  "format_json": {
+    "message": "JSON",
+    "description": "JSON format"
+  },
+  "format_plain_text": {
+    "message": "Texte brut",
+    "description": "Plain text format"
+  },
+  "notion_hint": {
+    "message": "Configurez d'abord l'intégration Notion dans les Paramètres.",
+    "description": "Hint for Notion configuration"
+  },
+  "open_settings": {
+    "message": "Ouvrir les paramètres",
+    "description": "Button to open settings page"
+  },
+  "settings": {
+    "message": "Paramètres",
+    "description": "Settings label"
+  },
+  "settings_title": {
+    "message": "Paramètres de Chat2Note",
+    "description": "Settings page title"
+  },
+  "error_no_active_tab": {
+    "message": "Impossible de trouver l'onglet actif pour l'exportation",
+    "description": "Error when active tab not found"
+  },
+  "error_not_supported_page": {
+    "message": "Veuillez ouvrir ChatGPT, Claude, DeepSeek, Grok ou d'autres plateformes IA prises en charge pour exporter une conversation.",
+    "description": "Error when not on supported page"
+  },
+  "notification_exporting": {
+    "message": "Exportation de la conversation...",
+    "description": "Progress notification for export"
+  },
+  "notification_export_success": {
+    "message": "Exporté vers $target$ ($format$)",
+    "description": "Success notification for export",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "Local file"
+      },
+      "format": {
+        "content": "$2",
+        "example": "Markdown"
+      }
+    }
+  },
+  "notification_export_failed": {
+    "message": "Échec de l'exportation",
+    "description": "Error notification for export failure"
+  },
+  "notification_view_in_notion": {
+    "message": "Voir dans Notion",
+    "description": "Link text to view exported page in Notion"
+  },
+  "how_to_use": {
+    "message": "Comment utiliser",
+    "description": "How-to section title"
+  },
+  "how_to_step1": {
+    "message": "Ouvrez ChatGPT dans votre navigateur.",
+    "description": "First step in how-to guide"
+  },
+  "how_to_step2": {
+    "message": "Choisissez la destination d'exportation et le format.",
+    "description": "Second step in how-to guide"
+  },
+  "how_to_step3": {
+    "message": "Cliquez sur le bouton d'exportation.",
+    "description": "Third step in how-to guide"
+  },
+  "how_to_step4": {
+    "message": "La conversation est exportée dans le format sélectionné.",
+    "description": "Fourth step in how-to guide"
+  },
+  "available_features": {
+    "message": "Fonctionnalités disponibles",
+    "description": "Features list title"
+  },
+  "feature_local_download": {
+    "message": "Télécharger vers les fichiers locaux",
+    "description": "Local download feature"
+  },
+  "feature_notion_integration": {
+    "message": "Intégration de base de données Notion",
+    "description": "Notion integration feature"
+  },
+  "feature_clipboard": {
+    "message": "Copier dans le presse-papiers",
+    "description": "Clipboard feature"
+  },
+  "feature_multiple_formats": {
+    "message": "Formats Markdown / JSON / TXT",
+    "description": "Multiple formats feature"
+  },
+  "appearance": {
+    "message": "Apparence",
+    "description": "Appearance settings section"
+  },
+  "appearance_description": {
+    "message": "Choisissez l'apparence de Chat2Note sur toutes les pages de l'extension.",
+    "description": "Appearance settings description"
+  },
+  "language_settings": {
+    "message": "Langue",
+    "description": "Language settings label"
+  },
+  "language_settings_description": {
+    "message": "Choisissez votre langue préférée pour l'interface de l'extension.",
+    "description": "Language settings description"
+  },
+  "language_auto": {
+    "message": "Auto (Suivre le navigateur)",
+    "description": "Auto language option"
+  },
+  "language_auto_desc": {
+    "message": "Correspondre automatiquement à la langue du navigateur",
+    "description": "Auto language description"
+  },
+  "language_en": {
+    "message": "English",
+    "description": "English language option"
+  },
+  "language_en_desc": {
+    "message": "Afficher l'interface en anglais",
+    "description": "English language description"
+  },
+  "language_zh_cn": {
+    "message": "简体中文",
+    "description": "Simplified Chinese language option"
+  },
+  "language_zh_cn_desc": {
+    "message": "Afficher l'interface en chinois simplifié",
+    "description": "Simplified Chinese language description"
+  },
+  "floating_button_position": {
+    "message": "Position du bouton flottant",
+    "description": "Libellé pour le placement du bouton d'export flottant"
+  },
+  "floating_button_position_description": {
+    "message": "Choisissez où le bouton d'export flottant apparaît ou masquez-le totalement.",
+    "description": "Description de la position du bouton flottant"
+  },
+  "floating_button_position_top_right": {
+    "message": "En haut à droite",
+    "description": "Option de placement"
+  },
+  "floating_button_position_middle_right": {
+    "message": "Au centre à droite",
+    "description": "Option de placement"
+  },
+  "floating_button_position_bottom_right": {
+    "message": "En bas à droite",
+    "description": "Option de placement"
+  },
+  "floating_button_position_bottom_left": {
+    "message": "En bas à gauche",
+    "description": "Option de placement"
+  },
+  "floating_button_position_middle_left": {
+    "message": "Au centre à gauche",
+    "description": "Option de placement"
+  },
+  "floating_button_position_top_left": {
+    "message": "En haut à gauche",
+    "description": "Option de placement"
+  },
+  "floating_button_position_hidden": {
+    "message": "Masqué",
+    "description": "Option pour masquer le bouton"
+  },
+  "theme_system": {
+    "message": "Système",
+    "description": "System theme option"
+  },
+  "theme_system_desc": {
+    "message": "Correspondre à la préférence du système d'exploitation",
+    "description": "System theme description"
+  },
+  "theme_light": {
+    "message": "Clair",
+    "description": "Light theme option"
+  },
+  "theme_light_desc": {
+    "message": "Surfaces claires avec texte sombre",
+    "description": "Light theme description"
+  },
+  "theme_dark": {
+    "message": "Sombre",
+    "description": "Dark theme option"
+  },
+  "theme_dark_desc": {
+    "message": "Surfaces sombres avec texte clair",
+    "description": "Dark theme description"
+  },
+  "about_nav": {
+    "message": "À propos",
+    "description": "Étiquette de navigation pour la page À propos"
+  },
+  "open_source_nav": {
+    "message": "Licences open source",
+    "description": "Étiquette de navigation pour la page des licences open source"
+  },
+  "about_title": {
+    "message": "À propos de Chat2Note",
+    "description": "Titre de la page À propos"
+  },
+  "about_intro": {
+    "message": "Chat2Note vous aide à capturer les conversations IA et à les organiser dans votre propre écosystème de connaissances.",
+    "description": "Texte d'introduction sur la page À propos"
+  },
+  "about_version_label": {
+    "message": "Version actuelle",
+    "description": "Libellé pour la version actuelle"
+  },
+  "about_status_label": {
+    "message": "Statut du projet",
+    "description": "Libellé pour le statut du projet"
+  },
+  "about_status_value": {
+    "message": "Développement actif",
+    "description": "Valeur indiquant le statut du projet"
+  },
+  "about_website_label": {
+    "message": "Site officiel",
+    "description": "Libellé pour la carte du site officiel"
+  },
+  "about_website_description": {
+    "message": "Découvrez les nouveautés produit, les fonctionnalités et les offres sur example.invalid.",
+    "description": "Texte d'aide pour la carte du site officiel"
+  },
+  "about_user_manual_label": {
+    "message": "Guide utilisateur",
+    "description": "Libellé pour la carte du guide utilisateur"
+  },
+  "about_user_manual_link_label": {
+    "message": "Ouvrir la documentation",
+    "description": "Texte du lien pour la carte du guide utilisateur"
+  },
+  "about_user_manual_description": {
+    "message": "Tutoriels pas à pas pour l'installation, l'export et les intégrations avec vos notes.",
+    "description": "Texte d'aide pour la carte du guide utilisateur"
+  },
+  "about_support_label": {
+    "message": "E-mail du support",
+    "description": "Libellé pour la carte de l'e-mail support"
+  },
+  "about_highlights_title": {
+    "message": "Ce qui distingue Chat2Note",
+    "description": "Titre de la section des points forts"
+  },
+  "about_highlight_capture_title": {
+    "message": "Capture fiable",
+    "description": "Titre du point fort sur la capture"
+  },
+  "about_highlight_capture_description": {
+    "message": "Capturez l'intégralité des conversations IA avec un formatage orienté rôle et des métadonnées contextuelles.",
+    "description": "Description du point fort sur la capture"
+  },
+  "about_highlight_export_title": {
+    "message": "Export flexible",
+    "description": "Titre du point fort sur l'export"
+  },
+  "about_highlight_export_description": {
+    "message": "Exportez en Markdown, JSON ou texte brut avec des modèles de fichiers personnalisables.",
+    "description": "Description du point fort sur l'export"
+  },
+  "about_highlight_integrations_title": {
+    "message": "Intégrations fluides",
+    "description": "Titre du point fort sur les intégrations"
+  },
+  "about_highlight_integrations_description": {
+    "message": "Envoyez vos notes vers Notion, Obsidian et d'autres carnets connectés en un clic.",
+    "description": "Description du point fort sur les intégrations"
+  },
+  "about_privacy_title": {
+    "message": "Priorité à la confidentialité",
+    "description": "Titre de la section confidentialité"
+  },
+  "about_privacy_description": {
+    "message": "Tout le traitement s'effectue dans votre navigateur. Chat2Note ne met rien en ligne sans votre accord explicite.",
+    "description": "Description de la section confidentialité"
+  },
+  "about_links_title": {
+    "message": "Site officiel & support",
+    "description": "Titre de la section des liens officiels"
+  },
+  "about_links_description": {
+    "message": "Consultez les canaux officiels de Chat2Note pour suivre les nouveautés et obtenir de l'aide.",
+    "description": "Description de la section des liens officiels"
+  },
+  "about_links_website": {
+    "message": "Visiter le site officiel",
+    "description": "Titre du lien vers le site officiel"
+  },
+  "about_links_website_description": {
+    "message": "Retrouvez les annonces, les fonctionnalités et les offres sur example.invalid.",
+    "description": "Description du lien vers le site officiel"
+  },
+  "about_links_user_manual": {
+    "message": "Ouvrir le guide utilisateur",
+    "description": "Titre du lien vers le guide utilisateur"
+  },
+  "about_links_user_manual_description": {
+    "message": "Guides détaillés pour capturer et exporter vos conversations IA.",
+    "description": "Description du lien vers le guide utilisateur"
+  },
+  "about_links_support": {
+    "message": "Contacter le support",
+    "description": "Titre du lien vers le support"
+  },
+  "about_links_support_description": {
+    "message": "Écrivez-nous à support@example.invalid pour toute question ou suggestion.",
+    "description": "Description du lien vers le support"
+  },
+  "about_support_title": {
+    "message": "Besoin d'aide ou envie de contribuer ?",
+    "description": "Titre de la section support"
+  },
+  "about_support_description": {
+    "message": "Envoyez-nous un e-mail et nous vous répondrons sous un jour ouvré.",
+    "description": "Texte d'aide pour la carte de l'e-mail support"
+  },
+  "about_support_email_label": {
+    "message": "Envoyer un e-mail à l'équipe (support@example.invalid)",
+    "description": "Texte du lien de support pour l'e-mail"
+  },
+  "about_support_issue_label": {
+    "message": "Ouvrir un ticket sur GitHub",
+    "description": "Texte du lien de support pour GitHub"
+  },
+  "about_support_docs_label": {
+    "message": "Consulter la documentation produit",
+    "description": "Texte du lien de support pour la documentation"
+  },
+  "about_resources_title": {
+    "message": "Ressources complémentaires",
+    "description": "Titre de la section ressources"
+  },
+  "about_resources_release_notes": {
+    "message": "Notes de version et changelog",
+    "description": "Texte du lien vers les notes de version"
+  },
+  "about_resources_roadmap": {
+    "message": "Feuille de route produit",
+    "description": "Texte du lien vers la feuille de route"
+  },
+  "notion_integration": {
+    "message": "Intégration Notion",
+    "description": "Notion integration tab title"
+  },
+  "notion_integration_settings": {
+    "message": "Paramètres d'intégration Notion",
+    "description": "Notion integration settings section title"
+  },
+  "notion_enable": {
+    "message": "Activer l'intégration Notion",
+    "description": "Checkbox to enable Notion"
+  },
+  "notion_enable_description": {
+    "message": "Activez pour exporter les conversations directement vers une base de données Notion.",
+    "description": "Notion enable description"
+  },
+  "notion_api_token": {
+    "message": "Jeton API Notion",
+    "description": "Notion API token field label"
+  },
+  "notion_api_token_description": {
+    "message": "Jeton d'intégration interne depuis la page Notion Integrations",
+    "description": "Notion API token description"
+  },
+  "notion_api_token_placeholder": {
+    "message": "Saisissez votre jeton API",
+    "description": "Notion API token placeholder"
+  },
+  "notion_database_id": {
+    "message": "ID de la base de données Notion",
+    "description": "Notion database ID field label"
+  },
+  "notion_database_id_description": {
+    "message": "ID de la base de données cible, format : xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion database ID description"
+  },
+  "notion_database_id_placeholder": {
+    "message": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion database ID placeholder"
+  },
+  "notion_test_connection": {
+    "message": "Tester la connexion",
+    "description": "Test connection button"
+  },
+  "notion_testing": {
+    "message": "Test en cours...",
+    "description": "Testing connection status"
+  },
+  "notion_connected": {
+    "message": "Connecté",
+    "description": "Connected status"
+  },
+  "notion_disconnected": {
+    "message": "Déconnecté",
+    "description": "Disconnected status"
+  },
+  "notion_unknown": {
+    "message": "Inconnu",
+    "description": "Unknown connection status"
+  },
+  "notion_how_to_configure": {
+    "message": "Comment configurer l'intégration Notion",
+    "description": "Notion configuration guide title"
+  },
+  "notion_setup_step1": {
+    "message": "Visitez Notion Integrations",
+    "description": "First step in Notion setup"
+  },
+  "notion_setup_step2": {
+    "message": "Créez une nouvelle intégration et copiez le \"Internal Integration Token\"",
+    "description": "Second step in Notion setup"
+  },
+  "notion_setup_step3": {
+    "message": "Créez une nouvelle base de données dans Notion ou utilisez-en une existante",
+    "description": "Third step in Notion setup"
+  },
+  "notion_setup_step4": {
+    "message": "Partagez la base de données avec votre intégration",
+    "description": "Fourth step in Notion setup"
+  },
+  "notion_setup_step5": {
+    "message": "Copiez l'ID de la base de données (les 32 caractères dans l'URL de la base de données)",
+    "description": "Fifth step in Notion setup"
+  },
+  "notion_setup_step6": {
+    "message": "Renseignez les informations ci-dessus et testez la connexion",
+    "description": "Sixth step in Notion setup"
+  },
+  "export_settings": {
+    "message": "Paramètres d'exportation",
+    "description": "Export settings tab title"
+  },
+  "export_default_format": {
+    "message": "Format d'export par défaut",
+    "description": "Default format setting label"
+  },
+  "export_default_format_description": {
+    "message": "Choisissez le format de fichier par défaut pour les exports",
+    "description": "Default format description"
+  },
+  "export_default_target": {
+    "message": "Destination d'export par défaut",
+    "description": "Default target setting label"
+  },
+  "export_default_target_description": {
+    "message": "Choisissez la destination d'exportation par défaut",
+    "description": "Default target description"
+  },
+  "export_default_scope": {
+    "message": "Portée d'exportation par défaut",
+    "description": "Default scope setting label"
+  },
+  "export_default_scope_description": {
+    "message": "Choisissez d'exporter par défaut les conversations entières ou uniquement les messages sélectionnés",
+    "description": "Default scope description"
+  },
+  "export_include_metadata_description": {
+    "message": "Inclure l'URL source et les horodatages d'exportation dans les fichiers exportés",
+    "description": "Include metadata description"
+  },
+  "export_filename_template": {
+    "message": "Modèle de nom de fichier",
+    "description": "Filename template setting label"
+  },
+  "export_filename_template_description": {
+    "message": "Prend en charge les variables : {{title}}, {{date}}, {{time}}, {{timestamp}}",
+    "description": "Filename template description"
+  },
+  "export_filename_template_placeholder": {
+    "message": "{{title}}_{{date}}",
+    "description": "Filename template placeholder"
+  },
+  "export_markdown_template": {
+    "message": "Modèle Markdown",
+    "description": "Markdown template setting label"
+  },
+  "export_markdown_template_description": {
+    "message": "Personnalisez le corps Markdown. Variables disponibles : {{title}}, {{metadata}}, {{messages}}, {{url}}, {{platform}}, {{exportedAt}}, {{exportedAtISO}}, {{messageCount}}.",
+    "description": "Markdown template description"
+  },
+  "export_markdown_template_placeholder": {
+    "message": "# {{title}}\\n\\n{{metadata}}{{messages}}",
+    "description": "Markdown template placeholder"
+  },
+  "export_message_template": {
+    "message": "Modèle de message",
+    "description": "Message template setting label"
+  },
+  "export_message_template_description": {
+    "message": "Personnalisez l'affichage de chaque message. Variables : {{role}}, {{rawRole}}, {{content}}, {{index}}, {{messageCount}}, {{timestamp}}, {{timestampISO}}.",
+    "description": "Message template description"
+  },
+  "export_message_template_placeholder": {
+    "message": "## {{role}}\\n\\n{{content}}\\n\\n",
+    "description": "Message template placeholder"
+  },
+  "filename_variables_title": {
+    "message": "Variables de modèle de nom de fichier",
+    "description": "Filename variables card title"
+  },
+  "filename_var_title": {
+    "message": "Titre de la conversation",
+    "description": "Title variable description"
+  },
+  "filename_var_date": {
+    "message": "Date (AAAA-MM-JJ)",
+    "description": "Date variable description"
+  },
+  "filename_var_time": {
+    "message": "Heure (HH-MM-SS)",
+    "description": "Time variable description"
+  },
+  "filename_var_timestamp": {
+    "message": "Horodatage",
+    "description": "Timestamp variable description"
+  },
+  "config_import_export_title": {
+    "message": "Importation et exportation de la configuration",
+    "description": "Config import/export card title"
+  },
+  "config_export_info1": {
+    "message": "Les fichiers exportés incluent la version du schéma, la version de l'application et l'horodatage de l'exportation.",
+    "description": "Config export info 1"
+  },
+  "config_export_info2": {
+    "message": "L'importation d'un fichier remplacera tous les paramètres actuels après confirmation.",
+    "description": "Config export info 2"
+  },
+  "config_export_info3": {
+    "message": "Lors de l'exportation, vous pouvez choisir d'inclure ou non les informations sensibles (jetons API).",
+    "description": "Config export info 3"
+  },
+  "config_export_info4": {
+    "message": "Pour des raisons de sécurité, les informations sensibles dans les fichiers importés sont automatiquement chiffrées.",
+    "description": "Config export info 4"
+  },
+  "config_export_info5": {
+    "message": "Les fichiers contenant des informations sensibles auront \"-sensitive\" dans le nom de fichier.",
+    "description": "Config export info 5"
+  },
+  "save_settings": {
+    "message": "Enregistrer les paramètres",
+    "description": "Save settings button"
+  },
+  "saving": {
+    "message": "Enregistrement...",
+    "description": "Saving status"
+  },
+  "reload": {
+    "message": "Recharger",
+    "description": "Reload button"
+  },
+  "reset_settings": {
+    "message": "Réinitialiser les paramètres",
+    "description": "Reset settings button"
+  },
+  "export_config": {
+    "message": "Config d'exportation",
+    "description": "Export config button"
+  },
+  "import_config": {
+    "message": "Importer la configuration",
+    "description": "Import config button"
+  },
+  "notification_saving": {
+    "message": "Enregistrement des paramètres...",
+    "description": "Saving settings notification"
+  },
+  "notification_settings_saved": {
+    "message": "Paramètres enregistrés avec succès",
+    "description": "Settings saved notification"
+  },
+  "notification_settings_load_failed": {
+    "message": "Échec du chargement des paramètres",
+    "description": "Load settings failed notification"
+  },
+  "notification_settings_save_failed": {
+    "message": "Échec de l'enregistrement des paramètres : $error$",
+    "description": "Save settings failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid configuration"
+      }
+    }
+  },
+  "notification_validation_failed": {
+    "message": "Échec de la validation de la configuration : $errors$",
+    "description": "Validation failed notification",
+    "placeholders": {
+      "errors": {
+        "content": "$1",
+        "example": "Invalid API token"
+      }
+    }
+  },
+  "notification_notion_config_incomplete": {
+    "message": "Veuillez d'abord compléter la configuration Notion",
+    "description": "Notion config incomplete notification"
+  },
+  "notification_notion_testing": {
+    "message": "Test de la connexion Notion...",
+    "description": "Testing Notion connection notification"
+  },
+  "notification_notion_test_success": {
+    "message": "Test de connexion à Notion réussi",
+    "description": "Notion test success notification"
+  },
+  "notification_notion_test_failed": {
+    "message": "Test de connexion à Notion échoué",
+    "description": "Notion test failed notification"
+  },
+  "notification_siyuan_config_incomplete": {
+    "message": "Veuillez d'abord compléter la configuration SiYuan",
+    "description": "SiYuan config incomplete notification"
+  },
+  "notification_siyuan_testing": {
+    "message": "Test de la connexion SiYuan...",
+    "description": "Testing SiYuan connection notification"
+  },
+  "notification_siyuan_test_success": {
+    "message": "Test de connexion SiYuan réussi",
+    "description": "SiYuan test success notification"
+  },
+  "notification_siyuan_test_failed": {
+    "message": "Échec du test de connexion SiYuan",
+    "description": "SiYuan test failed notification"
+  },
+  "notification_connection_test_failed": {
+    "message": "Test de connexion échoué : $error$",
+    "description": "Connection test failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "confirm_reset_settings": {
+    "message": "Êtes-vous sûr de vouloir réinitialiser tous les paramètres ? Cette action ne peut pas être annulée.",
+    "description": "Reset settings confirmation"
+  },
+  "notification_resetting": {
+    "message": "Réinitialisation des paramètres...",
+    "description": "Resetting notification"
+  },
+  "notification_settings_reset": {
+    "message": "Les paramètres ont été réinitialisés",
+    "description": "Settings reset notification"
+  },
+  "notification_reset_failed": {
+    "message": "Échec de la réinitialisation des paramètres : $error$",
+    "description": "Reset failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Storage error"
+      }
+    }
+  },
+  "confirm_export_sensitive": {
+    "message": "Voulez-vous inclure les informations sensibles (comme les jetons de l'API Notion) dans l'exportation ?\n\nATTENTION : Inclure des informations sensibles signifie que le fichier exporté contiendra vos jetons d'API.\n   Ne sélectionnez cette option que si vous faites confiance à l'emplacement de stockage du fichier et aux personnes qui y auront accès.\n\nCliquez sur OK pour inclure les informations sensibles, ou sur Annuler pour exporter sans les informations sensibles.",
+    "description": "Confirm export with sensitive data"
+  },
+  "notification_exporting_config": {
+    "message": "Préparation de l'exportation de la configuration...",
+    "description": "Exporting config notification"
+  },
+  "notification_config_exported": {
+    "message": "Configuration exportée $sensitivity$ sous le nom $filename$",
+    "description": "Config exported notification",
+    "placeholders": {
+      "sensitivity": {
+        "content": "$1",
+        "example": "with sensitive information"
+      },
+      "filename": {
+        "content": "$2",
+        "example": "chat2note-settings.json"
+      }
+    }
+  },
+  "config_export_with_sensitive": {
+    "message": "avec des informations sensibles",
+    "description": "Config exported with sensitive data"
+  },
+  "config_export_without_sensitive": {
+    "message": "sans informations sensibles",
+    "description": "Config exported without sensitive data"
+  },
+  "notification_export_config_failed": {
+    "message": "Échec de l'exportation de la configuration : $error$",
+    "description": "Export config failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Serialization error"
+      }
+    }
+  },
+  "confirm_import_config": {
+    "message": "L'importation d'un fichier de configuration écrasera vos paramètres actuels. Continuer ?\n\nNote : Si le fichier contient des informations sensibles (jetons API), elles seront chiffrées de manière sécurisée.\nSi le fichier ne contient pas d'informations sensibles, tous les jetons existants seront supprimés.",
+    "description": "Confirm import config"
+  },
+  "notification_importing_config": {
+    "message": "Importation de la configuration...",
+    "description": "Importing config notification"
+  },
+  "notification_config_imported": {
+    "message": "Configuration importée avec succès",
+    "description": "Config imported notification"
+  },
+  "notification_import_config_failed": {
+    "message": "Échec de l'importation de la configuration : $error$",
+    "description": "Import config failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid file format"
+      }
+    }
+  },
+  "loading": {
+    "message": "Chargement...",
+    "description": "Loading status"
+  },
+  "context_menu_save_conversation": {
+    "message": "Enregistrer la conversation",
+    "description": "Context menu item to save conversation"
+  },
+  "version_info": {
+    "message": "Chat2Note v$version$",
+    "description": "Version information",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "config_version_info": {
+    "message": "Version de configuration : $current$ (Dernière : $latest$)",
+    "description": "Informations de version de configuration",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1.0.0"
+      },
+      "latest": {
+        "content": "$2",
+        "example": "1.1.0"
+      }
+    }
+  },
+  "error_no_conversation": {
+    "message": "Aucune conversation trouvée sur $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "error_extract_conversation": {
+    "message": "Impossible d'extraire la conversation : $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Erreur réseau"
+      }
+    }
+  },
+  "error_unknown": {
+    "message": "Erreur inconnue"
+  },
+  "error_no_conversation_generic": {
+    "message": "Aucune conversation disponible"
+  },
+  "notification_export_selection_empty": {
+    "message": "Sélectionnez au moins un message avant d'exporter"
+  },
+  "notification_export_selection_invalid": {
+    "message": "Les messages sélectionnés ne peuvent pas être exportés. Modifiez votre sélection et réessayez."
+  },
+  "notification_export_success_generic": {
+    "message": "Conversation exportée avec succès"
+  },
+  "notification_export_failed_with_reason": {
+    "message": "Échec de l'exportation : $reason$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "Erreur réseau"
+      }
+    }
+  },
+  "preview_title_select_messages": {
+    "message": "Choisissez les messages à exporter"
+  },
+  "preview_select_all": {
+    "message": "Tout sélectionner"
+  },
+  "preview_select_assistant": {
+    "message": "Select assistant replies"
+  },
+  "preview_deselect_all": {
+    "message": "Tout désélectionner"
+  },
+  "preview_cancel": {
+    "message": "Annuler"
+  },
+  "preview_confirm": {
+    "message": "Exporter la sélection"
+  },
+  "preview_toggle_expand": {
+    "message": "Afficher plus"
+  },
+  "preview_toggle_collapse": {
+    "message": "Afficher moins"
+  },
+  "preview_role_user": {
+    "message": "Utilisateur"
+  },
+  "preview_role_assistant": {
+    "message": "Assistant"
+  },
+  "aria_export_to": {
+    "message": "Exporter vers $target$",
+    "description": "Accessibility label for export target buttons",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "Notion"
+      }
+    }
+  },
+  "target_obsidian": {
+    "message": "Obsidian",
+    "description": "Obsidian export target"
+  },
+  "notification_export_obsidian_success": {
+    "message": "Envoyé vers Obsidian : $path$",
+    "description": "Success notification for Obsidian export",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      }
+    }
+  },
+  "notification_export_siyuan_success": {
+    "message": "Enregistré dans SiYuan : $path$",
+    "description": "Success notification for SiYuan export",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      }
+    }
+  },
+  "notification_siyuan_not_configured": {
+    "message": "L’intégration SiYuan n’est pas configurée. Veuillez l’activer dans les paramètres avant d’exporter.",
+    "description": "Error shown when trying to export without SiYuan configuration"
+  },
+  "notification_obsidian_uri_too_long": {
+    "message": "La note est trop volumineuse pour être envoyée via obsidian://. Veuillez plutôt l'exporter en tant que fichier Markdown.",
+    "description": "Error when the Obsidian URI would exceed length limits"
+  },
+  "notification_open_in_obsidian": {
+    "message": "Ouvrir dans Obsidian",
+    "description": "Link text to open the generated Obsidian note"
+  },
+  "obsidian_settings": {
+    "message": "Export Obsidian",
+    "description": "Obsidian settings section title"
+  },
+  "obsidian_settings_description": {
+    "message": "Configurez comment les notes sont envoyées vers votre coffre Obsidian.",
+    "description": "Obsidian settings description"
+  },
+  "obsidian_enable": {
+    "message": "Activer l'export Obsidian",
+    "description": "Toggle for enabling Obsidian integration"
+  },
+  "obsidian_enable_description": {
+    "message": "Autoriser Chat2Note à envoyer des notes via les liens obsidian://.",
+    "description": "Description for Obsidian enable toggle"
+  },
+  "obsidian_vault_name_label": {
+    "message": "Nom du coffre",
+    "description": "Label for Obsidian vault name"
+  },
+  "obsidian_vault_name_description": {
+    "message": "Entrez le nom exact de votre coffre Obsidian.",
+    "description": "Description for Obsidian vault name"
+  },
+  "obsidian_vault_folder_label": {
+    "message": "Sous-dossier (facultatif)",
+    "description": "Label for Obsidian folder path"
+  },
+  "obsidian_vault_folder_description": {
+    "message": "Les notes seront créées dans ce dossier. Laissez vide pour utiliser la racine du coffre.",
+    "description": "Description for Obsidian folder path"
+  },
+  "obsidian_open_mode_label": {
+    "message": "Après l'exportation",
+    "description": "Label for Obsidian open mode"
+  },
+  "obsidian_open_mode_description": {
+    "message": "Choisissez ce que Chat2Note doit faire après l'envoi de la note.",
+    "description": "Description for Obsidian open mode"
+  },
+  "obsidian_open_mode_note": {
+    "message": "Ouvrir la nouvelle note",
+    "description": "Option to open new note"
+  },
+  "obsidian_open_mode_app": {
+    "message": "Ouvrir le coffre",
+    "description": "Option to open the vault"
+  },
+  "obsidian_open_mode_none": {
+    "message": "Ne rien faire",
+    "description": "Option to not open Obsidian automatically"
+  },
+  "obsidian_enforce_markdown_label": {
+    "message": "Toujours utiliser Markdown",
+    "description": "Label for strict Markdown toggle"
+  },
+  "obsidian_enforce_markdown_description": {
+    "message": "Obsidian ne prend en charge que le contenu Markdown. Gardez cette option activée pour appliquer automatiquement le Markdown.",
+    "description": "Description for strict Markdown toggle"
+  },
+  "obsidian_note_path_hint": {
+    "message": "Les notes seront enregistrées sous $path$ dans \"$vault$\".",
+    "description": "Hint showing the resulting Obsidian path",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      },
+      "vault": {
+        "content": "$2",
+        "example": "Second Brain"
+      }
+    }
+  },
+  "obsidian_folder_root": {
+    "message": "(racine du coffre)",
+    "description": "Placeholder for vault root"
+  },
+  "obsidian_vault_placeholder": {
+    "message": "votre coffre",
+    "description": "Placeholder for vault name"
+  },
+  "obsidian_sample_note_title": {
+    "message": "Export Chat2Note",
+    "description": "Sample note title"
+  },
+  "obsidian_target_hint": {
+    "message": "Assurez-vous que l'application de bureau Obsidian est installée et que les liens obsidian:// sont autorisés.",
+    "description": "Hint shown when Obsidian target is selected"
+  },
+  "obsidian_format_locked": {
+    "message": "L'exportation Obsidian utilise uniquement le Markdown.",
+    "description": "Hint indicating Markdown is enforced"
+  },
+  "obsidian_format_required": {
+    "message": "L'exportation Obsidian ne prend en charge que le Markdown. Veuillez changer le format pour Markdown.",
+    "description": "Error shown when a non-Markdown format is selected"
+  },
+  "siyuan_format_required": {
+    "message": "L'exportation SiYuan ne prend en charge que le Markdown. Veuillez changer le format pour Markdown.",
+    "description": "Error shown when a non-Markdown format is selected for SiYuan"
+  },
+  "language_fr": {
+    "message": "Français",
+    "description": "French language option"
+  },
+  "language_fr_desc": {
+    "message": "Afficher l'interface en français",
+    "description": "French language description"
+  },
+  "language_de": {
+    "message": "Deutsch",
+    "description": "German language option"
+  },
+  "language_de_desc": {
+    "message": "Afficher l'interface en allemand",
+    "description": "German language description"
+  },
+  "app_settings_subtitle": {
+    "message": "Configurez comment les conversations IA sont exportées",
+    "description": "Application subtitle in settings page"
+  },
+  "feedback_view_page": {
+    "message": "Voir la page"
+  },
+  "feedback_open_settings": {
+    "message": "Ouvrir les paramètres"
+  },
+  "feedback_try_again": {
+    "message": "Réessayer"
+  },
+  "feedback_please_try_exporting_again": {
+    "message": "Veuillez réessayer d'exporter."
+  },
+  "feedback_configuration_validation_failed": {
+    "message": "Échec de la validation de la configuration"
+  },
+  "feedback_export_successful": {
+    "message": "Exportation réussie"
+  },
+  "feedback_open_file": {
+    "message": "Ouvrir le fichier"
+  },
+  "feedback_connection_test_succeeded": {
+    "message": "Test de connexion réussi"
+  },
+  "feedback_file_saved_to_downloads": {
+    "message": "Fichier enregistré dans votre dossier de téléchargements"
+  },
+  "feedback_export_failed": {
+    "message": "Échec de l'exportation"
+  },
+  "feedback_connection_test_failed": {
+    "message": "Test de connexion échoué"
+  },
+  "feedback_successfully_connected_to_notion_api": {
+    "message": "Connexion à l'API Notion établie avec succès"
+  },
+  "error_network_connection_failed": {
+    "message": "La connexion réseau a échoué. Veuillez vérifier votre connexion Internet."
+  },
+  "feedback_view_help": {
+    "message": "Voir l'aide"
+  },
+  "feedback_unable_to_connect_to_notion_api": {
+    "message": "Impossible de se connecter à l'API Notion. Veuillez vérifier votre configuration"
+  },
+  "error_storage_permissions_failed": {
+    "message": "Les autorisations de stockage ont échoué. Veuillez vérifier les autorisations de l'extension."
+  },
+  "feedback_troubleshooting": {
+    "message": "Dépannage"
+  },
+  "error_page_parsing_failed": {
+    "message": "L'analyse de la page a échoué. Veuillez vous assurer que vous êtes sur une page de chat prise en charge."
+  },
+  "error_notion_api_request_failed": {
+    "message": "La requête vers l'API Notion a échoué. Veuillez vérifier votre configuration."
+  },
+  "error_export_failed_please_try_again_later": {
+    "message": "Échec de l'exportation. Veuillez réessayer plus tard."
+  },
+  "error_notion_api_request_failed_short": {
+    "message": "Requête API Notion échouée"
+  },
+  "error_storage_operation_failed": {
+    "message": "Échec de l'opération de stockage"
+  },
+  "error_database_id_format_is_invalid": {
+    "message": "Le format de l'ID de la base de données est invalide"
+  },
+  "error_api_token_cannot_be_empty": {
+    "message": "Le jeton API ne peut pas être vide"
+  },
+  "error_storage_quota_exceeded": {
+    "message": "Quota de stockage dépassé"
+  },
+  "error_api_token_is_invalid_or_has_expired": {
+    "message": "Le jeton API est invalide ou a expiré"
+  },
+  "error_database_id_cannot_be_empty": {
+    "message": "L'ID de la base de données ne peut pas être vide"
+  },
+  "error_request_data_format_is_invalid": {
+    "message": "Le format des données de la requête est invalide"
+  },
+  "error_database_not_found_check_database_id": {
+    "message": "Base de données non trouvée. Veuillez vérifier l'ID de la base de données."
+  },
+  "error_api_calls_are_rate_limited_please_try_again_later": {
+    "message": "Les appels d'API sont limités par taux. Veuillez réessayer plus tard."
+  },
+  "error_unknown_clipboard_error": {
+    "message": "Erreur inconnue du presse-papiers"
+  },
+  "error_unknown_error_occurred": {
+    "message": "Erreur inconnue survenue"
+  },
+  "error_invalid_theme_preference": {
+    "message": "Préférence de thème non valide"
+  },
+  "error_missing_storage_permission_review_settings": {
+    "message": "Permission de stockage manquante. Veuillez vérifier les paramètres de l'extension."
+  },
+  "siyuan_enable": {
+    "message": "Activer l'intégration SiYuan",
+    "description": "Toggle for enabling SiYuan"
+  },
+  "theme_settings": {
+    "message": "Thème",
+    "description": "Theme settings label"
+  },
+  "advanced_settings": {
+    "message": "Paramètres avancés",
+    "description": "Advanced settings page title"
+  },
+  "general_settings_section": {
+    "message": "Paramètres généraux",
+    "description": "Section title for general settings"
+  },
+  "siyuan_settings": {
+    "message": "Intégration SiYuan",
+    "description": "SiYuan settings section title"
+  },
+  "siyuan_settings_description": {
+    "message": "Connectez Chat2Note à votre instance SiYuan locale ou distante.",
+    "description": "SiYuan settings description"
+  },
+  "siyuan_connection_coming_soon": {
+    "message": "L'intégration SiYuan arrive bientôt !",
+    "description": "Coming soon message for SiYuan"
+  },
+  "notebook_software_section": {
+    "message": "Logiciel de Notebook",
+    "description": "Section title for notebook software configurations"
+  },
+  "siyuan_api_url": {
+    "message": "URL de l'API SiYuan",
+    "description": "SiYuan API URL field label"
+  },
+  "advanced_settings_section": {
+    "message": "Paramètres avancés",
+    "description": "Section title for advanced settings"
+  },
+  "other_section": {
+    "message": "Autres",
+    "description": "Section title for other pages"
+  },
+  "obsidian_connection_note": {
+    "message": "Obsidian utilise un schéma d'URI pour l'intégration. Le statut de connexion reflète l'achèvement de la configuration.",
+    "description": "Note about Obsidian connection"
+  },
+  "siyuan_test_connection": {
+    "message": "Tester la connexion",
+    "description": "Test connection button for SiYuan"
+  },
+  "siyuan_open_after_create": {
+    "message": "Ouvrir après la création",
+    "description": "Toggle for opening document after creation"
+  },
+  "siyuan_notebook_id": {
+    "message": "ID du bloc-notes",
+    "description": "SiYuan notebook ID field label"
+  },
+  "siyuan_notebook_id_description": {
+    "message": "ID du bloc-notes cible dans SiYuan",
+    "description": "SiYuan notebook ID description"
+  },
+  "siyuan_notebook_placeholder": {
+    "message": "votre carnet",
+    "description": "Placeholder for notebook ID preview"
+  },
+  "siyuan_api_token": {
+    "message": "Jeton d'API SiYuan",
+    "description": "SiYuan API token field label"
+  },
+  "siyuan_open_after_create_description": {
+    "message": "Ouvrir automatiquement le document créé dans SiYuan",
+    "description": "Description for open after creation toggle"
+  },
+  "siyuan_target_hint": {
+    "message": "Assurez-vous que l’application de bureau SiYuan ou l’API serveur est en cours d’exécution et accessible.",
+    "description": "Hint shown for SiYuan target"
+  },
+  "siyuan_sample_note_title": {
+    "message": "Export Chat2Note",
+    "description": "Sample SiYuan note title"
+  },
+  "siyuan_note_path_hint": {
+    "message": "Les notes seront créées en tant que $path$ dans le carnet $notebook$.",
+    "description": "Hint showing the resulting SiYuan path",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      },
+      "notebook": {
+        "content": "$2",
+        "example": "20210805123456-abcdefg"
+      }
+    }
+  },
+  "siyuan_folder_path_description": {
+    "message": "Chemin où les documents seront créés dans le bloc-notes",
+    "description": "SiYuan folder path description"
+  },
+  "siyuan_api_token_description": {
+    "message": "Jeton d'API pour accéder à l'API SiYuan",
+    "description": "SiYuan API token description"
+  },
+  "siyuan_folder_path": {
+    "message": "Chemin du dossier",
+    "description": "SiYuan folder path field label"
+  },
+  "siyuan_api_url_description": {
+    "message": "L'URL de l'API de votre instance SiYuan (par exemple, http://localhost:6806)",
+    "description": "SiYuan API URL description"
+  },
+  "siyuan_connected": {
+    "message": "Connecté",
+    "description": "SiYuan connected status"
+  },
+  "target_siyuan": {
+    "message": "SiYuan",
+    "description": "SiYuan export target"
+  },
+  "siyuan_disconnected": {
+    "message": "Déconnecté",
+    "description": "SiYuan disconnected status"
+  },
+  "siyuan_connection_unknown": {
+    "message": "Inconnu",
+    "description": "SiYuan unknown status"
+  },
+  "siyuan_testing": {
+    "message": "Test en cours...",
+    "description": "Testing SiYuan connection status"
+  },
+  "config_import_export_actions": {
+    "message": "Actions d'Import/Export",
+    "description": "Title for import/export action buttons"
+  },
+  "config_danger_zone": {
+    "message": "Zone de Danger",
+    "description": "Title for dangerous configuration actions"
+  },
+  "config_reset_warning": {
+    "message": "La réinitialisation restaurera tous les paramètres à leurs valeurs par défaut et ne peut pas être annulée.",
+    "description": "Warning message for configuration reset"
+  },
+  "export_visible_targets": {
+    "message": "Cibles d'exportation visibles",
+    "description": "Label for visible targets setting"
+  },
+  "export_visible_targets_description": {
+    "message": "Choisissez quelles destinations d'exportation apparaissent dans le bouton d'exportation flottant",
+    "description": "Description for visible targets setting"
+  },
+  "obsidian_include_yaml_frontmatter_label": {
+    "message": "Inclure le frontmatter YAML",
+    "description": "Label for YAML frontmatter toggle"
+  },
+  "obsidian_include_yaml_frontmatter_description": {
+    "message": "Ajouter un frontmatter YAML avec des métadonnées (titre, source, plateforme, date d'export) en haut de la note.",
+    "description": "Description for YAML frontmatter toggle"
+  },
+  "notion_property_exported_at": {
+    "message": "Exporté le",
+    "description": "Exported at property label"
+  },
+  "notion_advanced_settings": {
+    "message": "Paramètres avancés",
+    "description": "Advanced settings section title"
+  },
+  "notion_property_type": {
+    "message": "Type",
+    "description": "Property type column header"
+  },
+  "notion_property_name": {
+    "message": "Nom de la propriété",
+    "description": "Property name column header"
+  },
+  "notion_property_mapping": {
+    "message": "Correspondance des propriétés",
+    "description": "Property mapping section title"
+  },
+  "notion_property_url": {
+    "message": "URL source",
+    "description": "URL property label"
+  },
+  "notion_advanced_settings_description": {
+    "message": "Personnalisez les propriétés à exporter et leurs noms de colonne dans votre base de données Notion",
+    "description": "Advanced settings description"
+  },
+  "notion_property_column_name": {
+    "message": "Nom de colonne dans Notion",
+    "description": "Column name input label"
+  },
+  "notion_property_url_description": {
+    "message": "Lien vers la conversation originale",
+    "description": "URL property description"
+  },
+  "notion_property_enabled": {
+    "message": "Activé",
+    "description": "Property enabled column header"
+  },
+  "notion_property_message_count_description": {
+    "message": "Nombre total de messages dans la conversation",
+    "description": "Message count property description"
+  },
+  "notion_property_exported_at_description": {
+    "message": "Horodatage de l'exportation de la conversation",
+    "description": "Exported at property description"
+  },
+  "notion_property_message_count": {
+    "message": "Nombre de messages",
+    "description": "Message count property label"
+  },
+  "notion_property_platform": {
+    "message": "Plateforme",
+    "description": "Platform property label"
+  },
+  "notion_type_date": {
+    "message": "Date",
+    "description": "Date type"
+  },
+  "notion_property_platform_description": {
+    "message": "Nom de la plateforme IA (par ex. ChatGPT, Claude)",
+    "description": "Platform property description"
+  },
+  "notion_type_url": {
+    "message": "URL",
+    "description": "URL type"
+  },
+  "notion_type_select": {
+    "message": "Sélectionner",
+    "description": "Select type"
+  },
+  "notion_type_number": {
+    "message": "Nombre",
+    "description": "Number type"
+  },
+  "notion_include_properties": {
+    "message": "Exporter les métadonnées vers les propriétés de la base de données",
+    "description": "Checkbox to export metadata as Notion database properties"
+  },
+  "notion_include_properties_description": {
+    "message": "Exporte l'URL, l'heure d'exportation, la plateforme et le nombre de messages vers les propriétés de la base de données. Ceci est indépendant de l'option 'Inclure les métadonnées dans les exports' qui affecte uniquement le contenu Markdown.",
+    "description": "Notion include properties description"
+  },
+  "format_txt": {
+    "message": "Texte brut",
+    "description": "Plain text format (alias for format_plain_text)"
+  },
+  "siyuan_set_block_attributes_label": {
+    "message": "Définir les attributs du bloc",
+    "description": "Label for block attributes toggle in SiYuan settings"
+  },
+  "siyuan_set_block_attributes_description": {
+    "message": "Définir les métadonnées de la conversation comme attributs de bloc (custom-source-url, custom-platform, custom-exported-at, etc.) pour une meilleure organisation et recherche.",
+    "description": "Description for block attributes toggle in SiYuan settings"
+  },
+  "language_es": {
+    "message": "Espagnol",
+    "description": "Spanish language option"
+  },
+  "language_ja": {
+    "message": "Japonais",
+    "description": "Japanese language option"
+  },
+  "language_es_desc": {
+    "message": "Afficher l'interface en espagnol",
+    "description": "Spanish language description"
+  },
+  "language_pt": {
+    "message": "Portugais",
+    "description": "Portuguese language option"
+  },
+  "language_ja_desc": {
+    "message": "Afficher l'interface en japonais",
+    "description": "Japanese language description"
+  },
+  "language_ko_desc": {
+    "message": "Afficher l'interface en coréen",
+    "description": "Korean language description"
+  },
+  "language_ko": {
+    "message": "Coréen",
+    "description": "Korean language option"
+  },
+  "language_pt_desc": {
+    "message": "Afficher l'interface en portugais",
+    "description": "Portuguese language description"
+  },
+  "notification_export_success_shortcut": {
+    "message": "Conversation exportée via le raccourci"
+  },
+  "notification_export_in_progress": {
+    "message": "Exportation de la conversation en cours..."
+  },
+  "account_section": {
+    "message": "Compte",
+    "description": "Account section title"
+  },
+  "account_enable_description": {
+    "message": "Connectez-vous à votre compte pour accéder aux fonctionnalités premium et gérer votre abonnement.",
+    "description": "Description for account enable toggle"
+  },
+  "account_enable": {
+    "message": "Activer l'intégration de compte",
+    "description": "Label for account enable toggle"
+  },
+  "account_status_member": {
+    "message": "Membre",
+    "description": "Member status text"
+  },
+  "account_status_unknown": {
+    "message": "Inconnu",
+    "description": "Unknown status text"
+  },
+  "account_membership_status": {
+    "message": "Statut d'adhésion",
+    "description": "Membership status section title"
+  },
+  "account_status_not_logged_in": {
+    "message": "Non connecté",
+    "description": "Not logged in status text"
+  },
+  "account_test_connection": {
+    "message": "Tester la connexion",
+    "description": "Test connection button text"
+  },
+  "account_subscription_plan": {
+    "message": "Forfait",
+    "description": "Subscription plan label"
+  },
+  "account_info": {
+    "message": "Informations du compte",
+    "description": "Account information section title"
+  },
+  "account_client_name": {
+    "message": "Nom",
+    "description": "Client name label"
+  },
+  "account_client_company": {
+    "message": "Entreprise",
+    "description": "Client company label"
+  },
+  "account_subscription_expires": {
+    "message": "Expire le",
+    "description": "Subscription expiry date label"
+  },
+  "account_client_email": {
+    "message": "E-mail",
+    "description": "Client email label"
+  },
+  "account_status_not_member": {
+    "message": "Non membre",
+    "description": "Not a member status text"
+  },
+  "account_status_expired": {
+    "message": "Expiré",
+    "description": "Expired membership status text"
+  },
+  "account_subscription_info": {
+    "message": "Informations sur l'abonnement",
+    "description": "Subscription information section title"
+  },
+  "account_subscription_status": {
+    "message": "Statut",
+    "description": "Subscription status label"
+  },
+  "account_connection_success": {
+    "message": "Connexion à votre compte réussie",
+    "description": "Connection success message"
+  },
+  "account_subscription_amount": {
+    "message": "Montant",
+    "description": "Subscription amount label"
+  },
+  "account_login_success": {
+    "message": "Connexion réussie",
+    "description": "Login success message"
+  },
+  "account_subscription_never_expires": {
+    "message": "Jamais",
+    "description": "Never expires text"
+  },
+  "account_subscription_auto_renew": {
+    "message": "Renouvellement automatique",
+    "description": "Auto renew label"
+  },
+  "account_logout_success": {
+    "message": "Déconnexion réussie",
+    "description": "Logout success message"
+  },
+  "account_login_failed": {
+    "message": "Échec de la connexion : $error$",
+    "description": "Login failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid credentials"
+      }
+    }
+  },
+  "account_connection_failed": {
+    "message": "Échec de la connexion au serveur de compte : $error$",
+    "description": "Connection failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "account_testing": {
+    "message": "Test en cours...",
+    "description": "Testing connection state"
+  },
+  "account_api_key": {
+    "message": "Clé API",
+    "description": "Label for API Key input"
+  },
+  "account_api_key_description": {
+    "message": "Votre clé API client depuis le tableau de bord du compte",
+    "description": "Description for API Key input"
+  },
+  "account_api_key_placeholder": {
+    "message": "Saisissez votre clé API...",
+    "description": "Placeholder for API Key input"
+  },
+  "account_test_connection_success": {
+    "message": "Connexion réussie",
+    "description": "Test connection success message"
+  },
+  "account_api_key_help": {
+    "message": "Obtenez votre clé API depuis le tableau de bord client → Profil → Clé API",
+    "description": "Help text for getting API Key"
+  },
+  "account_test_connection_failed": {
+    "message": "Échec de la connexion : $REASON$",
+    "description": "Test connection failed message",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "Invalid API Key"
+      }
+    }
+  },
+  "account_not_connected": {
+    "message": "Non connecté",
+    "description": "Not connected status text"
+  },
+  "account_click_test_to_check": {
+    "message": "Cliquez sur 'Test connection' pour vérifier votre statut d'adhésion",
+    "description": "Prompt to test connection for membership status"
+  },
+  "days_remaining": {
+    "message": "$count$ jours restants",
+    "description": "Remaining days until subscription expires",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "account_register": {
+    "message": "Créer un compte",
+    "description": "Button to register a new account"
+  },
+  "account_register_hint": {
+    "message": "Vous n'avez pas de compte ? Inscrivez-vous d'abord pour obtenir votre clé API.",
+    "description": "Hint for registering an account"
+  },
+  "account_member_title": {
+    "message": "You're a Pro member!",
+    "description": "Headline for active Pro members"
+  },
+  "account_member_description": {
+    "message": "Thank you for supporting Chat2Note Pro. Enjoy the full suite of premium features without limits.",
+    "description": "Description for active Pro members"
+  },
+  "account_member_days_remaining": {
+    "message": "$count$ days of Pro access remaining",
+    "description": "Days remaining for Pro membership",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "account_member_active_hint": {
+    "message": "Your Pro benefits are active",
+    "description": "Message when Pro membership is active without remaining days info"
+  },
+  "account_member_expiry": {
+    "message": "Renews on $date$",
+    "description": "Membership renewal date message",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "2025-08-01"
+      }
+    }
+  },
+  "account_manage_membership": {
+    "message": "Manage membership",
+    "description": "Button to manage an existing membership"
+  },
+  "account_nonmember_title": {
+    "message": "Upgrade to Pro membership",
+    "description": "Headline encouraging non-members to upgrade"
+  },
+  "account_nonmember_description": {
+    "message": "Remove daily limits, unlock premium export workflows and stay ahead with upcoming features.",
+    "description": "Description encouraging upgrade"
+  },
+  "account_nonmember_benefit_unlimited": {
+    "message": "Unlimited exports without daily caps",
+    "description": "Benefit list item for unlimited exports"
+  },
+  "account_nonmember_benefit_advanced": {
+    "message": "Advanced templates and smart formatting",
+    "description": "Benefit list item for advanced tools"
+  },
+  "account_nonmember_benefit_priority": {
+    "message": "Priority support and faster updates",
+    "description": "Benefit list item for support"
+  },
+  "account_upgrade_now": {
+    "message": "Upgrade now",
+    "description": "Upgrade button label"
+  },
+  "export_advanced_options": {
+    "message": "Options avancées",
+    "description": "Advanced export options section title"
+  },
+  "export_template_settings": {
+    "message": "Paramètres du modèle",
+    "description": "Template settings section title"
+  },
+  "pro_feature_tooltip": {
+    "message": "Fonction réservée aux membres Pro",
+    "description": "Tooltip text for Pro-only features"
+  },
+  "target_joplin": {
+    "message": "Joplin",
+    "description": "Joplin export target"
+  },
+  "joplin_api_token": {
+    "message": "Jeton d'API Joplin",
+    "description": "Joplin API token field label"
+  },
+  "joplin_api_url": {
+    "message": "URL de l'API Joplin",
+    "description": "Joplin API URL field label"
+  },
+  "joplin_settings_description": {
+    "message": "Exportez les conversations directement vers votre application de notes Joplin",
+    "description": "Joplin settings description"
+  },
+  "joplin_api_token_placeholder": {
+    "message": "Saisissez votre jeton API",
+    "description": "Joplin API token placeholder"
+  },
+  "joplin_settings": {
+    "message": "Intégration Joplin",
+    "description": "Joplin settings section title"
+  },
+  "joplin_api_url_description": {
+    "message": "URL du service Web Clipper (par défaut : http://127.0.0.1:41184)",
+    "description": "Joplin API URL description"
+  },
+  "joplin_enable": {
+    "message": "Activer l'intégration Joplin",
+    "description": "Toggle for enabling Joplin"
+  },
+  "joplin_api_token_description": {
+    "message": "Jeton d'autorisation des paramètres du Joplin Web Clipper",
+    "description": "Joplin API token description"
+  },
+  "notification_joplin_not_configured": {
+    "message": "L'intégration Joplin n'est pas configurée. Veuillez l'activer dans les paramètres avant d'exporter.",
+    "description": "Error shown when trying to export without Joplin configuration"
+  },
+  "joplin_connected": {
+    "message": "Connecté",
+    "description": "Joplin connected status"
+  },
+  "joplin_default_tags": {
+    "message": "Tags par défaut",
+    "description": "Joplin default tags field label"
+  },
+  "joplin_default_tags_placeholder": {
+    "message": "ai-chat, export",
+    "description": "Joplin default tags placeholder"
+  },
+  "joplin_testing": {
+    "message": "Test en cours...",
+    "description": "Testing Joplin connection status"
+  },
+  "joplin_default_notebook": {
+    "message": "Carnet par défaut",
+    "description": "Joplin default notebook field label"
+  },
+  "joplin_default_tags_description": {
+    "message": "Étiquettes séparées par des virgules à attacher aux notes exportées",
+    "description": "Joplin default tags description"
+  },
+  "joplin_include_metadata": {
+    "message": "Inclure les métadonnées",
+    "description": "Joplin include metadata toggle"
+  },
+  "joplin_test_connection": {
+    "message": "Tester la connexion",
+    "description": "Test Joplin connection button"
+  },
+  "joplin_include_metadata_description": {
+    "message": "Ajouter les métadonnées de la conversation au contenu de la note",
+    "description": "Joplin include metadata description"
+  },
+  "joplin_default_notebook_description": {
+    "message": "Sélectionnez le carnet où les notes seront créées",
+    "description": "Joplin default notebook description"
+  },
+  "joplin_config_incomplete": {
+    "message": "Veuillez d'abord compléter la configuration Joplin",
+    "description": "Joplin config incomplete notification"
+  },
+  "joplin_target_hint": {
+    "message": "Assurez-vous que l'application de bureau Joplin est en cours d'exécution avec le Web Clipper activé",
+    "description": "Hint shown for Joplin target"
+  },
+  "joplin_disconnected": {
+    "message": "Déconnecté",
+    "description": "Joplin disconnected status"
+  },
+  "joplin_test_failed": {
+    "message": "Test de connexion à Joplin échoué",
+    "description": "Joplin test failed notification"
+  },
+  "joplin_test_success": {
+    "message": "Test de connexion à Joplin réussi",
+    "description": "Joplin test success notification"
+  },
+  "notification_joplin_test_success": {
+    "message": "Test de connexion à Joplin réussi",
+    "description": "Joplin test success notification"
+  },
+  "joplin_notebook_id_description": {
+    "message": "Optionnel : ID du carnet par défaut pour stocker les conversations exportées",
+    "description": "Joplin notebook ID description"
+  },
+  "joplin_connection_unknown": {
+    "message": "Statut de connexion inconnu",
+    "description": "Joplin connection status unknown"
+  },
+  "notification_joplin_config_incomplete": {
+    "message": "Veuillez d'abord compléter la configuration Joplin (URL de l'API et Token requis)",
+    "description": "Joplin config incomplete notification"
+  },
+  "notification_joplin_testing": {
+    "message": "Test de la connexion à Joplin...",
+    "description": "Testing Joplin connection status"
+  },
+  "joplin_notebook_id": {
+    "message": "ID du carnet",
+    "description": "Joplin notebook ID field label"
+  },
+  "notification_joplin_test_failed": {
+    "message": "Test de connexion à Joplin échoué",
+    "description": "Joplin test failed notification"
+  }
+}

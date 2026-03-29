@@ -1,0 +1,1844 @@
+{
+  "app_name": {
+    "message": "Chat2Note",
+    "description": "Application name"
+  },
+  "app_settings_subtitle": {
+    "message": "AI会話のエクスポート方法を設定",
+    "description": "Application subtitle in settings page"
+  },
+  "file_format": {
+    "message": "ファイル形式:",
+    "description": "Label for file format selection"
+  },
+  "export_scope": {
+    "message": "エクスポート範囲:",
+    "description": "Label for export scope selection"
+  },
+  "app_subtitle": {
+    "message": "AIチャットの会話を複数の形式でエクスポート",
+    "description": "Application subtitle in popup"
+  },
+  "export_button": {
+    "message": "現在の会話をエクスポート",
+    "description": "Main export button text"
+  },
+  "export_destination": {
+    "message": "エクスポート先:",
+    "description": "Label for export target selection"
+  },
+  "scope_all": {
+    "message": "会話全体",
+    "description": "Option to export entire conversation"
+  },
+  "exporting": {
+    "message": "エクスポート中...",
+    "description": "Export in progress status"
+  },
+  "aria_export_to": {
+    "message": "$target$にエクスポート",
+    "description": "Accessibility label for export target buttons",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "Notion"
+      }
+    }
+  },
+  "target_notion": {
+    "message": "Notion",
+    "description": "Notion export target"
+  },
+  "format_markdown": {
+    "message": "Markdown",
+    "description": "Markdown format"
+  },
+  "format_json": {
+    "message": "JSON",
+    "description": "JSON format"
+  },
+  "target_obsidian": {
+    "message": "Obsidian",
+    "description": "Obsidian export target"
+  },
+  "advanced_options_hide": {
+    "message": "詳細オプションを非表示",
+    "description": "Button to hide advanced options"
+  },
+  "target_clipboard": {
+    "message": "クリップボード",
+    "description": "Clipboard export target"
+  },
+  "target_local": {
+    "message": "ローカルファイル",
+    "description": "Local file export target"
+  },
+  "advanced_options_show": {
+    "message": "詳細オプションを表示",
+    "description": "Button to show advanced options"
+  },
+  "include_metadata": {
+    "message": "メタデータを含める",
+    "description": "Checkbox label for including metadata"
+  },
+  "scope_selected": {
+    "message": "選択したメッセージのみ",
+    "description": "Option to export only selected messages"
+  },
+  "settings": {
+    "message": "設定",
+    "description": "Settings label"
+  },
+  "open_settings": {
+    "message": "設定を開く",
+    "description": "Button to open settings page"
+  },
+  "settings_title": {
+    "message": "Chat2Note 設定",
+    "description": "Settings page title"
+  },
+  "notification_exporting": {
+    "message": "会話をエクスポート中...",
+    "description": "Progress notification for export"
+  },
+  "format_plain_text": {
+    "message": "プレーンテキスト",
+    "description": "Plain text format"
+  },
+  "notion_hint": {
+    "message": "まず設定でNotion連携を構成してください。",
+    "description": "Hint for Notion configuration"
+  },
+  "error_no_active_tab": {
+    "message": "エクスポート対象のアクティブなタブが見つかりません",
+    "description": "Error when active tab not found"
+  },
+  "error_not_supported_page": {
+    "message": "会話をエクスポートするには、ChatGPT、Claude、DeepSeek、Grok、またはその他のサポート対象のAIプラットフォームを開いてください。",
+    "description": "Error when not on supported page"
+  },
+  "notification_export_success": {
+    "message": "$target$ ($format$) にエクスポートしました",
+    "description": "Success notification for export",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "Local file"
+      },
+      "format": {
+        "content": "$2",
+        "example": "Markdown"
+      }
+    }
+  },
+  "format_txt": {
+    "message": "プレーンテキスト",
+    "description": "Plain text format (alias for format_plain_text)"
+  },
+  "how_to_use": {
+    "message": "使い方",
+    "description": "How-to section title"
+  },
+  "notification_open_in_obsidian": {
+    "message": "Obsidianで開く",
+    "description": "Link text to open the generated Obsidian note"
+  },
+  "how_to_step2": {
+    "message": "エクスポート先と形式を選択します。",
+    "description": "Second step in how-to guide"
+  },
+  "notification_view_in_notion": {
+    "message": "Notionで表示",
+    "description": "Link text to view exported page in Notion"
+  },
+  "notification_export_failed": {
+    "message": "エクスポートに失敗しました",
+    "description": "Error notification for export failure"
+  },
+  "how_to_step1": {
+    "message": "ブラウザでChatGPTを開きます。",
+    "description": "First step in how-to guide"
+  },
+  "notification_obsidian_uri_too_long": {
+    "message": "ノートが大きすぎて obsidian:// で送信できません。代わりにMarkdownファイルとしてエクスポートしてください。",
+    "description": "Error when the Obsidian URI would exceed length limits"
+  },
+  "notification_export_siyuan_success": {
+    "message": "SiYuanに保存しました: $path$",
+    "description": "Success notification for SiYuan export",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      }
+    }
+  },
+  "notification_siyuan_not_configured": {
+    "message": "SiYuan連携が設定されていません。エクスポートする前に設定で有効にしてください。",
+    "description": "Error shown when trying to export without SiYuan configuration"
+  },
+  "notification_export_obsidian_success": {
+    "message": "Obsidianに送信しました: $path$",
+    "description": "Success notification for Obsidian export",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      }
+    }
+  },
+  "feature_local_download": {
+    "message": "ローカルファイルにダウンロード",
+    "description": "Local download feature"
+  },
+  "feature_clipboard": {
+    "message": "クリップボードにコピー",
+    "description": "Clipboard feature"
+  },
+  "available_features": {
+    "message": "利用可能な機能",
+    "description": "Features list title"
+  },
+  "how_to_step3": {
+    "message": "エクスポートボタンをクリックします。",
+    "description": "Third step in how-to guide"
+  },
+  "obsidian_settings": {
+    "message": "Obsidianエクスポート",
+    "description": "Obsidian settings section title"
+  },
+  "feature_multiple_formats": {
+    "message": "Markdown / JSON / TXT 形式",
+    "description": "Multiple formats feature"
+  },
+  "feature_notion_integration": {
+    "message": "Notionデータベース連携",
+    "description": "Notion integration feature"
+  },
+  "how_to_step4": {
+    "message": "会話は選択された形式でエクスポートされます。",
+    "description": "Fourth step in how-to guide"
+  },
+  "obsidian_enable": {
+    "message": "Obsidianエクスポートを有効化",
+    "description": "Toggle for enabling Obsidian integration"
+  },
+  "obsidian_settings_description": {
+    "message": "ノートを Obsidian ボールトに送信する方法を設定します。",
+    "description": "Obsidian settings description"
+  },
+  "obsidian_open_mode_label": {
+    "message": "エクスポート後に",
+    "description": "Label for Obsidian open mode"
+  },
+  "obsidian_open_mode_none": {
+    "message": "何もしない",
+    "description": "Option to not open Obsidian automatically"
+  },
+  "obsidian_vault_name_label": {
+    "message": "Vault名",
+    "description": "Label for Obsidian vault name"
+  },
+  "obsidian_open_mode_description": {
+    "message": "ノートを送信した後、Chat2Noteが何を行うかを選択します。",
+    "description": "Description for Obsidian open mode"
+  },
+  "obsidian_enable_description": {
+    "message": "Chat2Noteがobsidian://リンク経由でノートを送信できるようにします。",
+    "description": "Description for Obsidian enable toggle"
+  },
+  "obsidian_open_mode_app": {
+    "message": "ボールトを開く",
+    "description": "Option to open the vault"
+  },
+  "obsidian_vault_folder_label": {
+    "message": "サブフォルダ（任意）",
+    "description": "Label for Obsidian folder path"
+  },
+  "obsidian_vault_name_description": {
+    "message": "あなたのObsidianボールトの正確な名前を入力してください。",
+    "description": "Description for Obsidian vault name"
+  },
+  "obsidian_open_mode_note": {
+    "message": "新規ノートを開く",
+    "description": "Option to open new note"
+  },
+  "obsidian_vault_folder_description": {
+    "message": "ノートはこのフォルダ内に作成されます。空白のままにするとVaultのルートを使用します。",
+    "description": "Description for Obsidian folder path"
+  },
+  "obsidian_folder_root": {
+    "message": "(ルートフォルダ)",
+    "description": "Placeholder for vault root"
+  },
+  "obsidian_sample_note_title": {
+    "message": "Chat2Note エクスポート",
+    "description": "Sample note title"
+  },
+  "obsidian_enforce_markdown_label": {
+    "message": "常にMarkdownを使用する",
+    "description": "Label for strict Markdown toggle"
+  },
+  "obsidian_vault_placeholder": {
+    "message": "あなたのボールト",
+    "description": "Placeholder for vault name"
+  },
+  "obsidian_target_hint": {
+    "message": "Obsidianデスクトップアプリがインストールされ、obsidian://リンクが許可されていることを確認してください。",
+    "description": "Hint shown when Obsidian target is selected"
+  },
+  "obsidian_include_yaml_frontmatter_label": {
+    "message": "YAMLフロントマターを含める",
+    "description": "Label for YAML frontmatter toggle"
+  },
+  "obsidian_include_yaml_frontmatter_description": {
+    "message": "ノートの先頭にメタデータ（タイトル、ソース、プラットフォーム、エクスポート日）を含むYAML frontmatterを追加します。",
+    "description": "Description for YAML frontmatter toggle"
+  },
+  "obsidian_format_locked": {
+    "message": "ObsidianエクスポートはMarkdownのみを使用します。",
+    "description": "Hint indicating Markdown is enforced"
+  },
+  "obsidian_enforce_markdown_description": {
+    "message": "ObsidianはMarkdownコンテンツのみサポートしています。これを有効にすると、自動的にMarkdownが適用されます。",
+    "description": "Description for strict Markdown toggle"
+  },
+  "obsidian_note_path_hint": {
+    "message": "ノートは「$vault$」内の$path$として保存されます。",
+    "description": "Hint showing the resulting Obsidian path",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      },
+      "vault": {
+        "content": "$2",
+        "example": "Second Brain"
+      }
+    }
+  },
+  "appearance": {
+    "message": "外観",
+    "description": "Appearance settings section"
+  },
+  "language_en_desc": {
+    "message": "インターフェースを英語で表示",
+    "description": "English language description"
+  },
+  "language_en": {
+    "message": "英語",
+    "description": "English language option"
+  },
+  "appearance_description": {
+    "message": "Chat2Noteのすべての拡張機能ページでの表示方法を選択します。",
+    "description": "Appearance settings description"
+  },
+  "language_auto": {
+    "message": "自動 (ブラウザに従う)",
+    "description": "Auto language option"
+  },
+  "language_auto_desc": {
+    "message": "ブラウザの言語を自動的に合わせる",
+    "description": "Auto language description"
+  },
+  "language_settings_description": {
+    "message": "拡張機能のインターフェースで使用する言語を選択してください。",
+    "description": "Language settings description"
+  },
+  "siyuan_format_required": {
+    "message": "SiYuanのエクスポートはMarkdownのみサポートしています。形式をMarkdownに切り替えてください。",
+    "description": "Error shown when a non-Markdown format is selected for SiYuan"
+  },
+  "language_settings": {
+    "message": "言語",
+    "description": "Language settings label"
+  },
+  "obsidian_format_required": {
+    "message": "ObsidianのエクスポートはMarkdownのみ対応しています。形式をMarkdownに切り替えてください。",
+    "description": "Error shown when a non-Markdown format is selected"
+  },
+  "language_fr_desc": {
+    "message": "インターフェースをフランス語で表示",
+    "description": "French language description"
+  },
+  "language_fr": {
+    "message": "フランス語",
+    "description": "French language option"
+  },
+  "floating_button_position_middle_right": {
+    "message": "中央右",
+    "description": "Floating button placement option"
+  },
+  "floating_button_position_bottom_left": {
+    "message": "左下",
+    "description": "Floating button placement option"
+  },
+  "floating_button_position_top_right": {
+    "message": "右上",
+    "description": "Floating button placement option"
+  },
+  "floating_button_position_bottom_right": {
+    "message": "右下",
+    "description": "Floating button placement option"
+  },
+  "floating_button_position": {
+    "message": "フローティングボタンの位置",
+    "description": "Label for floating export button placement"
+  },
+  "language_zh_cn_desc": {
+    "message": "インターフェースを簡体字中国語で表示",
+    "description": "Simplified Chinese language description"
+  },
+  "floating_button_position_description": {
+    "message": "フローティングエクスポートボタンの表示位置を選択するか、完全に非表示にします。",
+    "description": "Description for floating button placement setting"
+  },
+  "language_zh_cn": {
+    "message": "简体中文",
+    "description": "Simplified Chinese language option"
+  },
+  "floating_button_position_top_left": {
+    "message": "左上",
+    "description": "Floating button placement option"
+  },
+  "floating_button_position_middle_left": {
+    "message": "中央左",
+    "description": "Floating button placement option"
+  },
+  "theme_system": {
+    "message": "システム",
+    "description": "System theme option"
+  },
+  "theme_light": {
+    "message": "ライト",
+    "description": "Light theme option"
+  },
+  "language_de": {
+    "message": "ドイツ語",
+    "description": "German language option"
+  },
+  "theme_light_desc": {
+    "message": "明るい背景にダークテキスト",
+    "description": "Light theme description"
+  },
+  "theme_system_desc": {
+    "message": "オペレーティングシステムの設定に合わせる",
+    "description": "System theme description"
+  },
+  "theme_dark": {
+    "message": "ダーク",
+    "description": "Dark theme option"
+  },
+  "floating_button_position_hidden": {
+    "message": "非表示",
+    "description": "Floating button placement option to hide the button"
+  },
+  "language_de_desc": {
+    "message": "インターフェースをドイツ語で表示",
+    "description": "German language description"
+  },
+  "about_nav": {
+    "message": "About",
+    "description": "Sidebar navigation label for About page"
+  },
+  "about_status_label": {
+    "message": "プロジェクトステータス",
+    "description": "Label for project status badge"
+  },
+  "about_version_label": {
+    "message": "現在のバージョン",
+    "description": "Label for version badge"
+  },
+  "about_highlight_capture_title": {
+    "message": "確実なキャプチャ",
+    "description": "Highlight title for capture"
+  },
+  "theme_dark_desc": {
+    "message": "暗い背景に明るい文字",
+    "description": "Dark theme description"
+  },
+  "about_status_value": {
+    "message": "アクティブな開発中",
+    "description": "Value for project status badge"
+  },
+  "about_website_label": {
+    "message": "公式サイト",
+    "description": "Label for official website card"
+  },
+  "about_website_description": {
+    "message": "example.invalid で最新情報や機能、プランをチェックできます。",
+    "description": "Helper text for official website card"
+  },
+  "about_user_manual_label": {
+    "message": "ユーザーマニュアル",
+    "description": "Label for user manual card"
+  },
+  "about_user_manual_link_label": {
+    "message": "ドキュメントを開く",
+    "description": "Link text for user manual card"
+  },
+  "about_user_manual_description": {
+    "message": "インストールやエクスポート、ノート連携までを段階的に解説します。",
+    "description": "Helper text for user manual card"
+  },
+  "about_support_label": {
+    "message": "サポート用メール",
+    "description": "Label for support email card"
+  },
+  "about_highlights_title": {
+    "message": "Chat2Noteの特徴",
+    "description": "Highlights section title"
+  },
+  "open_source_nav": {
+    "message": "オープンソースライセンス",
+    "description": "Sidebar navigation label for open source page"
+  },
+  "about_intro": {
+    "message": "Chat2Noteは、AIとの会話を記録し、あなた自身のナレッジスタック内で整理整頓することを支援します。",
+    "description": "Intro paragraph on the About page"
+  },
+  "about_title": {
+    "message": "Chat2Noteについて",
+    "description": "Heading for About page"
+  },
+  "about_privacy_title": {
+    "message": "プライバシー第一",
+    "description": "Privacy section title"
+  },
+  "about_support_title": {
+    "message": "ヘルプが必要ですか？貢献したいですか？",
+    "description": "Support section title"
+  },
+  "about_highlight_export_title": {
+    "message": "柔軟なエクスポート",
+    "description": "Highlight title for export"
+  },
+  "about_support_email_label": {
+    "message": "チームにメールする (support@example.invalid)",
+    "description": "Support link text for email"
+  },
+  "about_highlight_integrations_title": {
+    "message": "シームレスな連携",
+    "description": "Highlight title for integrations"
+  },
+  "about_highlight_capture_description": {
+    "message": "役割を意識したフォーマットとコンテキストメタデータでAIチャットセッション全体をキャプチャします。",
+    "description": "Highlight description for capture"
+  },
+  "about_support_description": {
+    "message": "メールでご連絡ください。1営業日以内に返信いたします。",
+    "description": "Support card helper text"
+  },
+  "about_highlight_export_description": {
+    "message": "Markdown、JSON、またはプレーンテキストとしてエクスポート。ファイル名とメタデータはカスタマイズ可能です。",
+    "description": "Highlight description for export"
+  },
+  "about_highlight_integrations_description": {
+    "message": "Notion、Obsidian、その他の接続済みノートブックにワンクリックでメモを直接送信できます。",
+    "description": "Highlight description for integrations"
+  },
+  "about_privacy_description": {
+    "message": "すべての処理はお使いのブラウザ内で行われます。Chat2Noteは、明示的にノートブックの保存先を接続しない限り、会話をアップロードすることはありません。",
+    "description": "Privacy section description"
+  },
+  "about_links_title": {
+    "message": "公式サイトとサポート",
+    "description": "Title for official links section"
+  },
+  "about_links_description": {
+    "message": "Chat2Note の公式チャネルで最新情報とサポートをご確認ください。",
+    "description": "Description for official links section"
+  },
+  "about_links_website": {
+    "message": "公式サイトを見る",
+    "description": "Link title for website card"
+  },
+  "about_links_website_description": {
+    "message": "example.invalid でアップデートや機能、プランをチェックできます。",
+    "description": "Description for website link card"
+  },
+  "about_links_user_manual": {
+    "message": "ユーザーマニュアルを開く",
+    "description": "Link title for manual card"
+  },
+  "about_links_user_manual_description": {
+    "message": "会話の保存とエクスポート手順をステップごとに紹介しています。",
+    "description": "Description for manual link card"
+  },
+  "about_links_support": {
+    "message": "サポートに連絡する",
+    "description": "Link title for support card"
+  },
+  "about_links_support_description": {
+    "message": "support@example.invalid までメールでお問い合わせください。",
+    "description": "Description for support link card"
+  },
+  "notion_api_token": {
+    "message": "Notion APIトークン",
+    "description": "Notion API token field label"
+  },
+  "notion_integration": {
+    "message": "Notion連携",
+    "description": "Notion integration tab title"
+  },
+  "about_resources_title": {
+    "message": "その他のリソース",
+    "description": "Resources section title"
+  },
+  "about_resources_release_notes": {
+    "message": "リリースノートと変更履歴",
+    "description": "Resources link text for release notes"
+  },
+  "about_support_docs_label": {
+    "message": "製品ドキュメントを閲覧",
+    "description": "Support link text for docs"
+  },
+  "notion_enable": {
+    "message": "Notion連携を有効にする",
+    "description": "Checkbox to enable Notion"
+  },
+  "about_support_issue_label": {
+    "message": "GitHubでissueを開く",
+    "description": "Support link text for GitHub issues"
+  },
+  "notion_enable_description": {
+    "message": "会話をNotionデータベースに直接エクスポートできるようにします。",
+    "description": "Notion enable description"
+  },
+  "notion_integration_settings": {
+    "message": "Notion連携設定",
+    "description": "Notion integration settings section title"
+  },
+  "about_resources_roadmap": {
+    "message": "プロダクトロードマップ",
+    "description": "Resources link text for roadmap"
+  },
+  "notion_api_token_placeholder": {
+    "message": "APIトークンを入力してください",
+    "description": "Notion API token placeholder"
+  },
+  "notion_database_id": {
+    "message": "NotionデータベースID",
+    "description": "Notion database ID field label"
+  },
+  "notion_connected": {
+    "message": "接続済み",
+    "description": "Connected status"
+  },
+  "notion_database_id_placeholder": {
+    "message": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion database ID placeholder"
+  },
+  "notion_test_connection": {
+    "message": "接続テスト",
+    "description": "Test connection button"
+  },
+  "notion_api_token_description": {
+    "message": "Notionインテグレーションページの内部インテグレーショントークン",
+    "description": "Notion API token description"
+  },
+  "notion_database_id_description": {
+    "message": "対象データベースのID、形式: xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion database ID description"
+  },
+  "notion_include_properties": {
+    "message": "メタデータをデータベースプロパティとしてエクスポート",
+    "description": "Checkbox to export metadata as Notion database properties"
+  },
+  "notion_testing": {
+    "message": "テスト中...",
+    "description": "Testing connection status"
+  },
+  "notion_include_properties_description": {
+    "message": "エクスポートURL、エクスポート日時、プラットフォーム、メッセージ数をデータベースプロパティに出力します。これはMarkdownコンテンツにのみ影響する「エクスポートにメタデータを含める」オプションとは独立しています。",
+    "description": "Notion include properties description"
+  },
+  "notion_unknown": {
+    "message": "不明",
+    "description": "Unknown connection status"
+  },
+  "notion_disconnected": {
+    "message": "切断されました",
+    "description": "Disconnected status"
+  },
+  "notion_setup_step2": {
+    "message": "新しいインテグレーションを作成し、「Internal Integration Token」をコピーしてください",
+    "description": "Second step in Notion setup"
+  },
+  "notion_setup_step4": {
+    "message": "インテグレーションとデータベースを共有する",
+    "description": "Fourth step in Notion setup"
+  },
+  "notion_setup_step3": {
+    "message": "Notionで新しいデータベースを作成するか、既存のデータベースを使用してください",
+    "description": "Third step in Notion setup"
+  },
+  "notion_setup_step1": {
+    "message": "Notion Integrationsにアクセス",
+    "description": "First step in Notion setup"
+  },
+  "notion_how_to_configure": {
+    "message": "Notion連携の設定方法",
+    "description": "Notion configuration guide title"
+  },
+  "notion_advanced_settings": {
+    "message": "高度な設定",
+    "description": "Advanced settings section title"
+  },
+  "notion_setup_step6": {
+    "message": "上記の情報を入力して接続をテストしてください",
+    "description": "Sixth step in Notion setup"
+  },
+  "notion_setup_step5": {
+    "message": "データベースID（データベースURL内の32文字の文字列）をコピーしてください",
+    "description": "Fifth step in Notion setup"
+  },
+  "notion_property_mapping": {
+    "message": "プロパティマッピング",
+    "description": "Property mapping section title"
+  },
+  "notion_property_name": {
+    "message": "プロパティ名",
+    "description": "Property name column header"
+  },
+  "notion_property_enabled": {
+    "message": "有効",
+    "description": "Property enabled column header"
+  },
+  "notion_property_url_description": {
+    "message": "元の会話へのリンク",
+    "description": "URL property description"
+  },
+  "notion_property_exported_at_description": {
+    "message": "会話がエクスポートされたタイムスタンプ",
+    "description": "Exported at property description"
+  },
+  "notion_property_url": {
+    "message": "ソースURL",
+    "description": "URL property label"
+  },
+  "notion_property_column_name": {
+    "message": "Notionの列名",
+    "description": "Column name input label"
+  },
+  "notion_advanced_settings_description": {
+    "message": "Notionデータベースのエクスポート対象プロパティとカラム名をカスタマイズ",
+    "description": "Advanced settings description"
+  },
+  "notion_property_exported_at": {
+    "message": "エクスポート日時",
+    "description": "Exported at property label"
+  },
+  "notion_property_type": {
+    "message": "タイプ",
+    "description": "Property type column header"
+  },
+  "notion_type_number": {
+    "message": "数値",
+    "description": "Number type"
+  },
+  "export_default_format": {
+    "message": "デフォルトのエクスポート形式",
+    "description": "Default format setting label"
+  },
+  "notion_type_date": {
+    "message": "日付",
+    "description": "Date type"
+  },
+  "notion_property_message_count_description": {
+    "message": "会話内のメッセージ総数",
+    "description": "Message count property description"
+  },
+  "notion_type_select": {
+    "message": "選択",
+    "description": "Select type"
+  },
+  "notion_type_url": {
+    "message": "URL",
+    "description": "URL type"
+  },
+  "notion_property_message_count": {
+    "message": "メッセージ数",
+    "description": "Message count property label"
+  },
+  "export_settings": {
+    "message": "エクスポート設定",
+    "description": "Export settings tab title"
+  },
+  "notion_property_platform_description": {
+    "message": "AIプラットフォーム名（例：ChatGPT、Claude）。SelectタイプまたはRich Textタイプをサポート",
+    "description": "Platform property description"
+  },
+  "notion_property_platform": {
+    "message": "プラットフォーム",
+    "description": "Platform property label"
+  },
+  "export_default_target": {
+    "message": "デフォルトのエクスポート先",
+    "description": "Default target setting label"
+  },
+  "export_filename_template_placeholder": {
+    "message": "{{title}}_{{date}}",
+    "description": "Filename template placeholder"
+  },
+  "export_markdown_template": {
+    "message": "Markdownテンプレート",
+    "description": "Markdown template setting label"
+  },
+  "export_filename_template": {
+    "message": "ファイル名テンプレート",
+    "description": "Filename template setting label"
+  },
+  "export_default_format_description": {
+    "message": "エクスポートのデフォルトファイル形式を選択",
+    "description": "Default format description"
+  },
+  "export_filename_template_description": {
+    "message": "変数をサポート: {{title}}, {{date}}, {{time}}, {{timestamp}}",
+    "description": "Filename template description"
+  },
+  "export_default_scope": {
+    "message": "デフォルトエクスポートスコープ",
+    "description": "Default scope setting label"
+  },
+  "export_default_target_description": {
+    "message": "デフォルトのエクスポート先を選択",
+    "description": "Default target description"
+  },
+  "export_default_scope_description": {
+    "message": "デフォルトで全ての会話をエクスポートするか、選択したメッセージのみをエクスポートするかを選択します",
+    "description": "Default scope description"
+  },
+  "export_include_metadata_description": {
+    "message": "エクスポートするファイルにソースURLとエクスポート時のタイムスタンプを含める",
+    "description": "Include metadata description"
+  },
+  "filename_variables_title": {
+    "message": "ファイル名テンプレート変数",
+    "description": "Filename variables card title"
+  },
+  "export_message_template": {
+    "message": "メッセージテンプレート",
+    "description": "Message template setting label"
+  },
+  "filename_var_date": {
+    "message": "日付 (YYYY-MM-DD)",
+    "description": "Date variable description"
+  },
+  "export_message_template_placeholder": {
+    "message": "## {{role}}\\n\\n{{content}}\\n\\n",
+    "description": "Message template placeholder"
+  },
+  "filename_var_title": {
+    "message": "会話タイトル",
+    "description": "Title variable description"
+  },
+  "export_visible_targets": {
+    "message": "表示中のエクスポート対象",
+    "description": "Label for visible targets setting"
+  },
+  "export_markdown_template_placeholder": {
+    "message": "# {{title}}\\n\\n{{metadata}}{{messages}}",
+    "description": "Markdown template placeholder"
+  },
+  "export_message_template_description": {
+    "message": "各メッセージの表示方法をカスタマイズします。プレースホルダー: {{role}}, {{rawRole}}, {{content}}, {{index}}, {{messageCount}}, {{timestamp}}, {{timestampISO}}.",
+    "description": "Message template description"
+  },
+  "export_visible_targets_description": {
+    "message": "フローティングエクスポートボタンに表示するエクスポート先を選択",
+    "description": "Description for visible targets setting"
+  },
+  "export_markdown_template_description": {
+    "message": "Markdownの本文をカスタマイズします。使用可能なプレースホルダー: {{title}}, {{metadata}}, {{messages}}, {{url}}, {{platform}}, {{exportedAt}}, {{exportedAtISO}}, {{messageCount}}.",
+    "description": "Markdown template description"
+  },
+  "save_settings": {
+    "message": "設定を保存",
+    "description": "Save settings button"
+  },
+  "filename_var_timestamp": {
+    "message": "タイムスタンプ",
+    "description": "Timestamp variable description"
+  },
+  "saving": {
+    "message": "保存中...",
+    "description": "Saving status"
+  },
+  "filename_var_time": {
+    "message": "時間 (HH-MM-SS)",
+    "description": "Time variable description"
+  },
+  "config_export_info3": {
+    "message": "エクスポート時には、機密情報（APIトークン）を含めるかどうかを選択できます。",
+    "description": "Config export info 3"
+  },
+  "config_export_info5": {
+    "message": "機密情報を含むファイルには、ファイル名に「-sensitive」が含まれます。",
+    "description": "Config export info 5"
+  },
+  "config_import_export_title": {
+    "message": "設定のインポートとエクスポート",
+    "description": "Config import/export card title"
+  },
+  "config_export_info1": {
+    "message": "エクスポートされたファイルには、スキーマバージョン、アプリバージョン、およびエクスポートのタイムスタンプが含まれます。",
+    "description": "Config export info 1"
+  },
+  "config_export_info2": {
+    "message": "ファイルをインポートすると、確認後に現在のすべての設定が置き換えられます。",
+    "description": "Config export info 2"
+  },
+  "config_export_info4": {
+    "message": "セキュリティのため、インポートするファイル内の機密情報は自動的に暗号化されます。",
+    "description": "Config export info 4"
+  },
+  "reset_settings": {
+    "message": "設定をリセット",
+    "description": "Reset settings button"
+  },
+  "import_config": {
+    "message": "設定をインポート",
+    "description": "Import config button"
+  },
+  "notification_settings_saved": {
+    "message": "設定が正常に保存されました",
+    "description": "Settings saved notification"
+  },
+  "notification_notion_config_incomplete": {
+    "message": "まずNotion設定を完了させてください",
+    "description": "Notion config incomplete notification"
+  },
+  "export_config": {
+    "message": "設定をエクスポート",
+    "description": "Export config button"
+  },
+  "notification_settings_save_failed": {
+    "message": "設定の保存に失敗しました: $error$",
+    "description": "Save settings failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid configuration"
+      }
+    }
+  },
+  "notification_validation_failed": {
+    "message": "設定の検証に失敗しました: $errors$",
+    "description": "Validation failed notification",
+    "placeholders": {
+      "errors": {
+        "content": "$1",
+        "example": "Invalid API token"
+      }
+    }
+  },
+  "reload": {
+    "message": "再読み込み",
+    "description": "Reload button"
+  },
+  "notification_settings_load_failed": {
+    "message": "設定の読み込みに失敗しました",
+    "description": "Load settings failed notification"
+  },
+  "notification_saving": {
+    "message": "設定を保存中...",
+    "description": "Saving settings notification"
+  },
+  "notification_resetting": {
+    "message": "設定をリセット中...",
+    "description": "Resetting notification"
+  },
+  "confirm_reset_settings": {
+    "message": "すべての設定をリセットしてもよろしいですか？この操作は元に戻せません。",
+    "description": "Reset settings confirmation"
+  },
+  "notification_notion_testing": {
+    "message": "Notion接続をテスト中...",
+    "description": "Testing Notion connection notification"
+  },
+  "notification_siyuan_config_incomplete": {
+    "message": "まずはSiYuanの設定を完了させてください",
+    "description": "SiYuan config incomplete notification"
+  },
+  "notification_siyuan_test_failed": {
+    "message": "SiYuan接続テストが失敗しました",
+    "description": "SiYuan test failed notification"
+  },
+  "notification_siyuan_test_success": {
+    "message": "SiYuan接続テストが成功しました",
+    "description": "SiYuan test success notification"
+  },
+  "notification_notion_test_success": {
+    "message": "Notion接続テストが成功しました",
+    "description": "Notion test success notification"
+  },
+  "notification_notion_test_failed": {
+    "message": "Notion接続テストが失敗しました",
+    "description": "Notion test failed notification"
+  },
+  "notification_connection_test_failed": {
+    "message": "接続テストが失敗しました: $error$",
+    "description": "Connection test failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "notification_siyuan_testing": {
+    "message": "SiYuan接続をテスト中...",
+    "description": "Testing SiYuan connection notification"
+  },
+  "notification_settings_reset": {
+    "message": "設定がリセットされました",
+    "description": "Settings reset notification"
+  },
+  "config_export_without_sensitive": {
+    "message": "センシティブな情報なし",
+    "description": "Config exported without sensitive data"
+  },
+  "notification_exporting_config": {
+    "message": "設定のエクスポートを準備中...",
+    "description": "Exporting config notification"
+  },
+  "notification_importing_config": {
+    "message": "設定をインポート中...",
+    "description": "Importing config notification"
+  },
+  "config_export_with_sensitive": {
+    "message": "機密情報を含む",
+    "description": "Config exported with sensitive data"
+  },
+  "notification_reset_failed": {
+    "message": "設定のリセットに失敗しました: $error$",
+    "description": "Reset failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Storage error"
+      }
+    }
+  },
+  "notification_export_config_failed": {
+    "message": "設定のエクスポートに失敗しました: $error$",
+    "description": "Export config failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Serialization error"
+      }
+    }
+  },
+  "confirm_import_config": {
+    "message": "設定ファイルをインポートすると、現在の設定が上書きされます。続行しますか？\n\n注：ファイルに機密情報（APIトークンなど）が含まれている場合、それらは安全に暗号化されます。\nファイルに機密情報が含まれていない場合、既存のトークンはすべて削除されます。",
+    "description": "Confirm import config"
+  },
+  "notification_config_exported": {
+    "message": "設定を$sensitivity$、$filename$としてエクスポートしました",
+    "description": "Config exported notification",
+    "placeholders": {
+      "sensitivity": {
+        "content": "$1",
+        "example": "with sensitive information"
+      },
+      "filename": {
+        "content": "$2",
+        "example": "chat2note-settings.json"
+      }
+    }
+  },
+  "confirm_export_sensitive": {
+    "message": "エクスポートに機密情報（Notion APIトークンなど）を含めますか？\n\n警告: 機密情報を含めると、エクスポートされたファイルにはAPIトークンが含まれます。\n   ファイルの保存場所とアクセスする人物を信頼できる場合のみ、これを選択してください。\n\nOKをクリックして機密情報を含めるか、キャンセルをクリックして機密情報なしでエクスポートします。",
+    "description": "Confirm export with sensitive data"
+  },
+  "loading": {
+    "message": "読み込み中...",
+    "description": "Loading status"
+  },
+  "error_unknown": {
+    "message": "不明なエラー"
+  },
+  "context_menu_save_conversation": {
+    "message": "会話を保存",
+    "description": "Context menu item to save conversation"
+  },
+  "error_no_conversation_generic": {
+    "message": "利用できる会話がありません"
+  },
+  "notification_config_imported": {
+    "message": "設定のインポートが成功しました",
+    "description": "Config imported notification"
+  },
+  "error_no_conversation": {
+    "message": "$site$ で会話が見つかりません",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "error_extract_conversation": {
+    "message": "会話の抽出に失敗しました: $error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "version_info": {
+    "message": "Chat2Note v$version$",
+    "description": "Version information",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "notification_import_config_failed": {
+    "message": "設定のインポートに失敗しました: $error$",
+    "description": "Import config failed notification",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid file format"
+      }
+    }
+  },
+  "config_version_info": {
+    "message": "設定バージョン: $current$ (最新: $latest$)",
+    "description": "Configuration version information",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1.0.0"
+      },
+      "latest": {
+        "content": "$2",
+        "example": "1.1.0"
+      }
+    }
+  },
+  "preview_toggle_expand": {
+    "message": "もっと見る"
+  },
+  "preview_cancel": {
+    "message": "キャンセル"
+  },
+  "notification_export_selection_empty": {
+    "message": "エクスポートする前に少なくとも1つのメッセージを選択してください"
+  },
+  "preview_confirm": {
+    "message": "選択項目をエクスポート"
+  },
+  "preview_deselect_all": {
+    "message": "選択をクリア"
+  },
+  "notification_export_success_generic": {
+    "message": "会話のエクスポートが成功しました"
+  },
+  "notification_export_failed_with_reason": {
+    "message": "エクスポートが失敗しました: $reason$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "preview_title_select_messages": {
+    "message": "エクスポートするメッセージを選択"
+  },
+  "notification_export_selection_invalid": {
+    "message": "選択したメッセージはエクスポートできません。選択内容を調整して、もう一度お試しください。"
+  },
+  "preview_select_all": {
+    "message": "すべて選択"
+  },
+  "preview_select_assistant": {
+    "message": "Select assistant replies"
+  },
+  "preview_role_assistant": {
+    "message": "アシスタント"
+  },
+  "feedback_open_file": {
+    "message": "ファイルを開く"
+  },
+  "preview_role_user": {
+    "message": "ユーザー"
+  },
+  "feedback_try_again": {
+    "message": "もう一度試す"
+  },
+  "feedback_file_saved_to_downloads": {
+    "message": "ファイルがダウンロードフォルダに保存されました"
+  },
+  "preview_toggle_collapse": {
+    "message": "折りたたむ"
+  },
+  "feedback_view_page": {
+    "message": "ページを表示"
+  },
+  "feedback_export_successful": {
+    "message": "エクスポート成功"
+  },
+  "feedback_export_failed": {
+    "message": "エクスポートに失敗しました"
+  },
+  "feedback_please_try_exporting_again": {
+    "message": "もう一度エクスポートをお試しください。"
+  },
+  "feedback_connection_test_failed": {
+    "message": "接続テストが失敗しました"
+  },
+  "feedback_configuration_validation_failed": {
+    "message": "設定の検証に失敗しました"
+  },
+  "feedback_view_help": {
+    "message": "ヘルプを表示"
+  },
+  "feedback_open_settings": {
+    "message": "設定を開く"
+  },
+  "feedback_unable_to_connect_to_notion_api": {
+    "message": "Notion APIに接続できません。設定を確認してください"
+  },
+  "feedback_troubleshooting": {
+    "message": "トラブルシューティング"
+  },
+  "feedback_successfully_connected_to_notion_api": {
+    "message": "Notion APIへの接続に成功しました"
+  },
+  "error_network_connection_failed": {
+    "message": "ネットワーク接続に失敗しました。インターネット接続を確認してください。"
+  },
+  "error_notion_api_request_failed": {
+    "message": "Notion APIリクエストが失敗しました。設定を確認してください。"
+  },
+  "feedback_connection_test_succeeded": {
+    "message": "接続テストが成功しました"
+  },
+  "error_database_id_cannot_be_empty": {
+    "message": "データベースIDは空にできません"
+  },
+  "error_database_not_found_check_database_id": {
+    "message": "データベースが見つかりません。データベースIDを確認してください。"
+  },
+  "error_notion_api_request_failed_short": {
+    "message": "Notion APIリクエストが失敗しました"
+  },
+  "error_api_calls_are_rate_limited_please_try_again_later": {
+    "message": "API呼び出しはレート制限されています。後ほど再度お試しください。"
+  },
+  "error_storage_permissions_failed": {
+    "message": "ストレージの権限が失敗しました。拡張機能の権限を確認してください。"
+  },
+  "error_api_token_cannot_be_empty": {
+    "message": "APIトークンを空にすることはできません"
+  },
+  "error_database_id_format_is_invalid": {
+    "message": "データベースIDの形式が無効です"
+  },
+  "error_api_token_is_invalid_or_has_expired": {
+    "message": "APIトークンが無効、または期限切れです"
+  },
+  "error_export_failed_please_try_again_later": {
+    "message": "エクスポートに失敗しました。後ほど再度お試しください。"
+  },
+  "error_page_parsing_failed": {
+    "message": "ページの解析に失敗しました。サポートされているチャットページであることを確認してください。"
+  },
+  "error_storage_operation_failed": {
+    "message": "ストレージ操作が失敗しました"
+  },
+  "error_unknown_clipboard_error": {
+    "message": "不明なクリップボードエラー"
+  },
+  "error_invalid_theme_preference": {
+    "message": "無効なテーマ設定"
+  },
+  "error_unknown_error_occurred": {
+    "message": "不明なエラーが発生しました"
+  },
+  "error_request_data_format_is_invalid": {
+    "message": "リクエストデータの形式が無効です"
+  },
+  "general_settings_section": {
+    "message": "一般設定",
+    "description": "Section title for general settings"
+  },
+  "error_storage_quota_exceeded": {
+    "message": "ストレージクォータを超過しました"
+  },
+  "advanced_settings_section": {
+    "message": "詳細設定",
+    "description": "Section title for advanced settings"
+  },
+  "error_missing_storage_permission_review_settings": {
+    "message": "ストレージ権限がありません。拡張機能の設定を確認してください。"
+  },
+  "notebook_software_section": {
+    "message": "ノートブックソフトウェア",
+    "description": "Section title for notebook software configurations"
+  },
+  "theme_settings": {
+    "message": "テーマ",
+    "description": "Theme settings label"
+  },
+  "other_section": {
+    "message": "その他",
+    "description": "Section title for other pages"
+  },
+  "siyuan_api_url": {
+    "message": "SiYuan API URL",
+    "description": "SiYuan API URL field label"
+  },
+  "advanced_settings": {
+    "message": "詳細設定",
+    "description": "Advanced settings page title"
+  },
+  "siyuan_enable": {
+    "message": "SiYuan連携を有効にする",
+    "description": "Toggle for enabling SiYuan"
+  },
+  "siyuan_settings": {
+    "message": "SiYuan連携",
+    "description": "SiYuan settings section title"
+  },
+  "siyuan_connection_coming_soon": {
+    "message": "SiYuan連携機能は近日公開予定！",
+    "description": "Coming soon message for SiYuan"
+  },
+  "siyuan_api_url_description": {
+    "message": "SiYuanインスタンスのAPI URL（例: http://localhost:6806）",
+    "description": "SiYuan API URL description"
+  },
+  "siyuan_settings_description": {
+    "message": "Chat2NoteをローカルまたはリモートのSiYuanインスタンスに接続します。",
+    "description": "SiYuan settings description"
+  },
+  "obsidian_connection_note": {
+    "message": "Obsidianは連携のためにURIスキームを使用します。接続状態は設定の完了状況を反映します。",
+    "description": "Note about Obsidian connection"
+  },
+  "siyuan_open_after_create_description": {
+    "message": "作成したドキュメントをSiYuanで自動的に開く",
+    "description": "Description for open after creation toggle"
+  },
+  "siyuan_folder_path": {
+    "message": "フォルダパス",
+    "description": "SiYuan folder path field label"
+  },
+  "siyuan_folder_path_description": {
+    "message": "ノートブック内でドキュメントが作成されるパス",
+    "description": "SiYuan folder path description"
+  },
+  "siyuan_notebook_id_description": {
+    "message": "SiYuan内の対象ノートブックのID",
+    "description": "SiYuan notebook ID description"
+  },
+  "siyuan_notebook_placeholder": {
+    "message": "ノートブック",
+    "description": "Placeholder for notebook ID preview"
+  },
+  "siyuan_notebook_id": {
+    "message": "ノートブックID",
+    "description": "SiYuan notebook ID field label"
+  },
+  "siyuan_api_token": {
+    "message": "SiYuan APIトークン",
+    "description": "SiYuan API token field label"
+  },
+  "siyuan_target_hint": {
+    "message": "思源ノートのデスクトップ版またはサーバーAPIが起動してアクセス可能であることを確認してください。",
+    "description": "Hint shown for SiYuan target"
+  },
+  "siyuan_open_after_create": {
+    "message": "作成後に開く",
+    "description": "Toggle for opening document after creation"
+  },
+  "siyuan_api_token_description": {
+    "message": "SiYuan APIにアクセスするためのAPIトークン",
+    "description": "SiYuan API token description"
+  },
+  "siyuan_connected": {
+    "message": "接続済み",
+    "description": "SiYuan connected status"
+  },
+  "siyuan_test_connection": {
+    "message": "接続テスト",
+    "description": "Test connection button for SiYuan"
+  },
+  "siyuan_sample_note_title": {
+    "message": "Chat2Noteエクスポート",
+    "description": "Sample SiYuan note title"
+  },
+  "target_siyuan": {
+    "message": "SiYuan",
+    "description": "SiYuan export target"
+  },
+  "siyuan_disconnected": {
+    "message": "切断されました",
+    "description": "SiYuan disconnected status"
+  },
+  "siyuan_testing": {
+    "message": "テスト中...",
+    "description": "Testing SiYuan connection status"
+  },
+  "siyuan_connection_unknown": {
+    "message": "不明",
+    "description": "SiYuan unknown status"
+  },
+  "config_import_export_actions": {
+    "message": "インポート/エクスポートアクション",
+    "description": "Title for import/export action buttons"
+  },
+  "config_danger_zone": {
+    "message": "危険ゾーン",
+    "description": "Title for dangerous configuration actions"
+  },
+  "siyuan_note_path_hint": {
+    "message": "ノートはノートブック $notebook$ 内の $path$ として作成されます。",
+    "description": "Hint showing the resulting SiYuan path",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      },
+      "notebook": {
+        "content": "$2",
+        "example": "20210805123456-abcdefg"
+      }
+    }
+  },
+  "config_reset_warning": {
+    "message": "リセットするとすべての設定がデフォルト値に戻り、この操作は元に戻せません。",
+    "description": "Warning message for configuration reset"
+  },
+  "siyuan_set_block_attributes_label": {
+    "message": "ブロック属性を設定",
+    "description": "Label for block attributes toggle in SiYuan settings"
+  },
+  "siyuan_set_block_attributes_description": {
+    "message": "会話メタデータをブロック属性（custom-source-url、custom-platform、custom-exported-atなど）として設定し、整理と検索を効率化します。",
+    "description": "Description for block attributes toggle in SiYuan settings"
+  },
+  "language_ja": {
+    "message": "日本語",
+    "description": "Japanese language option"
+  },
+  "language_pt_desc": {
+    "message": "インターフェースをポルトガル語で表示",
+    "description": "Portuguese language description"
+  },
+  "language_ko": {
+    "message": "韓国語",
+    "description": "Korean language option"
+  },
+  "language_es": {
+    "message": "スペイン語",
+    "description": "Spanish language option"
+  },
+  "language_pt": {
+    "message": "ポルトガル語",
+    "description": "Portuguese language option"
+  },
+  "language_ja_desc": {
+    "message": "インターフェースを日本語で表示",
+    "description": "Japanese language description"
+  },
+  "language_ko_desc": {
+    "message": "インターフェースを韓国語で表示",
+    "description": "Korean language description"
+  },
+  "language_es_desc": {
+    "message": "インターフェースをスペイン語で表示",
+    "description": "Spanish language description"
+  },
+  "notification_export_success_shortcut": {
+    "message": "会話がショートカットからエクスポートされました"
+  },
+  "notification_export_in_progress": {
+    "message": "会話をエクスポート中..."
+  },
+  "account_enable": {
+    "message": "アカウント連携を有効にする",
+    "description": "Label for account enable toggle"
+  },
+  "account_section": {
+    "message": "アカウント",
+    "description": "Account section title"
+  },
+  "account_enable_description": {
+    "message": "アカウントに接続してプレミアム機能にアクセスし、サブスクリプションを管理します。",
+    "description": "Description for account enable toggle"
+  },
+  "account_status_unknown": {
+    "message": "不明",
+    "description": "Unknown status text"
+  },
+  "account_status_member": {
+    "message": "メンバー",
+    "description": "Member status text"
+  },
+  "account_test_connection": {
+    "message": "接続テスト",
+    "description": "Test connection button text"
+  },
+  "account_membership_status": {
+    "message": "メンバーシップステータス",
+    "description": "Membership status section title"
+  },
+  "account_status_not_logged_in": {
+    "message": "ログインしていません",
+    "description": "Not logged in status text"
+  },
+  "account_subscription_plan": {
+    "message": "プラン",
+    "description": "Subscription plan label"
+  },
+  "account_info": {
+    "message": "アカウント情報",
+    "description": "Account information section title"
+  },
+  "account_client_email": {
+    "message": "メールアドレス",
+    "description": "Client email label"
+  },
+  "account_subscription_expires": {
+    "message": "有効期限",
+    "description": "Subscription expiry date label"
+  },
+  "account_status_not_member": {
+    "message": "メンバーではありません",
+    "description": "Not a member status text"
+  },
+  "account_subscription_info": {
+    "message": "サブスクリプション情報",
+    "description": "Subscription information section title"
+  },
+  "account_status_expired": {
+    "message": "期限切れ",
+    "description": "Expired membership status text"
+  },
+  "account_client_name": {
+    "message": "名前",
+    "description": "Client name label"
+  },
+  "account_client_company": {
+    "message": "会社",
+    "description": "Client company label"
+  },
+  "account_subscription_status": {
+    "message": "ステータス",
+    "description": "Subscription status label"
+  },
+  "account_subscription_amount": {
+    "message": "金額",
+    "description": "Subscription amount label"
+  },
+  "account_login_success": {
+    "message": "ログインに成功しました",
+    "description": "Login success message"
+  },
+  "account_subscription_never_expires": {
+    "message": "なし",
+    "description": "Never expires text"
+  },
+  "account_subscription_auto_renew": {
+    "message": "自動更新",
+    "description": "Auto renew label"
+  },
+  "account_logout_success": {
+    "message": "ログアウトしました",
+    "description": "Logout success message"
+  },
+  "account_connection_success": {
+    "message": "アカウントへの接続に成功しました",
+    "description": "Connection success message"
+  },
+  "account_login_failed": {
+    "message": "ログインに失敗しました: $error$",
+    "description": "Login failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid credentials"
+      }
+    }
+  },
+  "account_connection_failed": {
+    "message": "アカウントサーバーへの接続に失敗しました: $error$",
+    "description": "Connection failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "account_api_key": {
+    "message": "APIキー",
+    "description": "Label for API Key input"
+  },
+  "account_api_key_placeholder": {
+    "message": "APIキーを入力...",
+    "description": "Placeholder for API Key input"
+  },
+  "account_test_connection_success": {
+    "message": "接続に成功しました",
+    "description": "Test connection success message"
+  },
+  "account_api_key_description": {
+    "message": "アカウントダッシュボードから取得したクライアントAPIキー",
+    "description": "Description for API Key input"
+  },
+  "account_testing": {
+    "message": "テスト中...",
+    "description": "Testing connection state"
+  },
+  "account_test_connection_failed": {
+    "message": "接続に失敗しました: $REASON$",
+    "description": "Test connection failed message",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "Invalid API Key"
+      }
+    }
+  },
+  "account_api_key_help": {
+    "message": "APIキーはクライアントダッシュボード → プロフィール → APIキーから取得してください",
+    "description": "Help text for getting API Key"
+  },
+  "account_not_connected": {
+    "message": "未接続",
+    "description": "Not connected status text"
+  },
+  "account_click_test_to_check": {
+    "message": "メンバーシップステータスを確認するには「接続テスト」をクリックしてください",
+    "description": "Prompt to test connection for membership status"
+  },
+  "days_remaining": {
+    "message": "あと$count$日",
+    "description": "Remaining days until subscription expires",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "account_register": {
+    "message": "アカウントを登録",
+    "description": "Button to register a new account"
+  },
+  "account_register_hint": {
+    "message": "アカウントをお持ちでない場合、まず登録してAPIキーを取得してください。",
+    "description": "Hint for registering an account"
+  },
+  "account_member_title": {
+    "message": "You're a Pro member!",
+    "description": "Headline for active Pro members"
+  },
+  "account_member_description": {
+    "message": "Thank you for supporting Chat2Note Pro. Enjoy the full suite of premium features without limits.",
+    "description": "Description for active Pro members"
+  },
+  "account_member_days_remaining": {
+    "message": "$count$ days of Pro access remaining",
+    "description": "Days remaining for Pro membership",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "account_member_active_hint": {
+    "message": "Your Pro benefits are active",
+    "description": "Message when Pro membership is active without remaining days info"
+  },
+  "account_member_expiry": {
+    "message": "Renews on $date$",
+    "description": "Membership renewal date message",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "2025-08-01"
+      }
+    }
+  },
+  "account_manage_membership": {
+    "message": "Manage membership",
+    "description": "Button to manage an existing membership"
+  },
+  "account_nonmember_title": {
+    "message": "Upgrade to Pro membership",
+    "description": "Headline encouraging non-members to upgrade"
+  },
+  "account_nonmember_description": {
+    "message": "Remove daily limits, unlock premium export workflows and stay ahead with upcoming features.",
+    "description": "Description encouraging upgrade"
+  },
+  "account_nonmember_benefit_unlimited": {
+    "message": "Unlimited exports without daily caps",
+    "description": "Benefit list item for unlimited exports"
+  },
+  "account_nonmember_benefit_advanced": {
+    "message": "Advanced templates and smart formatting",
+    "description": "Benefit list item for advanced tools"
+  },
+  "account_nonmember_benefit_priority": {
+    "message": "Priority support and faster updates",
+    "description": "Benefit list item for support"
+  },
+  "account_upgrade_now": {
+    "message": "Upgrade now",
+    "description": "Upgrade button label"
+  },
+  "export_advanced_options": {
+    "message": "詳細オプション",
+    "description": "Advanced export options section title"
+  },
+  "export_template_settings": {
+    "message": "テンプレート設定",
+    "description": "Template settings section title"
+  },
+  "pro_feature_tooltip": {
+    "message": "Proメンバーのみ利用可能な機能",
+    "description": "Tooltip text for Pro-only features"
+  },
+  "target_joplin": {
+    "message": "Joplin",
+    "description": "Joplin export target"
+  },
+  "joplin_settings": {
+    "message": "Joplin連携",
+    "description": "Joplin settings section title"
+  },
+  "joplin_settings_description": {
+    "message": "会話を直接 Joplin ノートアプリケーションにエクスポート",
+    "description": "Joplin settings description"
+  },
+  "joplin_api_url": {
+    "message": "Joplin API URL",
+    "description": "Joplin API URL field label"
+  },
+  "joplin_api_token_placeholder": {
+    "message": "APIトークンを入力してください",
+    "description": "Joplin API token placeholder"
+  },
+  "joplin_api_token_description": {
+    "message": "Joplin Web Clipper設定から取得した認証トークン",
+    "description": "Joplin API token description"
+  },
+  "joplin_enable": {
+    "message": "Joplin連携を有効にする",
+    "description": "Toggle for enabling Joplin"
+  },
+  "joplin_api_url_description": {
+    "message": "Web ClipperサービスURL（デフォルト: http://127.0.0.1:41184）",
+    "description": "Joplin API URL description"
+  },
+  "notification_joplin_not_configured": {
+    "message": "Joplin連携が設定されていません。エクスポートする前に設定から有効にしてください。",
+    "description": "Error shown when trying to export without Joplin configuration"
+  },
+  "joplin_api_token": {
+    "message": "Joplin APIトークン",
+    "description": "Joplin API token field label"
+  },
+  "joplin_test_connection": {
+    "message": "接続テスト",
+    "description": "Test Joplin connection button"
+  },
+  "joplin_default_notebook": {
+    "message": "デフォルトノートブック",
+    "description": "Joplin default notebook field label"
+  },
+  "joplin_include_metadata_description": {
+    "message": "会話のメタデータをノートの内容に追加",
+    "description": "Joplin include metadata description"
+  },
+  "joplin_connected": {
+    "message": "接続済み",
+    "description": "Joplin connected status"
+  },
+  "joplin_include_metadata": {
+    "message": "メタデータを含める",
+    "description": "Joplin include metadata toggle"
+  },
+  "joplin_testing": {
+    "message": "テスト中...",
+    "description": "Testing Joplin connection status"
+  },
+  "joplin_default_notebook_description": {
+    "message": "ノートが作成されるノートブックを選択",
+    "description": "Joplin default notebook description"
+  },
+  "joplin_default_tags_placeholder": {
+    "message": "ai-chat, export",
+    "description": "Joplin default tags placeholder"
+  },
+  "joplin_default_tags": {
+    "message": "デフォルトタグ",
+    "description": "Joplin default tags field label"
+  },
+  "joplin_default_tags_description": {
+    "message": "エクスポートするノートに付けるカンマ区切りのタグ",
+    "description": "Joplin default tags description"
+  },
+  "joplin_test_failed": {
+    "message": "Joplin接続テストが失敗しました",
+    "description": "Joplin test failed notification"
+  },
+  "joplin_config_incomplete": {
+    "message": "まずJoplinの設定を完了させてください",
+    "description": "Joplin config incomplete notification"
+  },
+  "joplin_target_hint": {
+    "message": "JoplinデスクトップアプリがWeb Clipperを有効にして実行されていることを確認してください",
+    "description": "Hint shown for Joplin target"
+  },
+  "joplin_disconnected": {
+    "message": "切断されました",
+    "description": "Joplin disconnected status"
+  },
+  "joplin_test_success": {
+    "message": "Joplin接続テストが成功しました",
+    "description": "Joplin test success notification"
+  },
+  "notification_joplin_test_success": {
+    "message": "Joplin接続テストが成功しました",
+    "description": "Joplin test success notification"
+  },
+  "joplin_connection_unknown": {
+    "message": "接続ステータス不明",
+    "description": "Joplin connection status unknown"
+  },
+  "notification_joplin_testing": {
+    "message": "Joplin接続をテスト中...",
+    "description": "Testing Joplin connection status"
+  },
+  "joplin_notebook_id": {
+    "message": "ノートブックID",
+    "description": "Joplin notebook ID field label"
+  },
+  "notification_joplin_config_incomplete": {
+    "message": "まずJoplinの設定を完了させてください（API URLとTokenが必要です）",
+    "description": "Joplin config incomplete notification"
+  },
+  "joplin_notebook_id_description": {
+    "message": "任意: エクスポートした会話を保存するデフォルトノートブックのID",
+    "description": "Joplin notebook ID description"
+  },
+  "notification_joplin_test_failed": {
+    "message": "Joplin接続テストが失敗しました",
+    "description": "Joplin test failed notification"
+  }
+}

@@ -1,0 +1,1844 @@
+{
+  "app_name": {
+    "message": "Chat2Note",
+    "description": "应用名称"
+  },
+  "app_subtitle": {
+    "message": "导出AI对话到多种格式",
+    "description": "弹出窗口的应用副标题"
+  },
+  "app_settings_subtitle": {
+    "message": "配置 AI 对话的导出方式",
+    "description": "设置页面的应用副标题"
+  },
+  "export_button": {
+    "message": "导出当前对话",
+    "description": "主导出按钮文本"
+  },
+  "aria_export_to": {
+    "message": "导出到 $target$",
+    "description": "导出目标按钮的无障碍标签",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "Notion"
+      }
+    }
+  },
+  "exporting": {
+    "message": "正在导出...",
+    "description": "导出进行中状态"
+  },
+  "export_destination": {
+    "message": "导出目标:",
+    "description": "导出目标选择标签"
+  },
+  "file_format": {
+    "message": "文件格式:",
+    "description": "文件格式选择标签"
+  },
+  "export_scope": {
+    "message": "导出范围:",
+    "description": "导出范围选择标签"
+  },
+  "scope_all": {
+    "message": "完整对话",
+    "description": "导出完整对话选项"
+  },
+  "scope_selected": {
+    "message": "仅选中消息",
+    "description": "仅导出选中消息选项"
+  },
+  "advanced_options_show": {
+    "message": "显示高级选项",
+    "description": "显示高级选项按钮"
+  },
+  "advanced_options_hide": {
+    "message": "隐藏高级选项",
+    "description": "隐藏高级选项按钮"
+  },
+  "include_metadata": {
+    "message": "包含元数据",
+    "description": "包含元数据复选框标签"
+  },
+  "target_local": {
+    "message": "本地文件",
+    "description": "本地文件导出目标"
+  },
+  "target_notion": {
+    "message": "Notion",
+    "description": "Notion导出目标"
+  },
+  "target_clipboard": {
+    "message": "剪贴板",
+    "description": "剪贴板导出目标"
+  },
+  "target_obsidian": {
+    "message": "Obsidian",
+    "description": "Obsidian 导出目标"
+  },
+  "format_markdown": {
+    "message": "Markdown",
+    "description": "Markdown格式"
+  },
+  "format_json": {
+    "message": "JSON",
+    "description": "JSON格式"
+  },
+  "format_plain_text": {
+    "message": "纯文本",
+    "description": "纯文本格式"
+  },
+  "notion_hint": {
+    "message": "请先在设置中配置 Notion 集成。",
+    "description": "Notion配置提示"
+  },
+  "open_settings": {
+    "message": "打开设置",
+    "description": "打开设置页面按钮"
+  },
+  "settings": {
+    "message": "设置",
+    "description": "设置标签"
+  },
+  "settings_title": {
+    "message": "Chat2Note 设置",
+    "description": "设置页面标题"
+  },
+  "error_no_active_tab": {
+    "message": "无法找到用于导出的活动标签页",
+    "description": "找不到活动标签页的错误"
+  },
+  "error_not_supported_page": {
+    "message": "请打开 ChatGPT、Claude、DeepSeek、Grok 或其他支持的 AI 平台以导出对话。",
+    "description": "不在支持的页面上的错误"
+  },
+  "notification_exporting": {
+    "message": "正在导出对话...",
+    "description": "导出的进度通知"
+  },
+  "notification_export_success": {
+    "message": "已导出到 $target$ ($format$)",
+    "description": "导出成功通知",
+    "placeholders": {
+      "target": {
+        "content": "$1",
+        "example": "本地文件"
+      },
+      "format": {
+        "content": "$2",
+        "example": "Markdown"
+      }
+    }
+  },
+  "notification_export_failed": {
+    "message": "导出失败",
+    "description": "导出失败错误通知"
+  },
+  "notification_export_obsidian_success": {
+    "message": "已发送到 Obsidian：$path$",
+    "description": "导出到 Obsidian 成功时的提示",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      }
+    }
+  },
+  "notification_export_siyuan_success": {
+    "message": "已保存到思源：$path$",
+    "description": "导出到思源成功时的提示",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      }
+    }
+  },
+  "notification_siyuan_not_configured": {
+    "message": "尚未配置思源集成，请在设置中启用后再导出。",
+    "description": "未配置思源时的错误提示"
+  },
+  "notification_obsidian_uri_too_long": {
+    "message": "笔记内容过大，无法通过 obsidian:// 发送，请改用 Markdown 文件导出。",
+    "description": "Obsidian URI 超出限制时的错误提示"
+  },
+  "notification_open_in_obsidian": {
+    "message": "在 Obsidian 中打开",
+    "description": "打开导出的 Obsidian 笔记的链接"
+  },
+  "notification_view_in_notion": {
+    "message": "在 Notion 中查看",
+    "description": "在Notion中查看导出页面的链接文本"
+  },
+  "how_to_use": {
+    "message": "使用方法",
+    "description": "使用方法部分标题"
+  },
+  "how_to_step1": {
+    "message": "在浏览器中打开 ChatGPT。",
+    "description": "使用指南第一步"
+  },
+  "how_to_step2": {
+    "message": "选择导出目标和格式。",
+    "description": "使用指南第二步"
+  },
+  "how_to_step3": {
+    "message": "点击导出按钮。",
+    "description": "使用指南第三步"
+  },
+  "how_to_step4": {
+    "message": "对话将以选定的格式导出。",
+    "description": "使用指南第四步"
+  },
+  "available_features": {
+    "message": "可用功能",
+    "description": "功能列表标题"
+  },
+  "feature_local_download": {
+    "message": "下载到本地文件",
+    "description": "本地下载功能"
+  },
+  "feature_notion_integration": {
+    "message": "Notion 数据库集成",
+    "description": "Notion集成功能"
+  },
+  "feature_clipboard": {
+    "message": "复制到剪贴板",
+    "description": "剪贴板功能"
+  },
+  "feature_multiple_formats": {
+    "message": "Markdown / JSON / TXT 格式",
+    "description": "多格式功能"
+  },
+  "obsidian_settings": {
+    "message": "Obsidian 导出",
+    "description": "Obsidian 设置标题"
+  },
+  "obsidian_settings_description": {
+    "message": "配置导出到 Obsidian 的选项。",
+    "description": "Obsidian 设置说明"
+  },
+  "obsidian_enable": {
+    "message": "启用 Obsidian 导出",
+    "description": "是否启用 Obsidian 集成"
+  },
+  "obsidian_enable_description": {
+    "message": "允许 Chat2Note 通过 obsidian:// 链接发送笔记。",
+    "description": "Obsidian 开关说明"
+  },
+  "obsidian_vault_name_label": {
+    "message": "Vault 名称",
+    "description": "Obsidian vault 名称标签"
+  },
+  "obsidian_vault_name_description": {
+    "message": "请输入 Obsidian 中显示的 vault 名称。",
+    "description": "Obsidian vault 名称说明"
+  },
+  "obsidian_vault_folder_label": {
+    "message": "子文件夹（可选）",
+    "description": "Obsidian 子文件夹标签"
+  },
+  "obsidian_vault_folder_description": {
+    "message": "在该文件夹下创建笔记，留空则保存到 vault 根目录。",
+    "description": "Obsidian 子文件夹说明"
+  },
+  "obsidian_open_mode_label": {
+    "message": "导出完成后",
+    "description": "Obsidian 打开方式标签"
+  },
+  "obsidian_open_mode_description": {
+    "message": "选择发送笔记后要执行的动作。",
+    "description": "Obsidian 打开方式说明"
+  },
+  "obsidian_open_mode_note": {
+    "message": "打开新笔记",
+    "description": "导出后打开新笔记"
+  },
+  "obsidian_open_mode_app": {
+    "message": "打开 Vault",
+    "description": "导出后打开 Vault"
+  },
+  "obsidian_open_mode_none": {
+    "message": "不自动打开",
+    "description": "导出后不打开应用"
+  },
+  "obsidian_enforce_markdown_label": {
+    "message": "强制使用 Markdown",
+    "description": "严格 Markdown 切换标签"
+  },
+  "obsidian_enforce_markdown_description": {
+    "message": "Obsidian 仅支持 Markdown 内容，开启后会自动锁定 Markdown。",
+    "description": "严格 Markdown 切换说明"
+  },
+  "obsidian_note_path_hint": {
+    "message": "笔记将保存为 $path$（位于“$vault$”）。",
+    "description": "Obsidian 笔记路径提示",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "Daily/Chat2Note Export.md"
+      },
+      "vault": {
+        "content": "$2",
+        "example": "Second Brain"
+      }
+    }
+  },
+  "obsidian_folder_root": {
+    "message": "（vault 根目录）",
+    "description": "vault 根目录提示"
+  },
+  "obsidian_vault_placeholder": {
+    "message": "你的 Vault",
+    "description": "vault 名称占位"
+  },
+  "obsidian_sample_note_title": {
+    "message": "Chat2Note 导出",
+    "description": "示例笔记标题"
+  },
+  "obsidian_target_hint": {
+    "message": "请确认已安装 Obsidian 桌面版并允许 obsidian:// 协议。",
+    "description": "选择 Obsidian 目标时的提示"
+  },
+  "obsidian_format_locked": {
+    "message": "Obsidian 导出仅支持 Markdown。",
+    "description": "Obsidian 格式限制提示"
+  },
+  "obsidian_format_required": {
+    "message": "Obsidian 导出仅支持 Markdown，请切换到 Markdown 格式。",
+    "description": "当选择非 Markdown 格式时的错误提示"
+  },
+  "siyuan_format_required": {
+    "message": "思源导出仅支持 Markdown，请切换到 Markdown 格式。",
+    "description": "思源导出选择非 Markdown 格式时的错误提示"
+  },
+  "appearance": {
+    "message": "外观",
+    "description": "外观设置部分"
+  },
+  "appearance_description": {
+    "message": "选择 Chat2Note 在所有扩展页面中的外观。",
+    "description": "外观设置描述"
+  },
+  "language_settings": {
+    "message": "语言",
+    "description": "语言设置标签"
+  },
+  "language_settings_description": {
+    "message": "选择扩展界面的首选语言。",
+    "description": "语言设置描述"
+  },
+  "language_auto": {
+    "message": "自动(跟随浏览器)",
+    "description": "自动语言选项"
+  },
+  "language_auto_desc": {
+    "message": "自动匹配浏览器语言",
+    "description": "自动语言描述"
+  },
+  "language_en": {
+    "message": "English",
+    "description": "英语选项"
+  },
+  "language_en_desc": {
+    "message": "Display interface in English",
+    "description": "英语描述"
+  },
+  "language_zh_cn": {
+    "message": "简体中文",
+    "description": "简体中文选项"
+  },
+  "language_zh_cn_desc": {
+    "message": "以简体中文显示界面",
+    "description": "简体中文描述"
+  },
+  "floating_button_position": {
+    "message": "悬浮球位置",
+    "description": "悬浮导出按钮位置设置标签"
+  },
+  "floating_button_position_description": {
+    "message": "选择悬浮导出按钮出现的位置，或直接将其隐藏。",
+    "description": "悬浮导出按钮位置设置说明"
+  },
+  "floating_button_position_top_right": {
+    "message": "右上角",
+    "description": "悬浮球位置选项"
+  },
+  "floating_button_position_middle_right": {
+    "message": "右侧居中",
+    "description": "悬浮球位置选项"
+  },
+  "floating_button_position_bottom_right": {
+    "message": "右下角",
+    "description": "悬浮球位置选项"
+  },
+  "floating_button_position_bottom_left": {
+    "message": "左下角",
+    "description": "悬浮球位置选项"
+  },
+  "floating_button_position_middle_left": {
+    "message": "左侧居中",
+    "description": "悬浮球位置选项"
+  },
+  "floating_button_position_top_left": {
+    "message": "左上角",
+    "description": "悬浮球位置选项"
+  },
+  "floating_button_position_hidden": {
+    "message": "隐藏",
+    "description": "悬浮球隐藏选项"
+  },
+  "theme_system": {
+    "message": "跟随系统",
+    "description": "系统主题选项"
+  },
+  "theme_system_desc": {
+    "message": "匹配操作系统偏好",
+    "description": "系统主题描述"
+  },
+  "theme_light": {
+    "message": "浅色",
+    "description": "浅色主题选项"
+  },
+  "theme_light_desc": {
+    "message": "明亮背景与深色文本",
+    "description": "浅色主题描述"
+  },
+  "theme_dark": {
+    "message": "深色",
+    "description": "深色主题选项"
+  },
+  "theme_dark_desc": {
+    "message": "暗色背景与浅色文本",
+    "description": "深色主题描述"
+  },
+  "about_nav": {
+    "message": "关于",
+    "description": "关于页导航标签"
+  },
+  "open_source_nav": {
+    "message": "开源许可",
+    "description": "开源页面导航标签"
+  },
+  "about_title": {
+    "message": "关于 Chat2Note",
+    "description": "关于页面标题"
+  },
+  "about_intro": {
+    "message": "Chat2Note 帮助你采集 AI 对话，并把它们整理到自己的知识体系中。",
+    "description": "关于页面介绍文案"
+  },
+  "about_version_label": {
+    "message": "当前版本",
+    "description": "版本信息标签"
+  },
+  "about_status_label": {
+    "message": "项目状态",
+    "description": "项目状态标签"
+  },
+  "about_status_value": {
+    "message": "持续迭代中",
+    "description": "项目状态值"
+  },
+  "about_website_label": {
+    "message": "官方网站",
+    "description": "官网卡片标签"
+  },
+  "about_website_description": {
+    "message": "在 example.invalid 获取最新功能介绍、更新动态与订阅信息。",
+    "description": "官网卡片辅助文案"
+  },
+  "about_user_manual_label": {
+    "message": "用户手册",
+    "description": "手册卡片标签"
+  },
+  "about_user_manual_link_label": {
+    "message": "打开文档中心",
+    "description": "手册卡片链接文本"
+  },
+  "about_user_manual_description": {
+    "message": "逐步指导你完成安装、导出配置以及与笔记工具联动。",
+    "description": "手册卡片辅助文案"
+  },
+  "about_support_label": {
+    "message": "支持邮箱",
+    "description": "支持邮箱卡片标签"
+  },
+  "about_highlights_title": {
+    "message": "Chat2Note 的亮点",
+    "description": "亮点模块标题"
+  },
+  "about_highlight_capture_title": {
+    "message": "可靠抓取",
+    "description": "亮点：抓取 标题"
+  },
+  "about_highlight_capture_description": {
+    "message": "完整保留 AI 对话，自动识别角色与上下文信息。",
+    "description": "亮点：抓取 描述"
+  },
+  "about_highlight_export_title": {
+    "message": "灵活导出",
+    "description": "亮点：导出 标题"
+  },
+  "about_highlight_export_description": {
+    "message": "支持 Markdown、JSON、纯文本，并可自定义文件命名与元数据。",
+    "description": "亮点：导出 描述"
+  },
+  "about_highlight_integrations_title": {
+    "message": "无缝集成",
+    "description": "亮点：集成 标题"
+  },
+  "about_highlight_integrations_description": {
+    "message": "一键将笔记同步到 Notion、Obsidian 等笔记工具。",
+    "description": "亮点：集成 描述"
+  },
+  "about_privacy_title": {
+    "message": "隐私优先",
+    "description": "隐私模块标题"
+  },
+  "about_privacy_description": {
+    "message": "所有处理都在浏览器本地完成；除非你主动连接目标笔记库，否则不会上传对话内容。",
+    "description": "隐私模块描述"
+  },
+  "about_links_title": {
+    "message": "官网与支持",
+    "description": "官方资源模块标题"
+  },
+  "about_links_description": {
+    "message": "访问 Chat2Note 的官方渠道，获取最新资讯与使用帮助。",
+    "description": "官方资源模块描述"
+  },
+  "about_links_website": {
+    "message": "前往官方网站",
+    "description": "官网链接标题"
+  },
+  "about_links_website_description": {
+    "message": "在 example.invalid 查看功能亮点、版本更新和订阅方案。",
+    "description": "官网链接描述"
+  },
+  "about_links_user_manual": {
+    "message": "打开用户手册",
+    "description": "手册链接标题"
+  },
+  "about_links_user_manual_description": {
+    "message": "获取捕获与导出对话的操作步骤与最佳实践。",
+    "description": "手册链接描述"
+  },
+  "about_links_support": {
+    "message": "联系支持团队",
+    "description": "支持链接标题"
+  },
+  "about_links_support_description": {
+    "message": "如需帮助或反馈，请发送邮件至 support@example.invalid。",
+    "description": "支持链接描述"
+  },
+  "about_support_title": {
+    "message": "需要帮助或想参与贡献？",
+    "description": "支持模块标题"
+  },
+  "about_support_description": {
+    "message": "邮件联系我们，我们会在 1 个工作日内回复。",
+    "description": "支持邮箱卡片描述"
+  },
+  "about_support_email_label": {
+    "message": "发送邮件给团队（support@example.invalid）",
+    "description": "支持链接：邮件"
+  },
+  "about_support_issue_label": {
+    "message": "在 GitHub 上提交 Issue",
+    "description": "支持链接：GitHub"
+  },
+  "about_support_docs_label": {
+    "message": "查看产品文档",
+    "description": "支持链接：文档"
+  },
+  "about_resources_title": {
+    "message": "更多资源",
+    "description": "资源模块标题"
+  },
+  "about_resources_release_notes": {
+    "message": "版本更新与变更日志",
+    "description": "资源链接：更新日志"
+  },
+  "about_resources_roadmap": {
+    "message": "产品路线图",
+    "description": "资源链接：路线图"
+  },
+  "notion_integration": {
+    "message": "Notion 集成",
+    "description": "Notion集成标签标题"
+  },
+  "notion_integration_settings": {
+    "message": "Notion 集成设置",
+    "description": "Notion集成设置部分标题"
+  },
+  "notion_enable": {
+    "message": "启用 Notion 集成",
+    "description": "启用Notion的复选框"
+  },
+  "notion_enable_description": {
+    "message": "启用后可直接将对话导出到 Notion 数据库。",
+    "description": "Notion启用描述"
+  },
+  "notion_api_token": {
+    "message": "Notion API Token",
+    "description": "Notion API token字段标签"
+  },
+  "notion_api_token_description": {
+    "message": "从 Notion Integrations 页面获取的内部集成令牌",
+    "description": "Notion API token描述"
+  },
+  "notion_api_token_placeholder": {
+    "message": "输入您的 API token",
+    "description": "Notion API token占位符"
+  },
+  "notion_database_id": {
+    "message": "Notion Database ID",
+    "description": "Notion数据库ID字段标签"
+  },
+  "notion_database_id_description": {
+    "message": "目标数据库的ID,格式: xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion数据库ID描述"
+  },
+  "notion_database_id_placeholder": {
+    "message": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "description": "Notion数据库ID占位符"
+  },
+  "notion_test_connection": {
+    "message": "测试连接",
+    "description": "测试连接按钮"
+  },
+  "notion_testing": {
+    "message": "正在测试...",
+    "description": "测试连接中状态"
+  },
+  "notion_connected": {
+    "message": "已连接",
+    "description": "已连接状态"
+  },
+  "notion_disconnected": {
+    "message": "未连接",
+    "description": "未连接状态"
+  },
+  "notion_unknown": {
+    "message": "未知",
+    "description": "未知连接状态"
+  },
+  "notion_how_to_configure": {
+    "message": "如何配置 Notion 集成",
+    "description": "Notion配置指南标题"
+  },
+  "notion_setup_step1": {
+    "message": "访问 Notion Integrations",
+    "description": "Notion设置第一步"
+  },
+  "notion_setup_step2": {
+    "message": "创建新的集成并复制\\\"Internal Integration Token\\\"",
+    "description": "Notion设置第二步"
+  },
+  "notion_setup_step3": {
+    "message": "在 Notion 中创建新数据库或使用现有数据库",
+    "description": "Notion设置第三步"
+  },
+  "notion_setup_step4": {
+    "message": "将数据库共享给您的集成",
+    "description": "Notion设置第四步"
+  },
+  "notion_setup_step5": {
+    "message": "复制数据库ID(数据库URL中的32个字符)",
+    "description": "Notion设置第五步"
+  },
+  "notion_setup_step6": {
+    "message": "填写上述信息并测试连接",
+    "description": "Notion设置第六步"
+  },
+  "export_settings": {
+    "message": "导出设置",
+    "description": "导出设置标签标题"
+  },
+  "export_default_format": {
+    "message": "默认导出格式",
+    "description": "默认格式设置标签"
+  },
+  "export_default_format_description": {
+    "message": "选择导出的默认文件格式",
+    "description": "默认格式描述"
+  },
+  "export_default_target": {
+    "message": "默认导出目标",
+    "description": "默认目标设置标签"
+  },
+  "export_default_target_description": {
+    "message": "选择默认的导出目标",
+    "description": "默认目标描述"
+  },
+  "export_default_scope": {
+    "message": "默认导出范围",
+    "description": "默认范围设置标签"
+  },
+  "export_default_scope_description": {
+    "message": "选择默认导出完整对话还是仅导出选中消息",
+    "description": "默认范围描述"
+  },
+  "export_include_metadata_description": {
+    "message": "在导出文件中包含来源URL和导出时间戳",
+    "description": "包含元数据描述"
+  },
+  "export_filename_template": {
+    "message": "文件名模板",
+    "description": "文件名模板设置标签"
+  },
+  "export_filename_template_description": {
+    "message": "支持变量: {{title}}, {{date}}, {{time}}, {{timestamp}}",
+    "description": "文件名模板描述"
+  },
+  "export_filename_template_placeholder": {
+    "message": "{{title}}_{{date}}",
+    "description": "文件名模板占位符"
+  },
+  "export_markdown_template": {
+    "message": "Markdown 模板",
+    "description": "Markdown 模板设置标签"
+  },
+  "export_markdown_template_description": {
+    "message": "自定义 Markdown 主体，可用占位符：{{title}}、{{metadata}}、{{messages}}、{{url}}、{{platform}}、{{exportedAt}}、{{exportedAtISO}}、{{messageCount}}。",
+    "description": "Markdown 模板描述"
+  },
+  "export_markdown_template_placeholder": {
+    "message": "# {{title}}\\n\\n{{metadata}}{{messages}}",
+    "description": "Markdown 模板占位提示"
+  },
+  "export_message_template": {
+    "message": "消息模板",
+    "description": "消息模板设置标签"
+  },
+  "export_message_template_description": {
+    "message": "自定义每条消息的渲染，可用占位符：{{role}}、{{rawRole}}、{{content}}、{{index}}、{{messageCount}}、{{timestamp}}、{{timestampISO}}。",
+    "description": "消息模板描述"
+  },
+  "export_message_template_placeholder": {
+    "message": "## {{role}}\\n\\n{{content}}\\n\\n",
+    "description": "消息模板占位提示"
+  },
+  "filename_variables_title": {
+    "message": "文件名模板变量",
+    "description": "文件名变量卡片标题"
+  },
+  "filename_var_title": {
+    "message": "对话标题",
+    "description": "标题变量描述"
+  },
+  "filename_var_date": {
+    "message": "日期 (YYYY-MM-DD)",
+    "description": "日期变量描述"
+  },
+  "filename_var_time": {
+    "message": "时间 (HH-MM-SS)",
+    "description": "时间变量描述"
+  },
+  "filename_var_timestamp": {
+    "message": "时间戳",
+    "description": "时间戳变量描述"
+  },
+  "config_import_export_title": {
+    "message": "配置导入导出",
+    "description": "配置导入导出卡片标题"
+  },
+  "config_export_info1": {
+    "message": "导出文件包含架构版本、应用版本和导出时间戳。",
+    "description": "配置导出信息1"
+  },
+  "config_export_info2": {
+    "message": "导入文件将在确认后替换所有当前设置。",
+    "description": "配置导出信息2"
+  },
+  "config_export_info3": {
+    "message": "导出时,您可以选择是否包含敏感信息(API tokens)。",
+    "description": "配置导出信息3"
+  },
+  "config_export_info4": {
+    "message": "为安全起见,导入文件中的敏感信息会自动加密。",
+    "description": "配置导出信息4"
+  },
+  "config_export_info5": {
+    "message": "包含敏感信息的文件名中会有\"-sensitive\"标记。",
+    "description": "配置导出信息5"
+  },
+  "save_settings": {
+    "message": "保存设置",
+    "description": "保存设置按钮"
+  },
+  "saving": {
+    "message": "正在保存...",
+    "description": "保存中状态"
+  },
+  "reload": {
+    "message": "重新加载",
+    "description": "重新加载按钮"
+  },
+  "reset_settings": {
+    "message": "重置设置",
+    "description": "重置设置按钮"
+  },
+  "export_config": {
+    "message": "导出配置",
+    "description": "导出配置按钮"
+  },
+  "import_config": {
+    "message": "导入配置",
+    "description": "导入配置按钮"
+  },
+  "notification_saving": {
+    "message": "正在保存设置...",
+    "description": "保存设置通知"
+  },
+  "notification_settings_saved": {
+    "message": "设置保存成功",
+    "description": "设置保存成功通知"
+  },
+  "notification_settings_load_failed": {
+    "message": "设置加载失败",
+    "description": "加载设置失败通知"
+  },
+  "notification_settings_save_failed": {
+    "message": "设置保存失败: $error$",
+    "description": "保存设置失败通知",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "配置无效"
+      }
+    }
+  },
+  "notification_validation_failed": {
+    "message": "配置验证失败: $errors$",
+    "description": "验证失败通知",
+    "placeholders": {
+      "errors": {
+        "content": "$1",
+        "example": "API token无效"
+      }
+    }
+  },
+  "notification_notion_config_incomplete": {
+    "message": "请先完成 Notion 配置",
+    "description": "Notion配置不完整通知"
+  },
+  "notification_notion_testing": {
+    "message": "正在测试 Notion 连接...",
+    "description": "测试Notion连接通知"
+  },
+  "notification_notion_test_success": {
+    "message": "Notion 连接测试成功",
+    "description": "Notion测试成功通知"
+  },
+  "notification_notion_test_failed": {
+    "message": "Notion 连接测试失败",
+    "description": "Notion测试失败通知"
+  },
+  "notification_siyuan_config_incomplete": {
+    "message": "请先完成思源的配置",
+    "description": "思源配置不完整通知"
+  },
+  "notification_siyuan_testing": {
+    "message": "正在测试思源连接...",
+    "description": "测试思源连接通知"
+  },
+  "notification_siyuan_test_success": {
+    "message": "思源连接测试成功",
+    "description": "思源测试成功通知"
+  },
+  "notification_siyuan_test_failed": {
+    "message": "思源连接测试失败",
+    "description": "思源测试失败通知"
+  },
+  "notification_connection_test_failed": {
+    "message": "连接测试失败: $error$",
+    "description": "连接测试失败通知",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "网络错误"
+      }
+    }
+  },
+  "confirm_reset_settings": {
+    "message": "确定要重置所有设置吗?此操作无法撤销。",
+    "description": "重置设置确认"
+  },
+  "notification_resetting": {
+    "message": "正在重置设置...",
+    "description": "重置中通知"
+  },
+  "notification_settings_reset": {
+    "message": "设置已重置",
+    "description": "设置重置通知"
+  },
+  "notification_reset_failed": {
+    "message": "设置重置失败: $error$",
+    "description": "重置失败通知",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "存储错误"
+      }
+    }
+  },
+  "confirm_export_sensitive": {
+    "message": "是否在导出中包含敏感信息(如 Notion API tokens)?\n\n警告:包含敏感信息意味着导出的文件将包含您的 API tokens。\n   仅当您信任文件存储位置和访问者时才选择此项。\n\n点击确定以包含敏感信息,或点击取消以不包含敏感信息导出。",
+    "description": "确认导出敏感数据"
+  },
+  "notification_exporting_config": {
+    "message": "正在准备配置导出...",
+    "description": "导出配置通知"
+  },
+  "notification_config_exported": {
+    "message": "配置已$sensitivity$导出为 $filename$",
+    "description": "配置导出完成通知",
+    "placeholders": {
+      "sensitivity": {
+        "content": "$1",
+        "example": "包含敏感信息"
+      },
+      "filename": {
+        "content": "$2",
+        "example": "chat2note-settings.json"
+      }
+    }
+  },
+  "config_export_with_sensitive": {
+    "message": "包含敏感信息",
+    "description": "配置导出包含敏感数据"
+  },
+  "config_export_without_sensitive": {
+    "message": "不包含敏感信息",
+    "description": "配置导出不包含敏感数据"
+  },
+  "notification_export_config_failed": {
+    "message": "配置导出失败: $error$",
+    "description": "导出配置失败通知",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "序列化错误"
+      }
+    }
+  },
+  "confirm_import_config": {
+    "message": "导入配置文件将覆盖您当前的所有设置。是否继续?\n\n注意:如果文件包含敏感信息(API tokens),它们将被安全加密。\n如果文件不包含敏感信息,任何现有的tokens将被清除。",
+    "description": "确认导入配置"
+  },
+  "notification_importing_config": {
+    "message": "正在导入配置...",
+    "description": "导入配置通知"
+  },
+  "notification_config_imported": {
+    "message": "配置导入成功",
+    "description": "配置导入完成通知"
+  },
+  "notification_import_config_failed": {
+    "message": "配置导入失败: $error$",
+    "description": "导入配置失败通知",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "文件格式无效"
+      }
+    }
+  },
+  "loading": {
+    "message": "加载中...",
+    "description": "加载状态"
+  },
+  "context_menu_save_conversation": {
+    "message": "保存对话",
+    "description": "保存对话的右键菜单项"
+  },
+  "version_info": {
+    "message": "Chat2Note v$version$",
+    "description": "版本信息",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "1.0.0"
+      }
+    }
+  },
+  "config_version_info": {
+    "message": "配置版本：$current$（最新：$latest$）",
+    "description": "配置版本信息",
+    "placeholders": {
+      "current": {
+        "content": "$1",
+        "example": "1.0.0"
+      },
+      "latest": {
+        "content": "$2",
+        "example": "1.1.0"
+      }
+    }
+  },
+  "error_no_conversation": {
+    "message": "$site$ 页面没有检测到对话",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "ChatGPT"
+      }
+    }
+  },
+  "error_extract_conversation": {
+    "message": "提取对话失败：$error$",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "网络错误"
+      }
+    }
+  },
+  "error_unknown": {
+    "message": "未知错误"
+  },
+  "error_no_conversation_generic": {
+    "message": "当前没有可用的对话"
+  },
+  "notification_export_selection_empty": {
+    "message": "请先选择至少一条消息后再导出"
+  },
+  "notification_export_selection_invalid": {
+    "message": "选中的消息无法导出，请调整选择后重试"
+  },
+  "notification_export_success_generic": {
+    "message": "对话导出成功"
+  },
+  "notification_export_failed_with_reason": {
+    "message": "导出失败：$reason$",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "网络错误"
+      }
+    }
+  },
+  "preview_title_select_messages": {
+    "message": "选择要导出的消息"
+  },
+  "preview_select_all": {
+    "message": "全选"
+  },
+  "preview_select_assistant": {
+    "message": "仅选助手消息"
+  },
+  "preview_deselect_all": {
+    "message": "清除选择"
+  },
+  "preview_cancel": {
+    "message": "取消"
+  },
+  "preview_confirm": {
+    "message": "导出所选"
+  },
+  "preview_toggle_expand": {
+    "message": "展开"
+  },
+  "preview_toggle_collapse": {
+    "message": "收起"
+  },
+  "preview_role_user": {
+    "message": "用户"
+  },
+  "preview_role_assistant": {
+    "message": "助手"
+  },
+  "language_fr": {
+    "message": "Français",
+    "description": "French language option"
+  },
+  "language_fr_desc": {
+    "message": "以法语显示界面",
+    "description": "French language description"
+  },
+  "language_de": {
+    "message": "Deutsch",
+    "description": "German language option"
+  },
+  "language_de_desc": {
+    "message": "以德语显示界面",
+    "description": "German language description"
+  },
+  "feedback_open_file": {
+    "message": "打开文件"
+  },
+  "feedback_export_successful": {
+    "message": "导出成功"
+  },
+  "feedback_view_page": {
+    "message": "查看页面"
+  },
+  "feedback_file_saved_to_downloads": {
+    "message": "文件已保存至您的下载文件夹"
+  },
+  "feedback_open_settings": {
+    "message": "打开设置"
+  },
+  "feedback_connection_test_succeeded": {
+    "message": "连接测试成功"
+  },
+  "feedback_try_again": {
+    "message": "重试"
+  },
+  "feedback_configuration_validation_failed": {
+    "message": "配置验证失败"
+  },
+  "feedback_export_failed": {
+    "message": "导出失败"
+  },
+  "feedback_please_try_exporting_again": {
+    "message": "请尝试重新导出。"
+  },
+  "feedback_view_help": {
+    "message": "查看帮助"
+  },
+  "feedback_troubleshooting": {
+    "message": "故障排除"
+  },
+  "feedback_connection_test_failed": {
+    "message": "连接测试失败"
+  },
+  "error_network_connection_failed": {
+    "message": "网络连接失败，请检查您的互联网连接。"
+  },
+  "error_storage_permissions_failed": {
+    "message": "存储权限获取失败。请检查扩展权限设置。"
+  },
+  "error_page_parsing_failed": {
+    "message": "页面解析失败。请确保您位于受支持的聊天页面。"
+  },
+  "feedback_unable_to_connect_to_notion_api": {
+    "message": "无法连接到 Notion API。请检查您的配置"
+  },
+  "feedback_successfully_connected_to_notion_api": {
+    "message": "已成功连接到Notion API"
+  },
+  "error_notion_api_request_failed": {
+    "message": "Notion API 请求失败。请检查您的配置。"
+  },
+  "error_export_failed_please_try_again_later": {
+    "message": "导出失败，请稍后重试。"
+  },
+  "error_database_id_cannot_be_empty": {
+    "message": "数据库ID不能为空"
+  },
+  "error_api_token_cannot_be_empty": {
+    "message": "API令牌不能为空"
+  },
+  "error_storage_quota_exceeded": {
+    "message": "存储配额已超出"
+  },
+  "error_database_not_found_check_database_id": {
+    "message": "数据库未找到，请检查数据库ID。"
+  },
+  "error_database_id_format_is_invalid": {
+    "message": "数据库ID格式无效"
+  },
+  "error_storage_operation_failed": {
+    "message": "存储操作失败"
+  },
+  "error_notion_api_request_failed_short": {
+    "message": "Notion API 请求失败"
+  },
+  "error_api_token_is_invalid_or_has_expired": {
+    "message": "API令牌无效或已过期"
+  },
+  "error_api_calls_are_rate_limited_please_try_again_later": {
+    "message": "API调用受到速率限制，请稍后重试。"
+  },
+  "error_request_data_format_is_invalid": {
+    "message": "请求数据格式无效"
+  },
+  "error_invalid_theme_preference": {
+    "message": "主题偏好设置无效"
+  },
+  "error_unknown_error_occurred": {
+    "message": "发生未知错误"
+  },
+  "error_unknown_clipboard_error": {
+    "message": "未知剪贴板错误"
+  },
+  "error_missing_storage_permission_review_settings": {
+    "message": "缺少存储权限。请检查扩展设置。"
+  },
+  "theme_settings": {
+    "message": "主题",
+    "description": "Theme settings label"
+  },
+  "advanced_settings": {
+    "message": "高级设置",
+    "description": "Advanced settings page title"
+  },
+  "siyuan_settings": {
+    "message": "思源笔记集成",
+    "description": "SiYuan settings section title"
+  },
+  "siyuan_settings_description": {
+    "message": "将 Chat2Note 连接到本地或远程的思源实例。",
+    "description": "SiYuan settings description"
+  },
+  "general_settings_section": {
+    "message": "通用设置",
+    "description": "Section title for general settings"
+  },
+  "advanced_settings_section": {
+    "message": "高级设置",
+    "description": "Section title for advanced settings"
+  },
+  "other_section": {
+    "message": "其他",
+    "description": "Section title for other pages"
+  },
+  "siyuan_enable": {
+    "message": "启用思源笔记集成",
+    "description": "Toggle for enabling SiYuan"
+  },
+  "siyuan_api_url": {
+    "message": "思源 API URL",
+    "description": "SiYuan API URL field label"
+  },
+  "obsidian_connection_note": {
+    "message": "Obsidian 使用 URI 方案进行集成。连接状态反映配置完成情况。",
+    "description": "Note about Obsidian connection"
+  },
+  "notebook_software_section": {
+    "message": "笔记软件",
+    "description": "Section title for notebook software configurations"
+  },
+  "siyuan_connection_coming_soon": {
+    "message": "思源集成即将推出！",
+    "description": "Coming soon message for SiYuan"
+  },
+  "siyuan_open_after_create_description": {
+    "message": "在思源中自动打开创建的文档",
+    "description": "Description for open after creation toggle"
+  },
+  "siyuan_target_hint": {
+    "message": "请确认思源桌面端或服务端 API 已启动并可访问。",
+    "description": "Hint shown for SiYuan target"
+  },
+  "siyuan_sample_note_title": {
+    "message": "Chat2Note 导出",
+    "description": "Sample SiYuan note title"
+  },
+  "siyuan_note_path_hint": {
+    "message": "笔记会以 $path$ 的形式保存到笔记本 $notebook$ 中。",
+    "description": "Hint showing the resulting SiYuan path",
+    "placeholders": {
+      "path": {
+        "content": "$1",
+        "example": "/inbox/Chat2Note Export.md"
+      },
+      "notebook": {
+        "content": "$2",
+        "example": "20210805123456-abcdefg"
+      }
+    }
+  },
+  "siyuan_test_connection": {
+    "message": "测试连接",
+    "description": "Test connection button for SiYuan"
+  },
+  "siyuan_open_after_create": {
+    "message": "创建后打开",
+    "description": "Toggle for opening document after creation"
+  },
+  "siyuan_api_token": {
+    "message": "思源 API 令牌",
+    "description": "SiYuan API token field label"
+  },
+  "siyuan_folder_path": {
+    "message": "文件夹路径",
+    "description": "SiYuan folder path field label"
+  },
+  "siyuan_api_token_description": {
+    "message": "用于访问思源笔记 API 的令牌",
+    "description": "SiYuan API token description"
+  },
+  "siyuan_notebook_id": {
+    "message": "笔记本 ID",
+    "description": "SiYuan notebook ID field label"
+  },
+  "siyuan_notebook_id_description": {
+    "message": "思源笔记中目标笔记本的ID",
+    "description": "SiYuan notebook ID description"
+  },
+  "siyuan_notebook_placeholder": {
+    "message": "目标笔记本",
+    "description": "Placeholder for notebook ID preview"
+  },
+  "siyuan_api_url_description": {
+    "message": "您的思源笔记实例的 API 地址（例如：http://localhost:6806）",
+    "description": "SiYuan API URL description"
+  },
+  "siyuan_folder_path_description": {
+    "message": "在笔记本中创建文档的路径",
+    "description": "SiYuan folder path description"
+  },
+  "siyuan_connected": {
+    "message": "已连接",
+    "description": "SiYuan connected status"
+  },
+  "target_siyuan": {
+    "message": "思源",
+    "description": "SiYuan export target"
+  },
+  "siyuan_testing": {
+    "message": "测试中...",
+    "description": "Testing SiYuan connection status"
+  },
+  "siyuan_disconnected": {
+    "message": "连接已断开",
+    "description": "SiYuan disconnected status"
+  },
+  "siyuan_connection_unknown": {
+    "message": "未知",
+    "description": "SiYuan unknown status"
+  },
+  "config_import_export_actions": {
+    "message": "导入/导出操作",
+    "description": "Title for import/export action buttons"
+  },
+  "config_danger_zone": {
+    "message": "危险操作区",
+    "description": "Title for dangerous configuration actions"
+  },
+  "config_reset_warning": {
+    "message": "重置将恢复所有设置为默认值，且无法撤销此操作。",
+    "description": "Warning message for configuration reset"
+  },
+  "export_visible_targets": {
+    "message": "可见导出目标",
+    "description": "Label for visible targets setting"
+  },
+  "export_visible_targets_description": {
+    "message": "选择在浮动导出按钮中显示的导出目标",
+    "description": "Description for visible targets setting"
+  },
+  "obsidian_include_yaml_frontmatter_label": {
+    "message": "包含 YAML 前置元数据",
+    "description": "Label for YAML frontmatter toggle"
+  },
+  "obsidian_include_yaml_frontmatter_description": {
+    "message": "在笔记顶部添加包含元数据（标题、来源、平台、导出日期）的 YAML 前置内容。",
+    "description": "Description for YAML frontmatter toggle"
+  },
+  "notion_property_name": {
+    "message": "属性名称",
+    "description": "Property name column header"
+  },
+  "notion_property_exported_at": {
+    "message": "导出时间",
+    "description": "Exported at property label"
+  },
+  "notion_property_url": {
+    "message": "源链接",
+    "description": "URL property label"
+  },
+  "notion_property_column_name": {
+    "message": "Notion中的列名",
+    "description": "Column name input label"
+  },
+  "notion_advanced_settings": {
+    "message": "高级设置",
+    "description": "Advanced settings section title"
+  },
+  "notion_property_mapping": {
+    "message": "属性映射",
+    "description": "Property mapping section title"
+  },
+  "notion_property_type": {
+    "message": "类型",
+    "description": "Property type column header"
+  },
+  "notion_advanced_settings_description": {
+    "message": "自定义要导出的属性及其在Notion数据库中的列名",
+    "description": "Advanced settings description"
+  },
+  "notion_property_enabled": {
+    "message": "已启用",
+    "description": "Property enabled column header"
+  },
+  "notion_property_url_description": {
+    "message": "原始对话链接",
+    "description": "URL property description"
+  },
+  "notion_type_url": {
+    "message": "URL",
+    "description": "URL type"
+  },
+  "notion_property_platform": {
+    "message": "平台",
+    "description": "Platform property label"
+  },
+  "notion_property_platform_description": {
+    "message": "AI平台名称（例如：ChatGPT、Claude）。支持选择或富文本类型",
+    "description": "Platform property description"
+  },
+  "notion_type_number": {
+    "message": "数字",
+    "description": "Number type"
+  },
+  "notion_property_exported_at_description": {
+    "message": "对话导出时的时间戳",
+    "description": "Exported at property description"
+  },
+  "notion_property_message_count": {
+    "message": "消息数量",
+    "description": "Message count property label"
+  },
+  "notion_property_message_count_description": {
+    "message": "对话中的消息总数",
+    "description": "Message count property description"
+  },
+  "notion_type_select": {
+    "message": "选择",
+    "description": "Select type"
+  },
+  "notion_type_date": {
+    "message": "日期",
+    "description": "Date type"
+  },
+  "notion_include_properties": {
+    "message": "将元数据导出到数据库属性",
+    "description": "Checkbox to export metadata as Notion database properties"
+  },
+  "notion_include_properties_description": {
+    "message": "将导出URL、导出时间、平台和消息数量导出至数据库属性。此功能独立于“在导出中包含元数据”选项，该选项仅影响Markdown内容。",
+    "description": "Notion include properties description"
+  },
+  "format_txt": {
+    "message": "纯文本",
+    "description": "Plain text format (alias for format_plain_text)"
+  },
+  "siyuan_set_block_attributes_label": {
+    "message": "设置块属性",
+    "description": "Label for block attributes toggle in SiYuan settings"
+  },
+  "siyuan_set_block_attributes_description": {
+    "message": "将对话元数据设置为块属性（custom-source-url、custom-platform、custom-exported-at 等），便于组织和搜索。",
+    "description": "Description for block attributes toggle in SiYuan settings"
+  },
+  "language_pt": {
+    "message": "葡萄牙语",
+    "description": "Portuguese language option"
+  },
+  "language_ja": {
+    "message": "日语",
+    "description": "Japanese language option"
+  },
+  "language_pt_desc": {
+    "message": "以葡萄牙语显示界面",
+    "description": "Portuguese language description"
+  },
+  "language_es": {
+    "message": "西班牙语",
+    "description": "Spanish language option"
+  },
+  "language_ja_desc": {
+    "message": "以日语显示界面",
+    "description": "Japanese language description"
+  },
+  "language_ko": {
+    "message": "韩语",
+    "description": "Korean language option"
+  },
+  "language_es_desc": {
+    "message": "以西班牙语显示界面",
+    "description": "Spanish language description"
+  },
+  "language_ko_desc": {
+    "message": "以韩语显示界面",
+    "description": "Korean language description"
+  },
+  "notification_export_success_shortcut": {
+    "message": "对话已通过快捷方式导出"
+  },
+  "notification_export_in_progress": {
+    "message": "正在导出对话..."
+  },
+  "account_section": {
+    "message": "账户",
+    "description": "Account section title"
+  },
+  "account_enable": {
+    "message": "启用账户集成",
+    "description": "Label for account enable toggle"
+  },
+  "account_enable_description": {
+    "message": "连接您的账户以访问高级功能并管理订阅。",
+    "description": "Description for account enable toggle"
+  },
+  "account_test_connection": {
+    "message": "测试连接",
+    "description": "Test connection button text"
+  },
+  "account_membership_status": {
+    "message": "会员状态",
+    "description": "Membership status section title"
+  },
+  "account_status_unknown": {
+    "message": "未知",
+    "description": "Unknown status text"
+  },
+  "account_status_member": {
+    "message": "成员",
+    "description": "Member status text"
+  },
+  "account_status_not_logged_in": {
+    "message": "未登录",
+    "description": "Not logged in status text"
+  },
+  "account_subscription_plan": {
+    "message": "方案",
+    "description": "Subscription plan label"
+  },
+  "account_subscription_info": {
+    "message": "订阅信息",
+    "description": "Subscription information section title"
+  },
+  "account_info": {
+    "message": "账户信息",
+    "description": "Account information section title"
+  },
+  "account_subscription_status": {
+    "message": "状态",
+    "description": "Subscription status label"
+  },
+  "account_client_name": {
+    "message": "名称",
+    "description": "Client name label"
+  },
+  "account_status_expired": {
+    "message": "已过期",
+    "description": "Expired membership status text"
+  },
+  "account_client_company": {
+    "message": "公司",
+    "description": "Client company label"
+  },
+  "account_status_not_member": {
+    "message": "非会员",
+    "description": "Not a member status text"
+  },
+  "account_subscription_expires": {
+    "message": "到期时间",
+    "description": "Subscription expiry date label"
+  },
+  "account_client_email": {
+    "message": "邮箱",
+    "description": "Client email label"
+  },
+  "account_connection_success": {
+    "message": "账户连接成功",
+    "description": "Connection success message"
+  },
+  "account_subscription_never_expires": {
+    "message": "永不过期",
+    "description": "Never expires text"
+  },
+  "account_logout_success": {
+    "message": "已成功退出登录",
+    "description": "Logout success message"
+  },
+  "account_subscription_amount": {
+    "message": "金额",
+    "description": "Subscription amount label"
+  },
+  "account_login_success": {
+    "message": "登录成功",
+    "description": "Login success message"
+  },
+  "account_subscription_auto_renew": {
+    "message": "自动续订",
+    "description": "Auto renew label"
+  },
+  "account_login_failed": {
+    "message": "登录失败：$error$",
+    "description": "Login failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Invalid credentials"
+      }
+    }
+  },
+  "account_connection_failed": {
+    "message": "账户服务器连接失败：$error$",
+    "description": "Connection failed message",
+    "placeholders": {
+      "error": {
+        "content": "$1",
+        "example": "Network error"
+      }
+    }
+  },
+  "account_api_key_description": {
+    "message": "来自账户仪表盘的客户端 API 密钥",
+    "description": "Description for API Key input"
+  },
+  "account_api_key": {
+    "message": "API密钥",
+    "description": "Label for API Key input"
+  },
+  "account_testing": {
+    "message": "测试中...",
+    "description": "Testing connection state"
+  },
+  "account_api_key_placeholder": {
+    "message": "输入您的API密钥...",
+    "description": "Placeholder for API Key input"
+  },
+  "account_test_connection_failed": {
+    "message": "连接失败：$REASON$",
+    "description": "Test connection failed message",
+    "placeholders": {
+      "reason": {
+        "content": "$1",
+        "example": "Invalid API Key"
+      }
+    }
+  },
+  "account_test_connection_success": {
+    "message": "连接成功",
+    "description": "Test connection success message"
+  },
+  "account_api_key_help": {
+    "message": "从客户端仪表板获取您的API密钥：前往 Profile → API Key",
+    "description": "Help text for getting API Key"
+  },
+  "account_not_connected": {
+    "message": "未连接",
+    "description": "Not connected status text"
+  },
+  "account_click_test_to_check": {
+    "message": "点击“测试连接”以检查您的会员状态",
+    "description": "Prompt to test connection for membership status"
+  },
+  "days_remaining": {
+    "message": "剩余 $count$ 天",
+    "description": "Remaining days until subscription expires",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "30"
+      }
+    }
+  },
+  "account_register_hint": {
+    "message": "还没有账户？请先注册以获取您的API Key。",
+    "description": "Hint for registering an account"
+  },
+  "account_register": {
+    "message": "注册账户",
+    "description": "Button to register a new account"
+  },
+  "account_member_title": {
+    "message": "感谢加入 Pro 会员！",
+    "description": "Headline for active Pro members"
+  },
+  "account_member_description": {
+    "message": "感谢支持 Chat2Note Pro，全部高级能力已为你解锁，可尽情畅用。",
+    "description": "Description for active Pro members"
+  },
+  "account_member_days_remaining": {
+    "message": "剩余 $count$ 天 Pro 权益",
+    "description": "Days remaining for Pro membership",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "account_member_active_hint": {
+    "message": "Pro 权益当前已激活",
+    "description": "Message when Pro membership is active without remaining days info"
+  },
+  "account_member_expiry": {
+    "message": "将于 $date$ 自动续期",
+    "description": "Membership renewal date message",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "2025-08-01"
+      }
+    }
+  },
+  "account_manage_membership": {
+    "message": "管理会员",
+    "description": "Button to manage an existing membership"
+  },
+  "account_nonmember_title": {
+    "message": "升级解锁 Pro 会员",
+    "description": "Headline encouraging non-members to upgrade"
+  },
+  "account_nonmember_description": {
+    "message": "解除每日导出限制，解锁高级模板流程，并抢先体验后续新功能。",
+    "description": "Description encouraging upgrade"
+  },
+  "account_nonmember_benefit_unlimited": {
+    "message": "无限导出，彻底告别每日次数限制",
+    "description": "Benefit list item for unlimited exports"
+  },
+  "account_nonmember_benefit_advanced": {
+    "message": "高级模板与智能排版一次到位",
+    "description": "Benefit list item for advanced tools"
+  },
+  "account_nonmember_benefit_priority": {
+    "message": "会员优先支持与加速更新通道",
+    "description": "Benefit list item for support"
+  },
+  "account_upgrade_now": {
+    "message": "立即升级",
+    "description": "Upgrade button label"
+  },
+  "export_advanced_options": {
+    "message": "高级选项",
+    "description": "Advanced export options section title"
+  },
+  "export_template_settings": {
+    "message": "模板设置",
+    "description": "Template settings section title"
+  },
+  "pro_feature_tooltip": {
+    "message": "仅限专业版会员功能",
+    "description": "Tooltip text for Pro-only features"
+  },
+  "joplin_settings": {
+    "message": "Joplin 集成",
+    "description": "Joplin settings section title"
+  },
+  "joplin_api_token_description": {
+    "message": "来自 Joplin Web Clipper 设置的授权令牌",
+    "description": "Joplin API token description"
+  },
+  "joplin_api_token": {
+    "message": "Joplin API 令牌",
+    "description": "Joplin API token field label"
+  },
+  "target_joplin": {
+    "message": "Joplin",
+    "description": "Joplin export target"
+  },
+  "joplin_api_token_placeholder": {
+    "message": "输入您的 API 令牌",
+    "description": "Joplin API token placeholder"
+  },
+  "joplin_api_url_description": {
+    "message": "Web Clipper 服务 URL（默认：http://127.0.0.1:41184）",
+    "description": "Joplin API URL description"
+  },
+  "joplin_api_url": {
+    "message": "Joplin API URL",
+    "description": "Joplin API URL field label"
+  },
+  "notification_joplin_not_configured": {
+    "message": "Joplin 集成未配置。请在导出前前往设置中启用该功能。",
+    "description": "Error shown when trying to export without Joplin configuration"
+  },
+  "joplin_settings_description": {
+    "message": "将会话直接导出到您的 Joplin 笔记应用程序",
+    "description": "Joplin settings description"
+  },
+  "joplin_enable": {
+    "message": "启用 Joplin 集成",
+    "description": "Toggle for enabling Joplin"
+  },
+  "joplin_default_tags_placeholder": {
+    "message": "ai-chat, export",
+    "description": "Joplin default tags placeholder"
+  },
+  "joplin_default_notebook": {
+    "message": "默认笔记本",
+    "description": "Joplin default notebook field label"
+  },
+  "joplin_include_metadata": {
+    "message": "包含元数据",
+    "description": "Joplin include metadata toggle"
+  },
+  "joplin_default_tags_description": {
+    "message": "附加到导出笔记的逗号分隔标签",
+    "description": "Joplin default tags description"
+  },
+  "joplin_default_notebook_description": {
+    "message": "选择创建笔记的笔记本",
+    "description": "Joplin default notebook description"
+  },
+  "joplin_connected": {
+    "message": "已连接",
+    "description": "Joplin connected status"
+  },
+  "joplin_test_connection": {
+    "message": "测试连接",
+    "description": "Test Joplin connection button"
+  },
+  "joplin_include_metadata_description": {
+    "message": "将对话元数据添加到笔记内容中",
+    "description": "Joplin include metadata description"
+  },
+  "joplin_default_tags": {
+    "message": "默认标签",
+    "description": "Joplin default tags field label"
+  },
+  "joplin_testing": {
+    "message": "测试中...",
+    "description": "Testing Joplin connection status"
+  },
+  "joplin_disconnected": {
+    "message": "已断开连接",
+    "description": "Joplin disconnected status"
+  },
+  "joplin_config_incomplete": {
+    "message": "请先完成 Joplin 配置",
+    "description": "Joplin config incomplete notification"
+  },
+  "joplin_target_hint": {
+    "message": "请确保 Joplin 桌面应用正在运行且已启用网页剪辑器",
+    "description": "Hint shown for Joplin target"
+  },
+  "joplin_test_success": {
+    "message": "Joplin 连接测试成功",
+    "description": "Joplin test success notification"
+  },
+  "joplin_test_failed": {
+    "message": "Joplin 连接测试失败",
+    "description": "Joplin test failed notification"
+  },
+  "notification_joplin_testing": {
+    "message": "正在测试 Joplin 连接...",
+    "description": "Testing Joplin connection status"
+  },
+  "notification_joplin_test_failed": {
+    "message": "Joplin 连接测试失败",
+    "description": "Joplin test failed notification"
+  },
+  "joplin_notebook_id": {
+    "message": "笔记本ID",
+    "description": "Joplin notebook ID field label"
+  },
+  "joplin_connection_unknown": {
+    "message": "连接状态未知",
+    "description": "Joplin connection status unknown"
+  },
+  "notification_joplin_config_incomplete": {
+    "message": "请先完成 Joplin 配置（需要 API URL 和 Token）",
+    "description": "Joplin config incomplete notification"
+  },
+  "joplin_notebook_id_description": {
+    "message": "可选：存储导出对话的默认笔记本ID",
+    "description": "Joplin notebook ID description"
+  },
+  "notification_joplin_test_success": {
+    "message": "Joplin 连接测试成功",
+    "description": "Joplin test success notification"
+  }
+}

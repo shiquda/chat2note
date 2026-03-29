@@ -1,0 +1,6 @@
+dist/
+build/
+.output/
+node_modules/
+*.lock
+*.log
