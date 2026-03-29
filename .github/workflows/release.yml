@@ -1,0 +1,68 @@
+name: Release Extension
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  release:
+    name: Build and release browser packages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Validate tag matches package version
+        shell: bash
+        run: |
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          TAG_NAME="${GITHUB_REF_NAME}"
+
+          if [ "${TAG_NAME}" != "v${PACKAGE_VERSION}" ]; then
+            echo "Tag ${TAG_NAME} does not match package.json version v${PACKAGE_VERSION}" >&2
+            exit 1
+          fi
+
+          echo "PACKAGE_VERSION=${PACKAGE_VERSION}" >> "$GITHUB_ENV"
+
+      - name: Run checks
+        run: |
+          pnpm compile
+          pnpm test
+
+      - name: Build Chromium package
+        run: pnpm zip
+
+      - name: Build Firefox package
+        run: pnpm zip:firefox
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: |
+            .output/chat2note-${{ env.PACKAGE_VERSION }}-chrome.zip
+            .output/chat2note-${{ env.PACKAGE_VERSION }}-firefox.zip

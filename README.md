@@ -39,6 +39,17 @@ pnpm build
 pnpm build:firefox
 ```
 
+## Release
+
+- GitHub Actions release workflow lives in `.github/workflows/release.yml`
+- Create and push a tag that matches `package.json` version, for example `v0.1.0`
+- The workflow will run checks, build Chromium and Firefox packages, and publish a GitHub Release with both zip files
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
 ## Notes
 
 - `wxt.config.ts` targets both Chrome and Firefox builds.
