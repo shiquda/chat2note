@@ -2,6 +2,7 @@
   "name": "chat2note-docs",
   "type": "module",
   "version": "1.0.0",
+  "packageManager": "pnpm@10.11.1",
   "engines": {
     "node": ">=20"
   },
@@ -27,5 +28,10 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
     "typescript": "^5.6.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@astrojs/sitemap": "3.6.0"
+    }
   }
 }
