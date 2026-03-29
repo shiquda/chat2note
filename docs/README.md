@@ -6,7 +6,7 @@ This directory contains the official website and documentation for Chat2Note, bu
 
 ### Prerequisites
 
-- Node.js 18+ or 20+
+- Node.js 22
 - pnpm (recommended) or npm
 
 ### Installation
@@ -83,7 +83,7 @@ To add translations:
 You can use Starlight's built-in components:
 
 ```mdx
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from '@astrojs/starlight/components'
 
 <CardGrid>
   <Card title="Feature 1" icon="star">
@@ -121,28 +121,42 @@ logo: {
 
 ## 🚢 Deployment
 
-### Cloudflare Pages
+### Official Deployment Target: Cloudflare Pages
 
-1. Connect your GitHub repository to Cloudflare Pages
-2. Set build configuration:
-   - **Build command:** `pnpm build`
-   - **Build output directory:** `dist`
-   - **Root directory:** `docs`
+Chat2Note documentation is intended to be deployed with Cloudflare Pages using GitHub integration.
 
-### Other Platforms
+Recommended project settings:
 
-Chat2Note documentation can be deployed to:
+- **Production branch:** `main`
+- **Framework preset:** `Astro`
+- **Root directory:** `docs`
+- **Build command:** `pnpm build`
+- **Build output directory:** `dist`
+- **Node.js version:** `22`
 
-- Vercel
-- Netlify
-- GitHub Pages
-- Any static hosting service
+Cloudflare Pages will automatically create preview deployments for pull requests and branch pushes.
+
+### Custom Domain
+
+- Primary domain: `chat2note.com`
+- Optional redirect/alias: `www.chat2note.com`
+
+If your DNS zone is already managed in Cloudflare, add the custom domain from the Cloudflare Pages dashboard and let Cloudflare manage the DNS records automatically.
+
+### Manual Validation
+
+Before pushing deployment-related changes:
+
+```bash
+cd docs
+pnpm build:check
+```
 
 ## 📚 Resources
 
 - [Astro Documentation](https://docs.astro.build)
 - [Starlight Documentation](https://starlight.astro.build)
-- [Chat2Note Repository](https://github.com/Chat2Note)
+- [Chat2Note Repository](https://github.com/shiquda/chat2note)
 
 ## 🤝 Contributing
 

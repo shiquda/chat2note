@@ -2,6 +2,9 @@
   "name": "chat2note-docs",
   "type": "module",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

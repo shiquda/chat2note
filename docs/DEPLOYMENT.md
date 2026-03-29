@@ -1,144 +1,104 @@
-# Cloudflare Pages Deployment Configuration
+# Cloudflare Pages Deployment
 
-This file documents the recommended Cloudflare Pages configuration for the Chat2Note documentation site.
+This document describes the formal deployment setup for the Chat2Note documentation site.
 
-## Build Configuration
+## Recommended Architecture
 
-When setting up your Cloudflare Pages project, use these settings:
+- **Source of truth:** GitHub repository `shiquda/chat2note`
+- **Docs root:** `docs/`
+- **Hosting platform:** Cloudflare Pages
+- **Deployment mode:** Cloudflare Pages GitHub integration
+- **Custom domain:** `chat2note.com`
 
-### Framework Preset
-- **Framework**: Astro
+Cloudflare Pages is the official deployment target for the docs site. GitHub Pages is no longer the primary docs hosting path.
 
-### Build Settings
-- **Build command**: `pnpm build`
-- **Build output directory**: `dist`
-- **Root directory**: `docs`
+## Why Cloudflare Pages
 
-### Environment Variables
-No environment variables are required for basic deployment.
+- Better global edge delivery for a static docs site
+- Built-in preview deployments for branch pushes and pull requests
+- Native custom domain and TLS management in the Cloudflare dashboard
+- No extra GitHub Actions workflow required for documentation deployment
 
-## Branch Configuration
+## Cloudflare Pages Project Settings
 
-### Production Branch
-- **Branch**: `master` (or `main`)
-- **Deployment**: Automatic on push
-- **URL**: Your custom domain (e.g., `chat2note.com`)
+Create a Pages project from the GitHub repository with these settings:
 
-### Preview Deployments
-- **Branches**: All other branches
-- **Deployment**: Automatic on push
-- **URL**: `<branch-name>.chat2note.pages.dev`
+- **Project type:** Pages
+- **Production branch:** `main`
+- **Framework preset:** `Astro`
+- **Root directory:** `docs`
+- **Build command:** `pnpm build`
+- **Build output directory:** `dist`
+- **Node.js version:** `22`
 
-## Custom Domain Setup
+If Cloudflare asks for an install command, use the default package-manager install or `pnpm install --frozen-lockfile`.
 
-### Add Custom Domain
-1. In Cloudflare Pages dashboard, go to your project
-2. Navigate to **Custom domains**
-3. Click **Set up a custom domain**
-4. Enter your domain: `chat2note.com`
-5. Follow DNS configuration instructions
+## Deployment Flow
 
-### DNS Configuration
-Add the following DNS records in your Cloudflare dashboard:
+1. Open Cloudflare dashboard
+2. Go to **Workers & Pages**
+3. Choose **Create application** -> **Pages** -> **Import an existing Git repository**
+4. Connect GitHub and select `shiquda/chat2note`
+5. Configure the project with the settings above
+6. Save and deploy
 
-```
-Type: CNAME
-Name: www
-Content: chat2note.pages.dev
-Proxy: Enabled (orange cloud)
+After setup, Cloudflare Pages will automatically:
 
-Type: CNAME
-Name: @
-Content: chat2note.pages.dev
-Proxy: Enabled (orange cloud)
-```
+- Deploy `main` as production
+- Build preview deployments for branches and pull requests
+- Keep the docs site independent from the extension release workflow
 
-## Advanced Configuration
+## Domain Setup
 
-### Build Watch Paths (Optional)
-```
-docs/**
-```
+Add the custom domain from the Cloudflare Pages dashboard:
 
-This ensures builds only trigger when files in the `docs/` directory change.
+- `chat2note.com`
+- optionally `www.chat2note.com`
 
-### Node.js Version
-- **Version**: 18 or 20 (automatically detected from package.json engines field if specified)
+If the DNS zone is already hosted in Cloudflare, prefer letting Cloudflare Pages manage the DNS records automatically from the dashboard.
 
-## Deployment Steps
+If you need to create records manually, point them to the Pages project domain shown in Cloudflare, typically `<project>.pages.dev`.
 
-1. **Connect Repository**
-   - Go to Cloudflare Pages dashboard
-   - Click **Create a project**
-   - Connect your GitHub account
-   - Select the `chat2note` repository
+## Repository Files Related to Deployment
 
-2. **Configure Build**
-   - Set framework preset to **Astro**
-   - Set root directory to `docs`
-   - Set build command to `pnpm build`
-   - Set build output directory to `dist`
+- `docs/astro.config.mjs`: canonical site URL
+- `docs/package.json`: docs build commands
+- `docs/wrangler.toml`: local Pages metadata and build output directory
+- `docs/README.md`: contributor-facing docs instructions
 
-3. **Deploy**
-   - Click **Save and Deploy**
-   - Cloudflare will build and deploy your site
+## Local Validation
 
-4. **Configure Domain** (Optional)
-   - Add custom domain in project settings
-   - Configure DNS as described above
-
-## Automatic Deployments
-
-Once configured, Cloudflare Pages will automatically:
-- Build and deploy on every push to production branch
-- Create preview deployments for pull requests
-- Show build status in GitHub
-
-## Build Cache
-
-Cloudflare Pages automatically caches:
-- `node_modules/` (based on package.json hash)
-- Build artifacts
-
-## Troubleshooting
-
-### Build Failures
-
-If builds fail, check:
-1. Build logs in Cloudflare dashboard
-2. Ensure `docs/package.json` has correct dependencies
-3. Verify root directory is set to `docs`
-
-### Preview Not Working
-
-For preview deployments:
-1. Ensure preview deployments are enabled
-2. Check branch protection rules
-3. Verify GitHub app permissions
-
-## Performance
-
-After deployment, your site will benefit from:
-- **Global CDN**: Cloudflare's edge network
-- **HTTP/3**: Latest protocol support
-- **Brotli compression**: Automatic compression
-- **Smart routing**: Optimal path to origin
-
-## Monitoring
-
-Monitor your deployment:
-- **Analytics**: Cloudflare Pages dashboard
-- **Web Analytics**: Enable in project settings
-- **Build logs**: Available for each deployment
-
-## Local Testing
-
-Test production build locally before deploying:
+Run this before changing deployment settings:
 
 ```bash
 cd docs
-pnpm build
-pnpm preview
+pnpm build:check
 ```
 
-This mimics the Cloudflare Pages build process.
+## Migration Notes from GitHub Pages
+
+When cutting over from GitHub Pages to Cloudflare Pages:
+
+1. Ensure the Cloudflare Pages project has deployed successfully
+2. Switch the custom domain to Cloudflare Pages
+3. Confirm `chat2note.com` serves the Cloudflare Pages site with valid TLS
+4. Only then disable or remove any remaining GitHub Pages site settings
+
+## Troubleshooting
+
+### Build succeeds locally but fails in Cloudflare
+
+- Confirm the Pages root directory is `docs`
+- Confirm the build output directory is `dist`
+- Confirm Cloudflare is using Node.js 22
+
+### Client-side behavior breaks after deployment
+
+- Check whether Cloudflare Auto Minify changes page output
+- If hydration issues appear, disable Auto Minify for HTML/JS and redeploy
+
+### Custom domain certificate is invalid
+
+- Make sure the custom domain is attached in the Cloudflare Pages dashboard
+- Make sure DNS points at the Pages project, not GitHub Pages
+- Wait for TLS provisioning to finish before testing HTTPS aggressively
