@@ -7,10 +7,10 @@
   "homepage": "https://chat2note.com",
   "repository": {
     "type": "git",
-    "url": "https://chat2note.com"
+    "url": "https://github.com/shiquda/chat2note.git"
   },
   "bugs": {
-    "url": "https://chat2note.com"
+    "url": "https://github.com/shiquda/chat2note/issues"
   },
   "type": "module",
   "scripts": {
