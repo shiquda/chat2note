@@ -133,8 +133,11 @@ Recommended project settings:
 - **Build command:** `pnpm build`
 - **Build output directory:** `dist`
 - **Node.js version:** `22`
+- **Deploy command:** leave empty
 
 Cloudflare Pages will automatically create preview deployments for pull requests and branch pushes.
+
+Do not set the deploy command to `npx wrangler deploy`. This docs site is a static Pages project, so Cloudflare should publish the `dist` output directly after the build step.
 
 ### Custom Domain
 

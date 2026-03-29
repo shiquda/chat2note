@@ -30,8 +30,11 @@ Create a Pages project from the GitHub repository with these settings:
 - **Build command:** `pnpm build`
 - **Build output directory:** `dist`
 - **Node.js version:** `22`
+- **Deploy command:** leave empty / do not configure one
 
 If Cloudflare asks for an install command, use the default package-manager install or `pnpm install --frozen-lockfile`.
+
+Do not set the Cloudflare dashboard deploy command to `wrangler deploy`. That command is for Workers deployments and will fail for this repository because the docs site is a static Pages project, not a Worker with an entry script.
 
 ## Deployment Flow
 
@@ -91,6 +94,12 @@ When cutting over from GitHub Pages to Cloudflare Pages:
 - Confirm the Pages root directory is `docs`
 - Confirm the build output directory is `dist`
 - Confirm Cloudflare is using Node.js 22
+
+### Build succeeds but deploy step fails with `Missing entry-point to Worker script or to assets directory`
+
+- Open the Cloudflare Pages project settings and clear the **Deploy command** field
+- Keep the project on the standard Pages Git integration flow so Cloudflare publishes the built `dist` output automatically
+- Only use Wrangler for manual uploads if you intentionally switch to a CLI-based workflow, and in that case use `wrangler pages deploy dist` instead of `wrangler deploy`
 
 ### Client-side behavior breaks after deployment
 
