@@ -1,0 +1,14 @@
+name = "chat2note-docs"
+compatibility_date = "2024-10-04"
+
+[build]
+command = "pnpm build"
+publish = "dist"
+
+[build.environment]
+NODE_VERSION = "20"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200

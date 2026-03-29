@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://chat2note.com/sitemap.xml
+
+# Crawl delay to be respectful to server resources
+Crawl-delay: 1

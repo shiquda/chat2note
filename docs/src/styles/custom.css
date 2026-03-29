@@ -1,0 +1,229 @@
+/* Custom CSS for Chat2Note Documentation */
+/* Match landing page theme colors */
+
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Primary brand colors */
+  --sl-color-accent-low: #1e3a8a;
+  --sl-color-accent: #3b82f6;
+  --sl-color-accent-high: #60a5fa;
+
+  /* Neutral colors */
+  --sl-color-white: #f8fafc;
+  --sl-color-gray-1: #f1f5f9;
+  --sl-color-gray-2: #e2e8f0;
+  --sl-color-gray-3: #cbd5f5;
+  --sl-color-gray-4: #94a3b8;
+  --sl-color-gray-5: #64748b;
+  --sl-color-gray-6: #1e293b;
+  --sl-color-black: #020617;
+
+  /* Typography */
+  --sl-color-text: #e2e8f0;
+  --sl-color-text-secondary: #b8c5e6;
+  --sl-color-text-accent: var(--sl-color-accent-high);
+  --sl-color-text-invert: #172554;
+
+  /* Surfaces */
+  --sl-color-bg: #020617;
+  --sl-color-bg-nav: rgba(8, 15, 32, 0.9);
+  --sl-color-bg-sidebar: rgba(4, 10, 22, 0.88);
+  --sl-color-bg-inline-code: #10203c;
+  --sl-color-bg-accent: rgba(59, 130, 246, 0.16);
+  --table-header-bg: rgba(59, 130, 246, 0.08);
+
+  /* Borders */
+  --sl-color-hairline-light: #223149;
+  --sl-color-hairline: #121d33;
+  --sl-color-hairline-shade: #060a13;
+
+  /* Code blocks */
+  --sl-color-code-bg: #0c1830;
+  --sl-color-code-inline-bg: #152341;
+
+  --sl-color-backdrop-overlay: rgba(2, 8, 20, 0.72);
+
+  --sl-font:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  /* Primary brand colors */
+  --sl-color-accent-low: #dbeafe;
+  --sl-color-accent: #3b82f6;
+  --sl-color-accent-high: #1d4ed8;
+
+  /* Neutral colors */
+  --sl-color-white: #111827;
+  --sl-color-gray-1: #1f2937;
+  --sl-color-gray-2: #374151;
+  --sl-color-gray-3: #4b5563;
+  --sl-color-gray-4: #6b7280;
+  --sl-color-gray-5: #9ca3af;
+  --sl-color-gray-6: #e2e8f0;
+  --sl-color-gray-7: #f3f4f6;
+  --sl-color-black: #ffffff;
+
+  /* Typography */
+  --sl-color-text: #1f2937;
+  --sl-color-text-secondary: #4b5563;
+  --sl-color-text-accent: var(--sl-color-accent);
+  --sl-color-text-invert: #ffffff;
+
+  /* Surfaces */
+  --sl-color-bg: #ffffff;
+  --sl-color-bg-nav: rgba(255, 255, 255, 0.85);
+  --sl-color-bg-sidebar: #f8fafc;
+  --sl-color-bg-inline-code: #e8edf9;
+  --sl-color-bg-accent: rgba(59, 130, 246, 0.12);
+  --table-header-bg: #eff4ff;
+
+  /* Borders */
+  --sl-color-hairline-light: #e5e7eb;
+  --sl-color-hairline: #d1d5db;
+  --sl-color-hairline-shade: #cbd5f5;
+
+  /* Code blocks */
+  --sl-color-code-bg: #f5f7ff;
+  --sl-color-code-inline-bg: #e8edff;
+
+  --sl-color-backdrop-overlay: rgba(17, 24, 39, 0.2);
+}
+
+/* Custom styling for feature cards */
+.feature-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--sl-color-hairline);
+  background: var(--sl-color-bg-sidebar);
+  transition: all 0.3s ease;
+}
+
+:root[data-theme='light'] .feature-card {
+  border-color: var(--sl-color-gray-3);
+  background: var(--sl-color-gray-6);
+}
+
+.feature-card:hover {
+  border-color: var(--sl-color-accent);
+  box-shadow:
+    0 10px 15px -3px rgba(59, 130, 246, 0.2),
+    0 4px 6px -4px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom link styles matching landing page */
+.sl-markdown-content a:not(.card-link) {
+  color: var(--sl-color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.sl-markdown-content a:not(.card-link):hover {
+  color: var(--sl-color-accent-high);
+  border-bottom-color: currentColor;
+}
+
+/* Code block improvements */
+.sl-markdown-content pre {
+  border-radius: 0.5rem;
+  border: 1px solid var(--sl-color-hairline);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--sl-color-code-bg) !important;
+}
+
+/* Callout/Aside blocks with landing page styling */
+.sl-markdown-content aside {
+  border-radius: 0.75rem;
+  border-width: 1px;
+  border-color: var(--sl-color-hairline);
+}
+
+/* Header matching landing page */
+header.header {
+  backdrop-filter: blur(12px);
+  background-color: var(--sl-color-bg-nav);
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+/* Enhanced layout surfaces */
+.starlight-sidebar {
+  background-color: var(--sl-color-bg-sidebar);
+  border-right-color: var(--sl-color-hairline);
+}
+
+.starlight-page {
+  background-color: var(--sl-color-bg);
+  color: var(--sl-color-text);
+}
+
+/* Inline code styling */
+code:not(pre code) {
+  background-color: var(--sl-color-code-inline-bg) !important;
+  color: var(--sl-color-text);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+/* Table improvements */
+table {
+  border-color: var(--sl-color-hairline);
+}
+
+th {
+  background-color: var(--table-header-bg);
+  border-color: var(--sl-color-hairline);
+}
+
+td {
+  border-color: var(--sl-color-hairline);
+}
+
+/* Link contrast adjustments */
+:root[data-theme='dark'] a {
+  color: var(--sl-color-accent-high);
+}
+
+:root[data-theme='dark'] a:hover {
+  color: #8cb8ff;
+}
+
+/* Search field */
+.starlight-search {
+  background-color: var(--sl-color-bg-inline-code);
+  border: 1px solid var(--sl-color-hairline);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+:root[data-theme='light'] .starlight-search {
+  background-color: #ffffff;
+  border-color: var(--sl-color-gray-4);
+}
+
+.starlight-search:focus-within {
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Sidebar active-state contrast */
+:root[data-theme='dark'] .starlight-sidebar [aria-current='page'],
+:root[data-theme='dark'] .starlight-sidebar [aria-current='page']:hover,
+:root[data-theme='dark'] .starlight-sidebar [aria-current='page']:focus {
+  color: var(--sl-color-white);
+}

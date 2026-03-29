@@ -1,0 +1,95 @@
+---
+const features = [
+  {
+    title: 'Privacy First',
+    description: 'All processing happens locally in your browser. Zero data transmission to external servers. Your conversations stay yours.',
+    icon: '🔒',
+  },
+  {
+    title: 'Multi-Platform Support',
+    description: 'Works seamlessly with ChatGPT, Claude, DeepSeek, Gemini, Kimi, Yuanbao, Doubao, and Grok.',
+    icon: '🌐',
+  },
+  {
+    title: 'Flexible Export Formats',
+    description: 'Export to Markdown, JSON, or plain text. Choose the format that works best for your workflow.',
+    icon: '📤',
+  },
+  {
+    title: 'Multiple Destinations',
+    description: 'Save to local files, Notion databases, Obsidian vaults, or copy to clipboard. One click, multiple options.',
+    icon: '🗄️',
+  },
+  {
+    title: 'Smart Selection',
+    description: 'Choose specific messages to export. Filter by role or select individual conversations for precise control.',
+    icon: '✅',
+  },
+  {
+    title: 'Lightning Fast',
+    description: 'Instant export with no delays. Optimized performance for conversations of any length.',
+    icon: '⚡',
+  },
+]
+---
+
+<section id="features" class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto max-w-7xl">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+        Powerful Features for Every User
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Everything you need to manage and export your AI conversations efficiently
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        features.map((feature) => (
+          <div class="group bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+            <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform text-3xl">
+              {feature.icon}
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">
+              {feature.title}
+            </h3>
+            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+              {feature.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Additional Feature Highlights -->
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="p-6">
+        <div class="text-4xl font-extrabold text-primary-600 dark:text-primary-400 mb-2">
+          8+
+        </div>
+        <div class="text-gray-600 dark:text-gray-300 font-medium">
+          Supported Platforms
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="text-4xl font-extrabold text-primary-600 dark:text-primary-400 mb-2">
+          5
+        </div>
+        <div class="text-gray-600 dark:text-gray-300 font-medium">
+          Supported Export Methods
+        </div>
+      </div>
+      <div class="p-6">
+        <div class="text-4xl font-extrabold text-primary-600 dark:text-primary-400 mb-2">
+          100%
+        </div>
+        <div class="text-gray-600 dark:text-gray-300 font-medium">
+          Privacy Protected
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

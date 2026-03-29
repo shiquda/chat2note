@@ -1,0 +1,28 @@
+{
+  "name": "chat2note-docs",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "build:check": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/starlight": "^0.28.4",
+    "@astrojs/tailwind": "^5.1.2",
+    "@iconify-json/tabler": "^1.2.9",
+    "@tabler/icons-react": "^3.35.0",
+    "astro": "^4.16.18",
+    "astro-icon": "^1.1.1",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.16"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "typescript": "^5.6.3"
+  }
+}

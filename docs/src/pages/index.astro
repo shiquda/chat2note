@@ -1,0 +1,27 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro'
+import Header from '../components/landing/Header.astro'
+import Hero from '../components/landing/Hero.astro'
+import Features from '../components/landing/Features.astro'
+import Platforms from '../components/landing/Platforms.astro'
+import CTA from '../components/landing/CTA.astro'
+import Footer from '../components/landing/Footer.astro'
+
+const navItems = [
+  { name: 'Features', href: '#features' },
+  { name: 'Platforms', href: '#platforms' },
+  { name: 'Docs', href: '/docs' },
+  { name: 'GitHub', href: 'https://github.com/shiquda/chat2note' },
+]
+---
+
+<LandingLayout>
+  <Header navItems={navItems} ctaHref="#download" />
+  <main>
+    <Hero />
+    <Features />
+    <Platforms />
+    <CTA />
+  </main>
+  <Footer />
+</LandingLayout>

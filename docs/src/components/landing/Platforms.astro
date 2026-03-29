@@ -1,0 +1,206 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const primaryPlatforms = [
+  {
+    name: 'ChatGPT',
+    url: 'https://chat.openai.com',
+    color: 'from-green-500 to-emerald-600',
+    icon: 'tabler:robot',
+    bgIcon: 'ChatGPT',
+  },
+  {
+    name: 'Claude',
+    url: 'https://claude.ai',
+    color: 'from-amber-500 to-orange-600',
+    icon: 'tabler:brain',
+    bgIcon: 'Claude',
+  },
+  {
+    name: 'DeepSeek',
+    url: 'https://chat.deepseek.com',
+    color: 'from-blue-500 to-cyan-600',
+    icon: 'tabler:search',
+    bgIcon: 'DeepSeek',
+  },
+  {
+    name: 'Gemini',
+    url: 'https://gemini.google.com',
+    color: 'from-purple-500 to-pink-600',
+    icon: 'tabler:sparkles',
+    bgIcon: 'Gemini',
+  },
+]
+
+const secondaryPlatforms = [
+  {
+    name: 'Kimi',
+    url: 'https://kimi.com',
+    description: 'Moonshot AI\'s flagship assistant for Chinese users',
+  },
+  {
+    name: 'Yuanbao',
+    url: 'https://yuanbao.tencent.com',
+    description: "Tencent's enterprise-ready AI assistant",
+  },
+  {
+    name: 'Doubao',
+    url: 'https://doubao.com',
+    description: "ByteDance's productivity-focused AI workspace",
+  },
+  {
+    name: 'Grok',
+    url: 'https://grok.com',
+    description: 'xAI\'s real-time conversational assistant',
+  },
+]
+
+const exportTargets = [
+  {
+    name: 'Notion',
+    description: 'Export directly to your Notion databases with rich formatting',
+    color: 'from-gray-800 to-gray-900',
+    icon: 'tabler:notebook',
+    bgIcon: 'Notion',
+  },
+  {
+    name: 'Obsidian',
+    description: 'Save to your Obsidian vault with YAML frontmatter support',
+    color: 'from-purple-500 to-purple-600',
+    icon: 'tabler:notes',
+    bgIcon: 'Obsidian',
+  },
+  {
+    name: 'Local Files',
+    description: 'Download as Markdown, JSON, or TXT for maximum flexibility',
+    color: 'from-blue-500 to-blue-600',
+    icon: 'tabler:folder-down',
+    bgIcon: 'Files',
+  },
+  {
+    name: 'Clipboard',
+    description: 'Copy to clipboard for quick pasting into any application',
+    color: 'from-green-500 to-green-600',
+    icon: 'tabler:clipboard-copy',
+    bgIcon: 'Copy',
+  },
+]
+---
+
+<section id="platforms" class="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-950">
+  <div class="container mx-auto max-w-7xl">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-4">
+        Works With Your Favorite AI Platforms
+      </h2>
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        Seamlessly integrate with the most popular global AI chat platforms plus regional leaders
+      </p>
+    </div>
+
+    <!-- Platforms Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {
+        primaryPlatforms.map((platform) => (
+          <div class="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+            {/* Background brand text with opacity */}
+            <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+              <div class={`text-9xl font-black bg-gradient-to-br ${platform.color} bg-clip-text text-transparent select-none`}>
+                {platform.bgIcon[0]}
+              </div>
+            </div>
+            <div class={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${platform.color} opacity-10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500`}></div>
+            <div class="relative">
+              <div class="flex items-center gap-3 mb-3">
+                <Icon name={platform.icon} class="w-10 h-10 text-primary-600 dark:text-primary-400" />
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
+                  {platform.name}
+                </h3>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- Secondary Platforms -->
+    <div class="mt-12">
+      <div class="text-center mb-6">
+        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">
+          Plus regional favorites trusted by our community
+        </h3>
+        <p class="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          Built-in support for additional AI platforms popular in Asia and emerging markets.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center gap-4">
+        {secondaryPlatforms.map(platform => (
+          <a
+            href={platform.url}
+            class="group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900/60 px-6 py-4 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="text-lg font-semibold text-gray-900 dark:text-white mb-1">
+              {platform.name}
+            </div>
+            <div class="text-sm text-gray-500 dark:text-gray-400 max-w-xs">
+              {platform.description}
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Coming Soon Badge -->
+    <div class="mt-12 text-center">
+      <div class="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-primary-100 to-blue-100 dark:from-primary-900/30 dark:to-blue-900/30 border border-primary-200 dark:border-primary-800">
+        <svg class="w-5 h-5 text-primary-600 dark:text-primary-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"></path>
+        </svg>
+        <span class="text-primary-700 dark:text-primary-300 font-medium">
+          More platforms coming soon - Perplexity AI, Poe, and more!
+        </span>
+      </div>
+    </div>
+
+    <!-- Export Targets Section -->
+    <div class="mt-24">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          Export to Your Favorite Note-Taking Apps
+        </h3>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Seamlessly save your conversations to the tools you already use
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* AI Platforms */}
+        {exportTargets.map((target) => (
+          <div class="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700">
+            {/* Background brand text with opacity */}
+            <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+              <div class={`text-9xl font-black bg-gradient-to-br ${target.color} bg-clip-text text-transparent select-none`}>
+                {target.bgIcon[0]}
+              </div>
+            </div>
+            <div class={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${target.color} opacity-10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500`}></div>
+            <div class="relative">
+              <div class="flex items-center gap-3 mb-3">
+                <Icon name={target.icon} class="w-10 h-10 text-primary-600 dark:text-primary-400" />
+                <h4 class="text-2xl font-bold text-gray-900 dark:text-white">
+                  {target.name}
+                </h4>
+              </div>
+              <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                {target.description}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

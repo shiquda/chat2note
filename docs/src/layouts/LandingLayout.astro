@@ -1,0 +1,197 @@
+---
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'Chat2Note - Export AI Conversations to Notion & Obsidian',
+  description = 'Privacy-first browser extension for exporting ChatGPT, Claude, DeepSeek, Gemini, Kimi, Yuanbao, Doubao, and Grok conversations to Notion databases and Obsidian vaults. Perfect for knowledge management and building your second brain.',
+} = Astro.props
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://chat2note.com/og-image.jpg" />
+    <meta property="og:url" content="https://chat2note.com" />
+    <meta property="og:site_name" content="Chat2Note" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://chat2note.com/og-image.jpg" />
+    <meta property="twitter:creator" content="@chat2note" />
+
+    <!-- Additional SEO -->
+    <meta name="keywords" content="ChatGPT export, Claude export, AI conversation backup, browser extension, Notion integration, Obsidian integration, Markdown export, AI chat backup, conversation management, privacy-focused AI tools, note-taking app, knowledge management, Notion AI, Obsidian sync, second brain, personal knowledge base, PKM, note-taking workflow, AI note-taking, chat export to notes, AI research notes, conversation logging, meeting notes AI" />
+    <meta name="author" content="Chat2Note Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://chat2note.com" />
+
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Chat2Note",
+          "description": "Privacy-first browser extension for exporting AI chat conversations",
+          "url": "https://chat2note.com",
+          "applicationCategory": "Productivity",
+          "operatingSystem": "Chrome, Firefox, Edge",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150"
+          },
+          "featureList": [
+            "Export ChatGPT conversations",
+            "Export Claude conversations",
+            "Export DeepSeek conversations",
+            "Export Gemini conversations",
+            "Export Kimi conversations",
+            "Export Yuanbao conversations",
+            "Export Doubao conversations",
+            "Export Grok conversations",
+            "Multiple export formats (Markdown, JSON, TXT)",
+            "Notion integration for knowledge management",
+            "Obsidian integration for second brain",
+            "Local file export for flexible note-taking",
+            "Notion database export with rich formatting",
+            "Obsidian vault export with YAML frontmatter",
+            "Privacy-first processing",
+            "No data tracking",
+            "AI conversation to notes conversion",
+            "Meeting notes automation",
+            "Research knowledge base builder"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What platforms does Chat2Note support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Chat2Note currently supports ChatGPT (chatgpt.com), Claude (claude.ai), DeepSeek (chat.deepseek.com), Gemini (gemini.google.com), Kimi (kimi.com), Yuanbao (yuanbao.tencent.com), Doubao (doubao.com), and Grok (grok.com)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Chat2Note privacy-focused?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, all processing happens locally in your browser. No data is ever sent to external servers, ensuring complete privacy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What export formats are available?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can export conversations in Markdown, JSON, and plain text formats. Additional destinations include Notion databases, Obsidian vaults, and clipboard. Perfect for building your personal knowledge base."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use Chat2Note with Notion and Obsidian?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Chat2Note is designed for Notion and Obsidian users. Export directly to Notion databases with rich formatting and properties. Export to Obsidian vaults with YAML frontmatter and proper linking. Perfect for knowledge management and building your second brain."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Chat2Note good for building a second brain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! Chat2Note helps you capture AI conversations for your personal knowledge management system in Notion and Obsidian. Export with metadata, timestamps, and conversation context. Perfect for research notes, meeting minutes, and building a comprehensive knowledge base."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "name": "How to export AI conversations with Chat2Note",
+          "description": "Step-by-step guide to export your AI chat conversations using Chat2Note browser extension",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Install Chat2Note",
+              "text": "Install the Chat2Note browser extension from the Chrome Web Store or Firefox Add-ons"
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Navigate to your AI chat platform",
+              "text": "Go to ChatGPT, Claude, DeepSeek, Gemini, Kimi, Yuanbao, Doubao, or Grok website"
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Click the export button",
+              "text": "Click the Chat2Note export button that appears on the chat interface"
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Choose export options",
+              "text": "Select which messages to export and choose your preferred format and destination"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-500 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-600;
+  }
+</style>
